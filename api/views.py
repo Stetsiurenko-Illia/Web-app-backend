@@ -62,8 +62,15 @@ class AboutView(APIView):
     def get(self, request):
         """Інформація про додаток. Повертає логотип і короткий опис додатку To-Do List."""
         return Response({
-            'logo': request.build_absolute_uri('/static/img/logo.png'),
-            'description': 'A simple To-Do List application'
+            "logo": request.build_absolute_uri("/static/img/logo.png"),
+            "description": "Ласкаво просимо до To-Do List — додатку, який допоможе вам організувати ваші щоденні завдання з легкістю.",
+            "features": [
+                "Додавання нових завдань із заголовком і описом",
+                "Позначення завдань як виконаних",
+                "Редагування та видалення завдань",
+                "Сортування завдань за статусом виконання",
+                "Зручний інтерфейс для роботи з вашим профілем"
+            ]
         })
 
 
