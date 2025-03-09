@@ -1,0 +1,2374 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://wep-app.onrender.com/api/docs/
+Subject: To-Do List API
+Date: Sun, 9 Mar 2025 16:30:16 +0200
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--oP3l7dy3nTEzYqkClR6iIe7DBuOw2hzJfXxDkAgsHc----"
+
+
+------MultipartBoundary--oP3l7dy3nTEzYqkClR6iIe7DBuOw2hzJfXxDkAgsHc----
+Content-Type: text/html
+Content-ID: <frame-E6075EF583EC5F070404F941A4A9BBE6@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://wep-app.onrender.com/api/docs/
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/css" href=3D=
+"cid:css-78c5b755-f803-4a4c-9919-fd6b3cc4ce1a@mhtml.blink" /><link rel=3D"s=
+tylesheet" type=3D"text/css" href=3D"cid:css-cf449bcb-4738-497b-ad14-dcf302=
+ca5990@mhtml.blink" /><link rel=3D"stylesheet" type=3D"text/css" href=3D"ci=
+d:css-8672dce5-ed79-466a-be55-ec24069e51e6@mhtml.blink" />
+   =20
+    <title>To-Do List API</title>
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+    <link rel=3D"preconnect" href=3D"https://fonts.googleapis.com/">
+    <link rel=3D"preconnect" href=3D"https://fonts.gstatic.com/" crossorigi=
+n=3D"">
+    <link rel=3D"stylesheet" href=3D"https://fonts.googleapis.com/css2?fami=
+ly=3DMontserrat:wght@300;400;700&amp;family=3DRoboto:wght@300;400;700&amp;d=
+isplay=3Dswap">
+   =20
+   =20
+  </head>
+  <body>
+   =20
+   =20
+    <redoc spec-url=3D"/api/schema/"><div class=3D"sc-lnPyaJ jvNsve redoc-w=
+rap"><div class=3D"sc-eBHhsj iVHMBI menu-content" style=3D"top: 0px; height=
+: calc(0px + 100vh);"><div role=3D"search" class=3D"sc-iapWAC jwpqNI"><svg =
+class=3D"sc-dxcDKg HJXho search-icon" version=3D"1.1" viewBox=3D"0 0 1000 1=
+000" x=3D"0px" xmlns=3D"http://www.w3.org/2000/svg" y=3D"0px"><path d=3D"M9=
+68.2,849.4L667.3,549c83.9-136.5,66.7-317.4-51.7-435.6C477.1-25,252.5-25,113=
+.9,113.4c-138.5,138.3-138.5,362.6,0,501C219.2,730.1,413.2,743,547.6,666.5l3=
+01.9,301.4c43.6,43.6,76.9,14.9,104.2-12.4C981,928.3,1011.8,893,968.2,849.4z=
+ M524.5,522c-88.9,88.7-233,88.7-321.8,0c-88.9-88.7-88.9-232.6,0-321.3c88.9-=
+88.7,233-88.7,321.8,0C613.4,289.4,613.4,433.3,524.5,522z"></path></svg><inp=
+ut placeholder=3D"Search..." aria-label=3D"Search" type=3D"text" class=3D"s=
+c-kqGoIF gfkSLd search-input" value=3D""></div><div class=3D"sc-dtBdUo gdNL=
+sg scrollbar-container undefined ps"><ul class=3D"sc-kYxDKI eoKbCJ" role=3D=
+"menu"><li tabindex=3D"0" data-item-id=3D"tag/about" role=3D"menuitem" clas=
+s=3D"sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC kbFLfk -depth1"><span widt=
+h=3D"calc(100% - 38px)" title=3D"about" class=3D"sc-gfoqjT ijqoQq">about</s=
+pan><svg class=3D"sc-cwHptR ssWsg" version=3D"1.1" viewBox=3D"0 0 24 24" x=
+=3D"0" xmlns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><p=
+olygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></poly=
+gon></svg></label><ul class=3D"sc-kYxDKI YyzeY"><li tabindex=3D"0" data-ite=
+m-id=3D"tag/about/operation/about_retrieve" role=3D"menuitem" class=3D"sc-b=
+pUBKd itmOnH"><label class=3D"sc-eyvILC iACzre -depth2"><span type=3D"get" =
+class=3D"sc-iHmpnF hDOFXM operation-type get">get</span><span tabindex=3D"0=
+" width=3D"calc(100% - 38px)" class=3D"sc-gfoqjT ijqoQq">about_retrieve</sp=
+an></label></li></ul></li><li tabindex=3D"0" data-item-id=3D"tag/login" rol=
+e=3D"menuitem" class=3D"sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC kbFLfk =
+-depth1"><span width=3D"calc(100% - 38px)" title=3D"login" class=3D"sc-gfoq=
+jT ijqoQq">login</span><svg class=3D"sc-cwHptR ssWsg" version=3D"1.1" viewB=
+ox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-=
+hidden=3D"true"><polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4=
+ 18.7 9.7 "></polygon></svg></label><ul class=3D"sc-kYxDKI YyzeY"><li tabin=
+dex=3D"0" data-item-id=3D"tag/login/operation/login_create" role=3D"menuite=
+m" class=3D"sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC iACzre -depth2"><sp=
+an type=3D"post" class=3D"sc-iHmpnF hDOFXM operation-type post">post</span>=
+<span tabindex=3D"0" width=3D"calc(100% - 38px)" class=3D"sc-gfoqjT ijqoQq"=
+>login_create</span></label></li></ul></li><li tabindex=3D"0" data-item-id=
+=3D"tag/profile" role=3D"menuitem" class=3D"sc-bpUBKd itmOnH"><label class=
+=3D"sc-eyvILC kbFLfk -depth1"><span width=3D"calc(100% - 38px)" title=3D"pr=
+ofile" class=3D"sc-gfoqjT ijqoQq">profile</span><svg class=3D"sc-cwHptR ssW=
+sg" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.or=
+g/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon points=3D"17.3 8.3 12 13.=
+6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></label><ul class=3D"s=
+c-kYxDKI YyzeY"><li tabindex=3D"0" data-item-id=3D"tag/profile/operation/pr=
+ofile_retrieve" role=3D"menuitem" class=3D"sc-bpUBKd itmOnH"><label class=
+=3D"sc-eyvILC iACzre -depth2"><span type=3D"get" class=3D"sc-iHmpnF hDOFXM =
+operation-type get">get</span><span tabindex=3D"0" width=3D"calc(100% - 38p=
+x)" class=3D"sc-gfoqjT ijqoQq">profile_retrieve</span></label></li><li tabi=
+ndex=3D"0" data-item-id=3D"tag/profile/operation/profile_update" role=3D"me=
+nuitem" class=3D"sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC iACzre -depth2=
+"><span type=3D"put" class=3D"sc-iHmpnF hDOFXM operation-type put">put</spa=
+n><span tabindex=3D"0" width=3D"calc(100% - 38px)" class=3D"sc-gfoqjT ijqoQ=
+q">profile_update</span></label></li></ul></li><li tabindex=3D"0" data-item=
+-id=3D"tag/register" role=3D"menuitem" class=3D"sc-bpUBKd itmOnH"><label cl=
+ass=3D"sc-eyvILC kbFLfk -depth1"><span width=3D"calc(100% - 38px)" title=3D=
+"register" class=3D"sc-gfoqjT ijqoQq">register</span><svg class=3D"sc-cwHpt=
+R ssWsg" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.=
+w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon points=3D"17.3 8.3 1=
+2 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></label><ul class=
+=3D"sc-kYxDKI YyzeY"><li tabindex=3D"0" data-item-id=3D"tag/register/operat=
+ion/register_create" role=3D"menuitem" class=3D"sc-bpUBKd itmOnH"><label cl=
+ass=3D"sc-eyvILC iACzre -depth2"><span type=3D"post" class=3D"sc-iHmpnF hDO=
+FXM operation-type post">post</span><span tabindex=3D"0" width=3D"calc(100%=
+ - 38px)" class=3D"sc-gfoqjT ijqoQq">register_create</span></label></li></u=
+l></li><li tabindex=3D"0" data-item-id=3D"tag/schema" role=3D"menuitem" cla=
+ss=3D"sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC kbFLfk -depth1"><span wid=
+th=3D"calc(100% - 38px)" title=3D"schema" class=3D"sc-gfoqjT ijqoQq">schema=
+</span><svg class=3D"sc-cwHptR ssWsg" version=3D"1.1" viewBox=3D"0 0 24 24"=
+ x=3D"0" xmlns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true">=
+<polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></po=
+lygon></svg></label><ul class=3D"sc-kYxDKI YyzeY"><li tabindex=3D"0" data-i=
+tem-id=3D"tag/schema/operation/schema_retrieve" role=3D"menuitem" class=3D"=
+sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC iACzre -depth2"><span type=3D"g=
+et" class=3D"sc-iHmpnF hDOFXM operation-type get">get</span><span tabindex=
+=3D"0" width=3D"calc(100% - 38px)" class=3D"sc-gfoqjT ijqoQq">schema_retrie=
+ve</span></label></li></ul></li><li tabindex=3D"0" data-item-id=3D"tag/task=
+s" role=3D"menuitem" class=3D"sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC k=
+bFLfk -depth1"><span width=3D"calc(100% - 38px)" title=3D"tasks" class=3D"s=
+c-gfoqjT ijqoQq">tasks</span><svg class=3D"sc-cwHptR ssWsg" version=3D"1.1"=
+ viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.org/2000/svg" y=3D"0"=
+ aria-hidden=3D"true"><polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 1=
+2 16.4 18.7 9.7 "></polygon></svg></label><ul class=3D"sc-kYxDKI YyzeY"><li=
+ tabindex=3D"0" data-item-id=3D"tag/tasks/operation/tasks_retrieve" role=3D=
+"menuitem" class=3D"sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC iACzre -dep=
+th2"><span type=3D"get" class=3D"sc-iHmpnF hDOFXM operation-type get">get</=
+span><span tabindex=3D"0" width=3D"calc(100% - 38px)" class=3D"sc-gfoqjT ij=
+qoQq">tasks_retrieve</span></label></li><li tabindex=3D"0" data-item-id=3D"=
+tag/tasks/operation/tasks_create" role=3D"menuitem" class=3D"sc-bpUBKd itmO=
+nH"><label class=3D"sc-eyvILC iACzre -depth2"><span type=3D"post" class=3D"=
+sc-iHmpnF hDOFXM operation-type post">post</span><span tabindex=3D"0" width=
+=3D"calc(100% - 38px)" class=3D"sc-gfoqjT ijqoQq">tasks_create</span></labe=
+l></li><li tabindex=3D"0" data-item-id=3D"tag/tasks/operation/tasks_retriev=
+e_2" role=3D"menuitem" class=3D"sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC=
+ iACzre -depth2"><span type=3D"get" class=3D"sc-iHmpnF hDOFXM operation-typ=
+e get">get</span><span tabindex=3D"0" width=3D"calc(100% - 38px)" class=3D"=
+sc-gfoqjT ijqoQq">tasks_retrieve_2</span></label></li><li tabindex=3D"0" da=
+ta-item-id=3D"tag/tasks/operation/tasks_update" role=3D"menuitem" class=3D"=
+sc-bpUBKd itmOnH"><label class=3D"sc-eyvILC iACzre -depth2"><span type=3D"p=
+ut" class=3D"sc-iHmpnF hDOFXM operation-type put">put</span><span tabindex=
+=3D"0" width=3D"calc(100% - 38px)" class=3D"sc-gfoqjT ijqoQq">tasks_update<=
+/span></label></li><li tabindex=3D"0" data-item-id=3D"tag/tasks/operation/t=
+asks_destroy" role=3D"menuitem" class=3D"sc-bpUBKd itmOnH"><label class=3D"=
+sc-eyvILC iACzre -depth2"><span type=3D"delete" class=3D"sc-iHmpnF hDOFXM o=
+peration-type delete">del</span><span tabindex=3D"0" width=3D"calc(100% - 3=
+8px)" class=3D"sc-gfoqjT ijqoQq">tasks_destroy</span></label></li></ul></li=
+><li tabindex=3D"0" data-item-id=3D"tag/token" role=3D"menuitem" class=3D"s=
+c-bpUBKd itmOnH"><label class=3D"sc-eyvILC kbFLfk -depth1"><span width=3D"c=
+alc(100% - 38px)" title=3D"token" class=3D"sc-gfoqjT ijqoQq">token</span><s=
+vg class=3D"sc-cwHptR ssWsg" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" =
+xmlns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon =
+points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></s=
+vg></label><ul class=3D"sc-kYxDKI YyzeY"><li tabindex=3D"0" data-item-id=3D=
+"tag/token/operation/token_create" role=3D"menuitem" class=3D"sc-bpUBKd itm=
+OnH"><label class=3D"sc-eyvILC iACzre -depth2"><span type=3D"post" class=3D=
+"sc-iHmpnF hDOFXM operation-type post">post</span><span tabindex=3D"0" widt=
+h=3D"calc(100% - 38px)" class=3D"sc-gfoqjT ijqoQq">token_create</span></lab=
+el></li><li tabindex=3D"0" data-item-id=3D"tag/token/operation/token_refres=
+h_create" role=3D"menuitem" class=3D"sc-bpUBKd itmOnH"><label class=3D"sc-e=
+yvILC iACzre -depth2"><span type=3D"post" class=3D"sc-iHmpnF hDOFXM operati=
+on-type post">post</span><span tabindex=3D"0" width=3D"calc(100% - 38px)" c=
+lass=3D"sc-gfoqjT ijqoQq">token_refresh_create</span></label></li></ul></li=
+></ul><div class=3D"sc-kbousE ccKipA"><a target=3D"_blank" rel=3D"noopener =
+noreferrer" href=3D"https://redocly.com/redoc/"><img alt=3D"redocly logo" s=
+rc=3D"https://cdn.redoc.ly/redoc/logo-mini.svg">API docs by Redocly</a></di=
+v><div class=3D"ps__rail-x" style=3D"left: 0px; bottom: 0px;"><div class=3D=
+"ps__thumb-x" tabindex=3D"0" style=3D"left: 0px; width: 0px;"></div></div><=
+div class=3D"ps__rail-y" style=3D"top: 0px; right: 0px;"><div class=3D"ps__=
+thumb-y" tabindex=3D"0" style=3D"top: 0px; height: 0px;"></div></div></div>=
+</div><div class=3D"sc-iXzfSG goQxSG"><div class=3D"sc-dPZUQH hJpxRL"><svg =
+class=3D"" viewBox=3D"0 0 926.23699 573.74994" version=3D"1.1" x=3D"0px" y=
+=3D"0px" width=3D"15" height=3D"15" style=3D"transform: translate(2px, -4px=
+) rotate(180deg); transition: transform 0.2s;"><g transform=3D"translate(90=
+4.92214,-879.1482)"><path d=3D"
+          m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+          -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.689=
+4,
+          0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.689=
+2,
+          -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+          -174.68583 0.6895,0 26.281,25.03215 56.8701,
+          55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+          -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+          -104.0616 -231.873,-231.248 z
+        " fill=3D"currentColor"></path></g></svg><svg class=3D"" viewBox=3D=
+"0 0 926.23699 573.74994" version=3D"1.1" x=3D"0px" y=3D"0px" width=3D"15" =
+height=3D"15" style=3D"transform: translate(2px, 4px); transition: transfor=
+m 0.2s;"><g transform=3D"translate(904.92214,-879.1482)"><path d=3D"
+          m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+          -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.689=
+4,
+          0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.689=
+2,
+          -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+          -174.68583 0.6895,0 26.281,25.03215 56.8701,
+          55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+          -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+          -104.0616 -231.873,-231.248 z
+        " fill=3D"currentColor"></path></g></svg></div></div><div class=3D"=
+sc-eulNck dQiXRu api-content"><div class=3D"sc-dcJsrY eVrqat"><div class=3D=
+"sc-kAyceB XMnSL"><div class=3D"sc-fqkvVR cEAxIC api-info"><h1 class=3D"sc-=
+imWYAI sc-ktJbId dCEJze kxOCzH">To-Do List API <span>(1.0.0)</span></h1><p>=
+Download OpenAPI specification:<a download=3D"" target=3D"_blank" href=3D"h=
+ttps://wep-app.onrender.com/api/schema/" rel=3D"noreferrer" class=3D"sc-gmg=
+FlS gDfmoL">Download</a></p><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya"=
+></div><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya" data-role=3D"redoc-s=
+ummary"></div><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya" data-role=3D"=
+redoc-description"><p>API =D0=B4=D0=BB=D1=8F =D1=83=D0=BF=D1=80=D0=B0=D0=B2=
+=D0=BB=D1=96=D0=BD=D0=BD=D1=8F =D0=B7=D0=B0=D0=B4=D0=B0=D1=87=D0=B0=D0=BC=
+=D0=B8 =D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=87=D1=96=
+=D0=B2 =D1=96=D0=B7 =D0=B0=D0=B2=D1=82=D0=BE=D1=80=D0=B8=D0=B7=D0=B0=D1=86=
+=D1=96=D1=94=D1=8E =D1=82=D0=B0 =D0=BF=D1=80=D0=BE=D1=84=D1=96=D0=BB=D0=B5=
+=D0=BC.</p>
+</div></div></div></div><div id=3D"tag/about" data-section-id=3D"tag/about"=
+ class=3D"sc-dcJsrY eVrqat"><div class=3D"sc-kAyceB XMnSL"><div class=3D"sc=
+-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew jrsfjb=
+" href=3D"https://wep-app.onrender.com/api/docs/#tag/about" aria-label=3D"t=
+ag/about"></a>about</h2></div></div></div><div id=3D"tag/about/operation/ab=
+out_retrieve" data-section-id=3D"tag/about/operation/about_retrieve" class=
+=3D"sc-dcJsrY kNjBFu"><div data-section-id=3D"operation/about_retrieve" id=
+=3D"operation/about_retrieve" class=3D"sc-kAyceB XMnSL"><div class=3D"sc-fq=
+kvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew jrsfjb" h=
+ref=3D"https://wep-app.onrender.com/api/docs/#tag/about/operation/about_ret=
+rieve" aria-label=3D"tag/about/operation/about_retrieve"></a>about_retrieve=
+ </h2><div class=3D"sc-bVVIoq bxAVpD"><div class=3D"sc-eeDRCY sc-eBMEME gvJ=
+SKt hzUya"><p>=D0=86=D0=BD=D1=84=D0=BE=D1=80=D0=BC=D0=B0=D1=86=D1=96=D1=8F =
+=D0=BF=D1=80=D0=BE =D0=B4=D0=BE=D0=B4=D0=B0=D1=82=D0=BE=D0=BA. =D0=9F=D0=BE=
+=D0=B2=D0=B5=D1=80=D1=82=D0=B0=D1=94 =D0=BB=D0=BE=D0=B3=D0=BE=D1=82=D0=B8=
+=D0=BF =D1=96 =D0=BA=D0=BE=D1=80=D0=BE=D1=82=D0=BA=D0=B8=D0=B9 =D0=BE=D0=BF=
+=D0=B8=D1=81 =D0=B4=D0=BE=D0=B4=D0=B0=D1=82=D0=BA=D1=83 To-Do List.</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span><span class=3D"sc-=
+jMakVo ezhZdr">None</span></div></div><div><h3 class=3D"sc-fMMURN ciDERN">R=
+esponses</h3><div><button class=3D"sc-kzqdkY bFiTlt" disabled=3D""><strong =
+class=3D"sc-dSIIpw cMtbfc">200 </strong><div class=3D"sc-eeDRCY sc-eBMEME s=
+c-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No response body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"get" class=3D"sc-eZYNyq kDzUVU http-verb get">get</span><span =
+class=3D"sc-iEXKAA lmuCWo">/api/about/</span><svg class=3D"sc-cwHptR hEFKzC=
+" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.org/=
+2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;"><poly=
+gon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon=
+></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><div c=
+lass=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA"><=
+/div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpNM"><s=
+pan>https://wep-app.onrender.com</span>/api/about/</div></div></div></div><=
+/div></div></div></div><div id=3D"tag/login" data-section-id=3D"tag/login" =
+class=3D"sc-dcJsrY eVrqat"><div class=3D"sc-kAyceB XMnSL"><div class=3D"sc-=
+fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew jrsfjb"=
+ href=3D"https://wep-app.onrender.com/api/docs/#tag/login" aria-label=3D"ta=
+g/login"></a>login</h2></div></div></div><div id=3D"tag/login/operation/log=
+in_create" data-section-id=3D"tag/login/operation/login_create" class=3D"sc=
+-dcJsrY kNjBFu"><div data-section-id=3D"operation/login_create" id=3D"opera=
+tion/login_create" class=3D"sc-kAyceB XMnSL"><div class=3D"sc-fqkvVR cEAxIC=
+"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew jrsfjb" href=3D"http=
+s://wep-app.onrender.com/api/docs/#tag/login/operation/login_create" aria-l=
+abel=3D"tag/login/operation/login_create"></a>login_create </h2><div class=
+=3D"sc-bVVIoq bxAVpD"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya"><p>=
+=D0=90=D1=83=D1=82=D0=B5=D0=BD=D1=82=D0=B8=D1=84=D1=96=D0=BA=D0=B0=D1=86=D1=
+=96=D1=8F =D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=87=D0=
+=B0 =D1=82=D0=B0 =D0=B2=D0=B8=D0=B4=D0=B0=D1=87=D0=B0 JWT-=D1=82=D0=BE=D0=
+=BA=D0=B5=D0=BD=D1=96=D0=B2. =D0=9F=D1=80=D0=B8=D0=B9=D0=BC=D0=B0=D1=94 ema=
+il =D1=96 =D0=BF=D0=B0=D1=80=D0=BE=D0=BB=D1=8C, =D0=BF=D0=BE=D0=B2=D0=B5=D1=
+=80=D1=82=D0=B0=D1=94 access =D1=82=D0=B0 refresh =D1=82=D0=BE=D0=BA=D0=B5=
+=D0=BD=D0=B8 =D0=B4=D0=BB=D1=8F =D0=B0=D0=B2=D1=82=D0=BE=D1=80=D0=B8=D0=B7=
+=D0=BE=D0=B2=D0=B0=D0=BD=D0=BE=D0=B3=D0=BE =D0=BA=D0=BE=D1=80=D0=B8=D1=81=
+=D1=82=D1=83=D0=B2=D0=B0=D1=87=D0=B0.</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span><span class=3D"sc-=
+jMakVo ezhZdr">None</span></div></div><div><h3 class=3D"sc-fMMURN ciDERN">R=
+esponses</h3><div><button class=3D"sc-kzqdkY bFiTlt" disabled=3D""><strong =
+class=3D"sc-dSIIpw cMtbfc">200 </strong><div class=3D"sc-eeDRCY sc-eBMEME s=
+c-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No response body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"post" class=3D"sc-eZYNyq jjWbju http-verb post">post</span><sp=
+an class=3D"sc-iEXKAA lmuCWo">/api/login/</span><svg class=3D"sc-cwHptR hEF=
+KzC" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.o=
+rg/2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;"><p=
+olygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></poly=
+gon></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><di=
+v class=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA=
+"></div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpNM"=
+><span>https://wep-app.onrender.com</span>/api/login/</div></div></div></di=
+v></div></div></div></div><div id=3D"tag/profile" data-section-id=3D"tag/pr=
+ofile" class=3D"sc-dcJsrY eVrqat"><div class=3D"sc-kAyceB XMnSL"><div class=
+=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew =
+jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag/profile" aria-la=
+bel=3D"tag/profile"></a>profile</h2></div></div></div><div id=3D"tag/profil=
+e/operation/profile_retrieve" data-section-id=3D"tag/profile/operation/prof=
+ile_retrieve" class=3D"sc-dcJsrY kNjBFu"><div data-section-id=3D"operation/=
+profile_retrieve" id=3D"operation/profile_retrieve" class=3D"sc-kAyceB XMnS=
+L"><div class=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=
+=3D"sc-jlZhew jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag/pr=
+ofile/operation/profile_retrieve" aria-label=3D"tag/profile/operation/profi=
+le_retrieve"></a>profile_retrieve </h2><div class=3D"sc-bVVIoq bxAVpD"><div=
+ class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya"><p>=D0=9E=D1=82=D1=80=D0=B8=D0=
+=BC=D0=B0=D0=BD=D0=BD=D1=8F =D0=BF=D1=80=D0=BE=D1=84=D1=96=D0=BB=D1=8E =D0=
+=B0=D0=B2=D1=82=D0=BE=D1=80=D0=B8=D0=B7=D0=BE=D0=B2=D0=B0=D0=BD=D0=BE=D0=B3=
+=D0=BE =D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=87=D0=B0.=
+=D0=9F=D0=BE=D0=B2=D0=B5=D1=80=D1=82=D0=B0=D1=94 =D0=B4=D0=B0=D0=BD=D1=96 =
+=D0=BF=D1=80=D0=BE=D1=84=D1=96=D0=BB=D1=8E (username, email, gender, birth_=
+date, avatar).</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span></div></div><div><=
+h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc-kzqdkY=
+ bFiTlt" disabled=3D""><strong class=3D"sc-dSIIpw cMtbfc">200 </strong><div=
+ class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No respons=
+e body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"get" class=3D"sc-eZYNyq kDzUVU http-verb get">get</span><span =
+class=3D"sc-iEXKAA lmuCWo">/api/profile/</span><svg class=3D"sc-cwHptR hEFK=
+zC" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.or=
+g/2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;"><po=
+lygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polyg=
+on></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><div=
+ class=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA"=
+></div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpNM">=
+<span>https://wep-app.onrender.com</span>/api/profile/</div></div></div></d=
+iv></div></div></div></div><div id=3D"tag/profile/operation/profile_update"=
+ data-section-id=3D"tag/profile/operation/profile_update" class=3D"sc-dcJsr=
+Y kNjBFu"><div data-section-id=3D"operation/profile_update" id=3D"operation=
+/profile_update" class=3D"sc-kAyceB XMnSL"><div class=3D"sc-fqkvVR cEAxIC">=
+<h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew jrsfjb" href=3D"https:=
+//wep-app.onrender.com/api/docs/#tag/profile/operation/profile_update" aria=
+-label=3D"tag/profile/operation/profile_update"></a>profile_update </h2><di=
+v class=3D"sc-bVVIoq bxAVpD"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya=
+"><p>=D0=9E=D0=BD=D0=BE=D0=B2=D0=BB=D0=B5=D0=BD=D0=BD=D1=8F =D0=BF=D1=80=D0=
+=BE=D1=84=D1=96=D0=BB=D1=8E =D0=B0=D0=B2=D1=82=D0=BE=D1=80=D0=B8=D0=B7=D0=
+=BE=D0=B2=D0=B0=D0=BD=D0=BE=D0=B3=D0=BE =D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=
+=82=D1=83=D0=B2=D0=B0=D1=87=D0=B0.=D0=94=D0=BE=D0=B7=D0=B2=D0=BE=D0=BB=D1=
+=8F=D1=94 =D1=87=D0=B0=D1=81=D1=82=D0=BA=D0=BE=D0=B2=D0=BE =D0=BE=D0=BD=D0=
+=BE=D0=B2=D0=B8=D1=82=D0=B8 =D0=B4=D0=B0=D0=BD=D1=96 =D0=BF=D1=80=D0=BE=D1=
+=84=D1=96=D0=BB=D1=8E, =D0=B2=D0=BA=D0=BB=D1=8E=D1=87=D0=B0=D1=8E=D1=87=D0=
+=B8 =D0=B0=D0=B2=D0=B0=D1=82=D0=B0=D1=80.</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span></div></div><div><=
+h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc-kzqdkY=
+ bFiTlt" disabled=3D""><strong class=3D"sc-dSIIpw cMtbfc">200 </strong><div=
+ class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No respons=
+e body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"put" class=3D"sc-eZYNyq jLavRV http-verb put">put</span><span =
+class=3D"sc-iEXKAA lmuCWo">/api/profile/</span><svg class=3D"sc-cwHptR hEFK=
+zC" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.or=
+g/2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;"><po=
+lygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polyg=
+on></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><div=
+ class=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA"=
+></div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpNM">=
+<span>https://wep-app.onrender.com</span>/api/profile/</div></div></div></d=
+iv></div></div></div></div><div id=3D"tag/register" data-section-id=3D"tag/=
+register" class=3D"sc-dcJsrY eVrqat"><div class=3D"sc-kAyceB XMnSL"><div cl=
+ass=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZh=
+ew jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag/register" ari=
+a-label=3D"tag/register"></a>register</h2></div></div></div><div id=3D"tag/=
+register/operation/register_create" data-section-id=3D"tag/register/operati=
+on/register_create" class=3D"sc-dcJsrY kNjBFu"><div data-section-id=3D"oper=
+ation/register_create" id=3D"operation/register_create" class=3D"sc-kAyceB =
+XMnSL"><div class=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a cl=
+ass=3D"sc-jlZhew jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag=
+/register/operation/register_create" aria-label=3D"tag/register/operation/r=
+egister_create"></a>register_create </h2><div class=3D"sc-bVVIoq bxAVpD"><d=
+iv class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya"><p>=D0=A0=D0=B5=D1=94=D1=81=
+=D1=82=D1=80=D0=B0=D1=86=D1=96=D1=8F =D0=BD=D0=BE=D0=B2=D0=BE=D0=B3=D0=BE =
+=D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=87=D0=B0. =D0=9F=
+=D1=80=D0=B8=D0=B9=D0=BC=D0=B0=D1=94 =D0=B4=D0=B0=D0=BD=D1=96 =D0=BA=D0=BE=
+=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=87=D0=B0 (username, email, pa=
+ssword, gender, birth_date, avatar) =D1=96 =D1=81=D1=82=D0=B2=D0=BE=D1=80=
+=D1=8E=D1=94 =D0=BD=D0=BE=D0=B2=D0=BE=D0=B3=D0=BE =D0=BA=D0=BE=D1=80=D0=B8=
+=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=87=D0=B0 =D0=B2 =D1=81=D0=B8=D1=81=D1=82=
+=D0=B5=D0=BC=D1=96.</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span></div></div><div><=
+h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc-kzqdkY=
+ bFiTlt" disabled=3D""><strong class=3D"sc-dSIIpw cMtbfc">200 </strong><div=
+ class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No respons=
+e body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"post" class=3D"sc-eZYNyq jjWbju http-verb post">post</span><sp=
+an class=3D"sc-iEXKAA lmuCWo">/api/register/</span><svg class=3D"sc-cwHptR =
+hEFKzC" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w=
+3.org/2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;"=
+><polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></p=
+olygon></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG">=
+<div class=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FD=
+QvA"></div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYp=
+NM"><span>https://wep-app.onrender.com</span>/api/register/</div></div></di=
+v></div></div></div></div></div><div id=3D"tag/schema" data-section-id=3D"t=
+ag/schema" class=3D"sc-dcJsrY eVrqat"><div class=3D"sc-kAyceB XMnSL"><div c=
+lass=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZ=
+hew jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag/schema" aria=
+-label=3D"tag/schema"></a>schema</h2></div></div></div><div id=3D"tag/schem=
+a/operation/schema_retrieve" data-section-id=3D"tag/schema/operation/schema=
+_retrieve" class=3D"sc-dcJsrY kNjBFu"><div data-section-id=3D"operation/sch=
+ema_retrieve" id=3D"operation/schema_retrieve" class=3D"sc-kAyceB XMnSL"><d=
+iv class=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc=
+-jlZhew jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag/schema/o=
+peration/schema_retrieve" aria-label=3D"tag/schema/operation/schema_retriev=
+e"></a>schema_retrieve </h2><div class=3D"sc-bVVIoq bxAVpD"><div class=3D"s=
+c-eeDRCY sc-eBMEME gvJSKt hzUya"><p>OpenApi3 schema for this API. Format ca=
+n be selected via content negotiation.</p>
+<ul>
+<li>YAML: application/vnd.oai.openapi</li>
+<li>JSON: application/vnd.oai.openapi+json</li>
+</ul>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span><span class=3D"sc-=
+jMakVo ezhZdr">None</span></div></div><div><h5 class=3D"sc-dAlyuH hNlDMA">q=
+uery Parameters</h5><table class=3D"sc-dAbbOL krDyRf"><tbody><tr class=3D""=
+><td class=3D"sc-dLMFU sc-eldPxv bvNJXm evxOdD" kind=3D"field" title=3D"for=
+mat"><span class=3D"sc-gFqAkR Aouot"></span><span class=3D"property-name">f=
+ormat</span></td><td class=3D"sc-fPXMVe iMGXTw"><div><div><span class=3D"sc=
+-Nxspf sc-cfxfcM lmPAIU bZSMCf"></span><span class=3D"sc-Nxspf sc-gFAWRd lm=
+PAIU iHgalF">string</span></div><div><span class=3D"sc-Nxspf lmPAIU"> Enum:=
+</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"json"</span> <spa=
+n class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"yaml"</span> </div> <div><div=
+ class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA"></div></div></div></td></tr><tr=
+ class=3D"last "><td class=3D"sc-dLMFU sc-eldPxv bvNJXm evxOdD" kind=3D"fie=
+ld" title=3D"lang"><span class=3D"sc-gFqAkR Aouot"></span><span class=3D"pr=
+operty-name">lang</span></td><td class=3D"sc-fPXMVe iMGXTw"><div><div><span=
+ class=3D"sc-Nxspf sc-cfxfcM lmPAIU bZSMCf"></span><span class=3D"sc-Nxspf =
+sc-gFAWRd lmPAIU iHgalF">string</span></div><div><span class=3D"sc-Nxspf lm=
+PAIU"> Enum:</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"af"</=
+span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"ar"</span> <span cl=
+ass=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"ar-dz"</span> <span class=3D"sc-N=
+xspf sc-ddjGPC lmPAIU dEQDjv">"ast"</span> <span class=3D"sc-Nxspf sc-ddjGP=
+C lmPAIU dEQDjv">"az"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDj=
+v">"be"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"bg"</span>=
+ <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"bn"</span> <span class=
+=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"br"</span> <span class=3D"sc-Nxspf s=
+c-ddjGPC lmPAIU dEQDjv">"bs"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAI=
+U dEQDjv">"ca"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"ckb=
+"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"cs"</span> <span=
+ class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"cy"</span> <span class=3D"sc-N=
+xspf sc-ddjGPC lmPAIU dEQDjv">"da"</span> <span class=3D"sc-Nxspf sc-ddjGPC=
+ lmPAIU dEQDjv">"de"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv=
+">"dsb"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"el"</span>=
+ <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"en"</span> <span class=
+=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"en-au"</span> <span class=3D"sc-Nxsp=
+f sc-ddjGPC lmPAIU dEQDjv">"en-gb"</span> <span class=3D"sc-Nxspf sc-ddjGPC=
+ lmPAIU dEQDjv">"eo"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv=
+">"es"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"es-ar"</spa=
+n> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"es-co"</span> <span cl=
+ass=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"es-mx"</span> <span class=3D"sc-N=
+xspf sc-ddjGPC lmPAIU dEQDjv">"es-ni"</span> <span class=3D"sc-Nxspf sc-ddj=
+GPC lmPAIU dEQDjv">"es-ve"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU =
+dEQDjv">"et"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"eu"</=
+span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"fa"</span> <span cl=
+ass=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"fi"</span> <span class=3D"sc-Nxsp=
+f sc-ddjGPC lmPAIU dEQDjv">"fr"</span> <span class=3D"sc-Nxspf sc-ddjGPC lm=
+PAIU dEQDjv">"fy"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"=
+ga"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"gd"</span> <sp=
+an class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"gl"</span> <span class=3D"sc=
+-Nxspf sc-ddjGPC lmPAIU dEQDjv">"he"</span> <span class=3D"sc-Nxspf sc-ddjG=
+PC lmPAIU dEQDjv">"hi"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQD=
+jv">"hr"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"hsb"</spa=
+n> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"hu"</span> <span class=
+=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"hy"</span> <span class=3D"sc-Nxspf s=
+c-ddjGPC lmPAIU dEQDjv">"ia"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAI=
+U dEQDjv">"id"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"ig"=
+</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"io"</span> <span =
+class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"is"</span> <span class=3D"sc-Nx=
+spf sc-ddjGPC lmPAIU dEQDjv">"it"</span> <span class=3D"sc-Nxspf sc-ddjGPC =
+lmPAIU dEQDjv">"ja"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv"=
+>"ka"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"kab"</span> =
+<span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"kk"</span> <span class=3D=
+"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"km"</span> <span class=3D"sc-Nxspf sc-d=
+djGPC lmPAIU dEQDjv">"kn"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU d=
+EQDjv">"ko"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"ky"</s=
+pan> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"lb"</span> <span cla=
+ss=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"lt"</span> <span class=3D"sc-Nxspf=
+ sc-ddjGPC lmPAIU dEQDjv">"lv"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmP=
+AIU dEQDjv">"mk"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"m=
+l"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"mn"</span> <spa=
+n class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"mr"</span> <span class=3D"sc-=
+Nxspf sc-ddjGPC lmPAIU dEQDjv">"ms"</span> <span class=3D"sc-Nxspf sc-ddjGP=
+C lmPAIU dEQDjv">"my"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDj=
+v">"nb"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"ne"</span>=
+ <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"nl"</span> <span class=
+=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"nn"</span> <span class=3D"sc-Nxspf s=
+c-ddjGPC lmPAIU dEQDjv">"os"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAI=
+U dEQDjv">"pa"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"pl"=
+</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"pt"</span> <span =
+class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"pt-br"</span> <span class=3D"sc=
+-Nxspf sc-ddjGPC lmPAIU dEQDjv">"ro"</span> <span class=3D"sc-Nxspf sc-ddjG=
+PC lmPAIU dEQDjv">"ru"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQD=
+jv">"sk"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"sl"</span=
+> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"sq"</span> <span class=
+=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"sr"</span> <span class=3D"sc-Nxspf s=
+c-ddjGPC lmPAIU dEQDjv">"sr-latn"</span> <span class=3D"sc-Nxspf sc-ddjGPC =
+lmPAIU dEQDjv">"sv"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv"=
+>"sw"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"ta"</span> <=
+span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"te"</span> <span class=3D"=
+sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"tg"</span> <span class=3D"sc-Nxspf sc-dd=
+jGPC lmPAIU dEQDjv">"th"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dE=
+QDjv">"tk"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"tr"</sp=
+an> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"tt"</span> <span clas=
+s=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"udm"</span> <span class=3D"sc-Nxspf=
+ sc-ddjGPC lmPAIU dEQDjv">"ug"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmP=
+AIU dEQDjv">"uk"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"u=
+r"</span> <span class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"uz"</span> <spa=
+n class=3D"sc-Nxspf sc-ddjGPC lmPAIU dEQDjv">"vi"</span> <span class=3D"sc-=
+Nxspf sc-ddjGPC lmPAIU dEQDjv">"zh-hans"</span> <span class=3D"sc-Nxspf sc-=
+ddjGPC lmPAIU dEQDjv">"zh-hant"</span> </div> <div><div class=3D"sc-eeDRCY =
+sc-eBMEME gvJSKt FDQvA"></div></div></div></td></tr></tbody></table></div><=
+div><h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc-k=
+zqdkY fZRtWb"><svg class=3D"sc-cwHptR ehtaAK" version=3D"1.1" viewBox=3D"0 =
+0 24 24" x=3D"0" xmlns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=
+=3D"true"><polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 =
+9.7 "></polygon></svg><strong class=3D"sc-dSIIpw cMtbfc">200 </strong><div =
+class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"></div></button=
+></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ bOFhJE"><div cl=
+ass=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><span type=3D"g=
+et" class=3D"sc-eZYNyq kDzUVU http-verb get">get</span><span class=3D"sc-iE=
+XKAA lmuCWo">/api/schema/</span><svg class=3D"sc-cwHptR hEFKzC" version=3D"=
+1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.org/2000/svg" y=
+=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;"><polygon points=
+=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></b=
+utton><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><div class=3D"sc=
+-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA"></div><div =
+tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpNM"><span>https:=
+//wep-app.onrender.com</span>/api/schema/</div></div></div></div></div><div=
+><h3 class=3D"sc-kpDqfm jhTHfM"> Response samples </h3><div class=3D"sc-bXC=
+LTC cJteCP" data-rttabs=3D"true"><ul class=3D"react-tabs__tab-list" role=3D=
+"tablist"><li class=3D"tab-success react-tabs__tab--selected" role=3D"tab" =
+id=3D"tab:r0:0" aria-selected=3D"true" aria-disabled=3D"false" aria-control=
+s=3D"panel:r0:0" tabindex=3D"0" data-rttab=3D"true">200</li></ul><div class=
+=3D"react-tabs__tab-panel react-tabs__tab-panel--selected" role=3D"tabpanel=
+" id=3D"panel:r0:0" aria-labelledby=3D"tab:r0:0"><div><div class=3D"sc-bbSZ=
+di fIhWJA"><span class=3D"sc-fjvvzt iQMUWd">Content type</span><div class=
+=3D"sc-dtInlm sc-fBWQRz kLounG bFmgGd"><svg class=3D"sc-kOHTFB cHXioC" xmln=
+s=3D"http://www.w3.org/2000/svg" width=3D"16" height=3D"16" viewBox=3D"0 0 =
+24 24" fill=3D"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-line=
+cap=3D"round" stroke-linejoin=3D"round"><polyline points=3D"6 9 12 15 18 9"=
+></polyline></svg><select class=3D"dropdown-select"><option value=3D"applic=
+ation/vnd.oai.openapi">application/vnd.oai.openapi</option><option value=3D=
+"application/yaml">application/yaml</option><option value=3D"application/vn=
+d.oai.openapi+json">application/vnd.oai.openapi+json</option><option value=
+=3D"application/json">application/json</option></select><label>application/=
+vnd.oai.openapi</label></div></div><div class=3D"sc-hknOHE dTOtRY">No sampl=
+e</div></div></div></div></div></div></div></div><div id=3D"tag/tasks" data=
+-section-id=3D"tag/tasks" class=3D"sc-dcJsrY eVrqat"><div class=3D"sc-kAyce=
+B XMnSL"><div class=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a =
+class=3D"sc-jlZhew jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#t=
+ag/tasks" aria-label=3D"tag/tasks"></a>tasks</h2></div></div></div><div id=
+=3D"tag/tasks/operation/tasks_retrieve" data-section-id=3D"tag/tasks/operat=
+ion/tasks_retrieve" class=3D"sc-dcJsrY kNjBFu"><div data-section-id=3D"oper=
+ation/tasks_retrieve" id=3D"operation/tasks_retrieve" class=3D"sc-kAyceB XM=
+nSL"><div class=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a clas=
+s=3D"sc-jlZhew jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag/t=
+asks/operation/tasks_retrieve" aria-label=3D"tag/tasks/operation/tasks_retr=
+ieve"></a>tasks_retrieve </h2><div class=3D"sc-bVVIoq bxAVpD"><div class=3D=
+"sc-eeDRCY sc-eBMEME gvJSKt hzUya"><p>=D0=9E=D1=82=D1=80=D0=B8=D0=BC=D0=B0=
+=D0=BD=D0=BD=D1=8F =D1=81=D0=BF=D0=B8=D1=81=D0=BA=D1=83 =D0=B7=D0=B0=D0=B4=
+=D0=B0=D1=87 =D0=B0=D0=B2=D1=82=D0=BE=D1=80=D0=B8=D0=B7=D0=BE=D0=B2=D0=B0=
+=D0=BD=D0=BE=D0=B3=D0=BE =D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=
+=D0=B0=D1=87=D0=B0.=D0=9F=D0=BE=D0=B2=D0=B5=D1=80=D1=82=D0=B0=D1=94 =D0=B2=
+=D1=81=D1=96 =D0=B7=D0=B0=D0=B4=D0=B0=D1=87=D1=96 =D0=BA=D0=BE=D1=80=D0=B8=
+=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=87=D0=B0 =D0=B7 =D0=BE=D0=BF=D1=86=D1=96=
+=D0=BE=D0=BD=D0=B0=D0=BB=D1=8C=D0=BD=D0=B8=D0=BC =D1=84=D1=96=D0=BB=D1=8C=
+=D1=82=D1=80=D0=BE=D0=BC =D0=B7=D0=B0 =D0=BF=D0=B0=D1=80=D0=B0=D0=BC=D0=B5=
+=D1=82=D1=80=D0=BE=D0=BC <code>completed</code> (true/false).</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span></div></div><div><=
+h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc-kzqdkY=
+ bFiTlt" disabled=3D""><strong class=3D"sc-dSIIpw cMtbfc">200 </strong><div=
+ class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No respons=
+e body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"get" class=3D"sc-eZYNyq kDzUVU http-verb get">get</span><span =
+class=3D"sc-iEXKAA lmuCWo">/api/tasks/</span><svg class=3D"sc-cwHptR hEFKzC=
+" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.org/=
+2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;"><poly=
+gon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon=
+></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><div c=
+lass=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA"><=
+/div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpNM"><s=
+pan>https://wep-app.onrender.com</span>/api/tasks/</div></div></div></div><=
+/div></div></div></div><div id=3D"tag/tasks/operation/tasks_create" data-se=
+ction-id=3D"tag/tasks/operation/tasks_create" class=3D"sc-dcJsrY kNjBFu"><d=
+iv data-section-id=3D"operation/tasks_create" id=3D"operation/tasks_create"=
+ class=3D"sc-kAyceB XMnSL"><div class=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-=
+jXbUNg copjkU"><a class=3D"sc-jlZhew jrsfjb" href=3D"https://wep-app.onrend=
+er.com/api/docs/#tag/tasks/operation/tasks_create" aria-label=3D"tag/tasks/=
+operation/tasks_create"></a>tasks_create </h2><div class=3D"sc-bVVIoq bxAVp=
+D"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya"><p>=D0=A1=D1=82=D0=B2=D0=
+=BE=D1=80=D0=B5=D0=BD=D0=BD=D1=8F =D0=BD=D0=BE=D0=B2=D0=BE=D1=97 =D0=B7=D0=
+=B0=D0=B4=D0=B0=D1=87=D1=96 =D0=B4=D0=BB=D1=8F =D0=B0=D0=B2=D1=82=D0=BE=D1=
+=80=D0=B8=D0=B7=D0=BE=D0=B2=D0=B0=D0=BD=D0=BE=D0=B3=D0=BE =D0=BA=D0=BE=D1=
+=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=87=D0=B0. =D0=9F=D1=80=D0=B8=D0=
+=B9=D0=BC=D0=B0=D1=94 =D0=B4=D0=B0=D0=BD=D1=96 =D0=B7=D0=B0=D0=B4=D0=B0=D1=
+=87=D1=96 (title, description, completed) =D1=96 =D0=BF=D0=BE=D0=B2=E2=80=
+=99=D1=8F=D0=B7=D1=83=D1=94 =D1=97=D1=97 =D0=B7 =D0=BF=D0=BE=D1=82=D0=BE=D1=
+=87=D0=BD=D0=B8=D0=BC =D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=
+=B0=D1=87=D0=B5=D0=BC.</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span></div></div><div><=
+h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc-kzqdkY=
+ bFiTlt" disabled=3D""><strong class=3D"sc-dSIIpw cMtbfc">200 </strong><div=
+ class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No respons=
+e body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"post" class=3D"sc-eZYNyq jjWbju http-verb post">post</span><sp=
+an class=3D"sc-iEXKAA lmuCWo">/api/tasks/</span><svg class=3D"sc-cwHptR hEF=
+KzC" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.o=
+rg/2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;"><p=
+olygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></poly=
+gon></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><di=
+v class=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA=
+"></div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpNM"=
+><span>https://wep-app.onrender.com</span>/api/tasks/</div></div></div></di=
+v></div></div></div></div><div id=3D"tag/tasks/operation/tasks_retrieve_2" =
+data-section-id=3D"tag/tasks/operation/tasks_retrieve_2" class=3D"sc-dcJsrY=
+ kNjBFu"><div data-section-id=3D"operation/tasks_retrieve_2" id=3D"operatio=
+n/tasks_retrieve_2" class=3D"sc-kAyceB XMnSL"><div class=3D"sc-fqkvVR cEAxI=
+C"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew jrsfjb" href=3D"htt=
+ps://wep-app.onrender.com/api/docs/#tag/tasks/operation/tasks_retrieve_2" a=
+ria-label=3D"tag/tasks/operation/tasks_retrieve_2"></a>tasks_retrieve_2 </h=
+2><div class=3D"sc-bVVIoq bxAVpD"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt =
+hzUya"><p>=D0=9E=D1=82=D1=80=D0=B8=D0=BC=D0=B0=D0=BD=D0=BD=D1=8F =D0=B4=D0=
+=B5=D1=82=D0=B0=D0=BB=D0=B5=D0=B9 =D0=BA=D0=BE=D0=BD=D0=BA=D1=80=D0=B5=D1=
+=82=D0=BD=D0=BE=D1=97 =D0=B7=D0=B0=D0=B4=D0=B0=D1=87=D1=96. =D0=9F=D0=BE=D0=
+=B2=D0=B5=D1=80=D1=82=D0=B0=D1=94 =D0=B4=D0=B0=D0=BD=D1=96 =D0=B7=D0=B0=D0=
+=B4=D0=B0=D1=87=D1=96 =D0=B7=D0=B0 =D1=97=D1=97 ID, =D1=8F=D0=BA=D1=89=D0=
+=BE =D0=B2=D0=BE=D0=BD=D0=B0 =D0=BD=D0=B0=D0=BB=D0=B5=D0=B6=D0=B8=D1=82=D1=
+=8C =D0=B0=D0=B2=D1=82=D0=BE=D1=80=D0=B8=D0=B7=D0=BE=D0=B2=D0=B0=D0=BD=D0=
+=BE=D0=BC=D1=83 =D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=
+=87=D1=83.</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span></div></div><div><=
+h5 class=3D"sc-dAlyuH hNlDMA">path Parameters</h5><table class=3D"sc-dAbbOL=
+ krDyRf"><tbody><tr class=3D"last "><td class=3D"sc-dLMFU sc-eldPxv bvNJXm =
+evxOdD" kind=3D"field" title=3D"id"><span class=3D"sc-gFqAkR Aouot"></span>=
+<span class=3D"property-name">id</span><div class=3D"sc-Nxspf sc-hRJfrW lmP=
+AIU dBPdaM">required</div></td><td class=3D"sc-fPXMVe iMGXTw"><div><div><sp=
+an class=3D"sc-Nxspf sc-cfxfcM lmPAIU bZSMCf"></span><span class=3D"sc-Nxsp=
+f sc-gFAWRd lmPAIU iHgalF">integer</span></div> <div><div class=3D"sc-eeDRC=
+Y sc-eBMEME gvJSKt FDQvA"></div></div></div></td></tr></tbody></table></div=
+><div><h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc=
+-kzqdkY bFiTlt" disabled=3D""><strong class=3D"sc-dSIIpw cMtbfc">200 </stro=
+ng><div class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No =
+response body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"get" class=3D"sc-eZYNyq kDzUVU http-verb get">get</span><span =
+class=3D"sc-iEXKAA lmuCWo">/api/tasks/{id}/</span><svg class=3D"sc-cwHptR h=
+EFKzC" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3=
+.org/2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;">=
+<polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></po=
+lygon></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><=
+div class=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQ=
+vA"></div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpN=
+M"><span>https://wep-app.onrender.com</span>/api/tasks/{id}/</div></div></d=
+iv></div></div></div></div></div><div id=3D"tag/tasks/operation/tasks_updat=
+e" data-section-id=3D"tag/tasks/operation/tasks_update" class=3D"sc-dcJsrY =
+kNjBFu"><div data-section-id=3D"operation/tasks_update" id=3D"operation/tas=
+ks_update" class=3D"sc-kAyceB XMnSL"><div class=3D"sc-fqkvVR cEAxIC"><h2 cl=
+ass=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew jrsfjb" href=3D"https://wep-=
+app.onrender.com/api/docs/#tag/tasks/operation/tasks_update" aria-label=3D"=
+tag/tasks/operation/tasks_update"></a>tasks_update </h2><div class=3D"sc-bV=
+VIoq bxAVpD"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya"><p>=D0=9E=D0=
+=BD=D0=BE=D0=B2=D0=BB=D0=B5=D0=BD=D0=BD=D1=8F =D0=BA=D0=BE=D0=BD=D0=BA=D1=
+=80=D0=B5=D1=82=D0=BD=D0=BE=D1=97 =D0=B7=D0=B0=D0=B4=D0=B0=D1=87=D1=96. =D0=
+=94=D0=BE=D0=B7=D0=B2=D0=BE=D0=BB=D1=8F=D1=94 =D1=87=D0=B0=D1=81=D1=82=D0=
+=BA=D0=BE=D0=B2=D0=BE =D0=BE=D0=BD=D0=BE=D0=B2=D0=B8=D1=82=D0=B8 =D0=B7=D0=
+=B0=D0=B4=D0=B0=D1=87=D1=83 =D0=B7=D0=B0 =D1=97=D1=97 ID, =D1=8F=D0=BA=D1=
+=89=D0=BE =D0=B2=D0=BE=D0=BD=D0=B0 =D0=BD=D0=B0=D0=BB=D0=B5=D0=B6=D0=B8=D1=
+=82=D1=8C =D0=B0=D0=B2=D1=82=D0=BE=D1=80=D0=B8=D0=B7=D0=BE=D0=B2=D0=B0=D0=
+=BD=D0=BE=D0=BC=D1=83 =D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=
+=B0=D1=87=D1=83.</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span></div></div><div><=
+h5 class=3D"sc-dAlyuH hNlDMA">path Parameters</h5><table class=3D"sc-dAbbOL=
+ krDyRf"><tbody><tr class=3D"last "><td class=3D"sc-dLMFU sc-eldPxv bvNJXm =
+evxOdD" kind=3D"field" title=3D"id"><span class=3D"sc-gFqAkR Aouot"></span>=
+<span class=3D"property-name">id</span><div class=3D"sc-Nxspf sc-hRJfrW lmP=
+AIU dBPdaM">required</div></td><td class=3D"sc-fPXMVe iMGXTw"><div><div><sp=
+an class=3D"sc-Nxspf sc-cfxfcM lmPAIU bZSMCf"></span><span class=3D"sc-Nxsp=
+f sc-gFAWRd lmPAIU iHgalF">integer</span></div> <div><div class=3D"sc-eeDRC=
+Y sc-eBMEME gvJSKt FDQvA"></div></div></div></td></tr></tbody></table></div=
+><div><h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc=
+-kzqdkY bFiTlt" disabled=3D""><strong class=3D"sc-dSIIpw cMtbfc">200 </stro=
+ng><div class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No =
+response body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"put" class=3D"sc-eZYNyq jLavRV http-verb put">put</span><span =
+class=3D"sc-iEXKAA lmuCWo">/api/tasks/{id}/</span><svg class=3D"sc-cwHptR h=
+EFKzC" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3=
+.org/2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;">=
+<polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></po=
+lygon></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><=
+div class=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQ=
+vA"></div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpN=
+M"><span>https://wep-app.onrender.com</span>/api/tasks/{id}/</div></div></d=
+iv></div></div></div></div></div><div id=3D"tag/tasks/operation/tasks_destr=
+oy" data-section-id=3D"tag/tasks/operation/tasks_destroy" class=3D"sc-dcJsr=
+Y kNjBFu"><div data-section-id=3D"operation/tasks_destroy" id=3D"operation/=
+tasks_destroy" class=3D"sc-kAyceB XMnSL"><div class=3D"sc-fqkvVR cEAxIC"><h=
+2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew jrsfjb" href=3D"https://=
+wep-app.onrender.com/api/docs/#tag/tasks/operation/tasks_destroy" aria-labe=
+l=3D"tag/tasks/operation/tasks_destroy"></a>tasks_destroy </h2><div class=
+=3D"sc-bVVIoq bxAVpD"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya"><p>=
+=D0=92=D0=B8=D0=B4=D0=B0=D0=BB=D0=B5=D0=BD=D0=BD=D1=8F =D0=BA=D0=BE=D0=BD=
+=D0=BA=D1=80=D0=B5=D1=82=D0=BD=D0=BE=D1=97 =D0=B7=D0=B0=D0=B4=D0=B0=D1=87=
+=D1=96.=D0=92=D0=B8=D0=B4=D0=B0=D0=BB=D1=8F=D1=94 =D0=B7=D0=B0=D0=B4=D0=B0=
+=D1=87=D1=83 =D0=B7=D0=B0 =D1=97=D1=97 ID, =D1=8F=D0=BA=D1=89=D0=BE =D0=B2=
+=D0=BE=D0=BD=D0=B0 =D0=BD=D0=B0=D0=BB=D0=B5=D0=B6=D0=B8=D1=82=D1=8C =D0=B0=
+=D0=B2=D1=82=D0=BE=D1=80=D0=B8=D0=B7=D0=BE=D0=B2=D0=B0=D0=BD=D0=BE=D0=BC=D1=
+=83 =D0=BA=D0=BE=D1=80=D0=B8=D1=81=D1=82=D1=83=D0=B2=D0=B0=D1=87=D1=83.</p>
+</div></div><div class=3D"sc-jaXxmE cDocAe"><div class=3D"sc-iMTnTL fJRIzN"=
+><h5 class=3D"sc-dAlyuH sc-hwdzOV hNlDMA hjazRA">Authorizations:</h5><svg c=
+lass=3D"sc-cwHptR kNXOKB" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xml=
+ns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon poi=
+nts=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg>=
+</div><div class=3D"sc-krNlru jiAhSp"><span class=3D"sc-jMakVo ezhZdr"><spa=
+n class=3D"sc-ihgnxF fCYfYV"><i>jwtAuth</i></span></span></div></div><div><=
+h5 class=3D"sc-dAlyuH hNlDMA">path Parameters</h5><table class=3D"sc-dAbbOL=
+ krDyRf"><tbody><tr class=3D"last "><td class=3D"sc-dLMFU sc-eldPxv bvNJXm =
+evxOdD" kind=3D"field" title=3D"id"><span class=3D"sc-gFqAkR Aouot"></span>=
+<span class=3D"property-name">id</span><div class=3D"sc-Nxspf sc-hRJfrW lmP=
+AIU dBPdaM">required</div></td><td class=3D"sc-fPXMVe iMGXTw"><div><div><sp=
+an class=3D"sc-Nxspf sc-cfxfcM lmPAIU bZSMCf"></span><span class=3D"sc-Nxsp=
+f sc-gFAWRd lmPAIU iHgalF">integer</span></div> <div><div class=3D"sc-eeDRC=
+Y sc-eBMEME gvJSKt FDQvA"></div></div></div></td></tr></tbody></table></div=
+><div><h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc=
+-kzqdkY bFiTlt" disabled=3D""><strong class=3D"sc-dSIIpw cMtbfc">204 </stro=
+ng><div class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"><p>No =
+response body</p>
+</div></button></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ b=
+OFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><=
+span type=3D"delete" class=3D"sc-eZYNyq hZWvcU http-verb delete">delete</sp=
+an><span class=3D"sc-iEXKAA lmuCWo">/api/tasks/{id}/</span><svg class=3D"sc=
+-cwHptR hEFKzC" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http=
+://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true" style=3D"margin-right:=
+ -25px;"><polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9=
+.7 "></polygon></svg></button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ =
+jLxaiG"><div class=3D"sc-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME g=
+vJSKt FDQvA"></div><div tabindex=3D"0" role=3D"button"><div class=3D"sc-kWt=
+peL koYpNM"><span>https://wep-app.onrender.com</span>/api/tasks/{id}/</div>=
+</div></div></div></div></div></div></div><div id=3D"tag/token" data-sectio=
+n-id=3D"tag/token" class=3D"sc-dcJsrY eVrqat"><div class=3D"sc-kAyceB XMnSL=
+"><div class=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=
+=3D"sc-jlZhew jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag/to=
+ken" aria-label=3D"tag/token"></a>token</h2></div></div></div><div id=3D"ta=
+g/token/operation/token_create" data-section-id=3D"tag/token/operation/toke=
+n_create" class=3D"sc-dcJsrY kNjBFu"><div data-section-id=3D"operation/toke=
+n_create" id=3D"operation/token_create" class=3D"sc-kAyceB XMnSL"><div clas=
+s=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-jlZhew=
+ jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag/token/operation=
+/token_create" aria-label=3D"tag/token/operation/token_create"></a>token_cr=
+eate </h2><div class=3D"sc-bVVIoq bxAVpD"><div class=3D"sc-eeDRCY sc-eBMEME=
+ gvJSKt hzUya"><p>Takes a set of user credentials and returns an access and=
+ refresh JSON web
+token pair to prove the authentication of those credentials.</p>
+</div></div><h5 class=3D"sc-dAlyuH hNlDMA">Request Body schema: <div class=
+=3D"sc-dtInlm sc-kOPcWz kLounG edEekE"><svg class=3D"sc-kOHTFB glrnAB" xmln=
+s=3D"http://www.w3.org/2000/svg" width=3D"16" height=3D"16" viewBox=3D"0 0 =
+24 24" fill=3D"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-line=
+cap=3D"round" stroke-linejoin=3D"round"><polyline points=3D"6 9 12 15 18 9"=
+></polyline></svg><select class=3D"dropdown-select"><option value=3D"applic=
+ation/json">application/json</option><option value=3D"application/x-www-for=
+m-urlencoded">application/x-www-form-urlencoded</option><option value=3D"mu=
+ltipart/form-data">multipart/form-data</option></select><label>application/=
+json</label></div><div class=3D"sc-Nxspf sc-hRJfrW sc-ecPEgm lmPAIU dBPdaM =
+gckpsV">required</div></h5><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya">=
+</div><table class=3D"sc-dAbbOL krDyRf"><tbody><tr class=3D""><td class=3D"=
+sc-dLMFU sc-eldPxv bvNJXm evxOdD" kind=3D"field" title=3D"email"><span clas=
+s=3D"sc-gFqAkR Aouot"></span><span class=3D"property-name">email</span><div=
+ class=3D"sc-Nxspf sc-hRJfrW lmPAIU dBPdaM">required</div></td><td class=3D=
+"sc-fPXMVe iMGXTw"><div><div><span class=3D"sc-Nxspf sc-cfxfcM lmPAIU bZSMC=
+f"></span><span class=3D"sc-Nxspf sc-gFAWRd lmPAIU iHgalF">string</span></d=
+iv> <div><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA"></div></div></div>=
+</td></tr><tr class=3D"last "><td class=3D"sc-dLMFU sc-eldPxv bvNJXm evxOdD=
+" kind=3D"field" title=3D"password"><span class=3D"sc-gFqAkR Aouot"></span>=
+<span class=3D"property-name">password</span><div class=3D"sc-Nxspf sc-hRJf=
+rW lmPAIU dBPdaM">required</div></td><td class=3D"sc-fPXMVe iMGXTw"><div><d=
+iv><span class=3D"sc-Nxspf sc-cfxfcM lmPAIU bZSMCf"></span><span class=3D"s=
+c-Nxspf sc-gFAWRd lmPAIU iHgalF">string</span></div> <div><div class=3D"sc-=
+eeDRCY sc-eBMEME gvJSKt FDQvA"></div></div></div></td></tr></tbody></table>=
+<div><h3 class=3D"sc-fMMURN ciDERN">Responses</h3><div><button class=3D"sc-=
+kzqdkY fZRtWb"><svg class=3D"sc-cwHptR ehtaAK" version=3D"1.1" viewBox=3D"0=
+ 0 24 24" x=3D"0" xmlns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=
+=3D"true"><polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 =
+9.7 "></polygon></svg><strong class=3D"sc-dSIIpw cMtbfc">200 </strong><div =
+class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gvJSKt dDrYQw ctYaUb"></div></button=
+></div></div></div><div class=3D"sc-iGgWBj sc-gsFSXq lbpUdJ bOFhJE"><div cl=
+ass=3D"sc-ejfMa-d jKIcgw"><button class=3D"sc-EgOXT kJYWtq"><span type=3D"p=
+ost" class=3D"sc-eZYNyq jjWbju http-verb post">post</span><span class=3D"sc=
+-iEXKAA lmuCWo">/api/token/</span><svg class=3D"sc-cwHptR hEFKzC" version=
+=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3.org/2000/svg"=
+ y=3D"0" aria-hidden=3D"true" style=3D"margin-right: -25px;"><polygon point=
+s=3D"17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></=
+button><div aria-hidden=3D"true" class=3D"sc-dlWCHZ jLxaiG"><div class=3D"s=
+c-hHOBiw fAZrna"><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA"></div><div=
+ tabindex=3D"0" role=3D"button"><div class=3D"sc-kWtpeL koYpNM"><span>https=
+://wep-app.onrender.com</span>/api/token/</div></div></div></div></div><div=
+><h3 class=3D"sc-kpDqfm jhTHfM"> Request samples </h3><div class=3D"sc-bXCL=
+TC cJteCP" data-rttabs=3D"true"><ul class=3D"react-tabs__tab-list" role=3D"=
+tablist"><li class=3D"react-tabs__tab react-tabs__tab--selected" role=3D"ta=
+b" id=3D"tab:r1:0" aria-selected=3D"true" aria-disabled=3D"false" aria-cont=
+rols=3D"panel:r1:0" tabindex=3D"0" data-rttab=3D"true">Payload</li></ul><di=
+v class=3D"react-tabs__tab-panel react-tabs__tab-panel--selected" role=3D"t=
+abpanel" id=3D"panel:r1:0" aria-labelledby=3D"tab:r1:0"><div><div class=3D"=
+sc-bbSZdi fIhWJA"><span class=3D"sc-fjvvzt iQMUWd">Content type</span><div =
+class=3D"sc-dtInlm sc-fBWQRz kLounG bFmgGd"><svg class=3D"sc-kOHTFB cHXioC"=
+ xmlns=3D"http://www.w3.org/2000/svg" width=3D"16" height=3D"16" viewBox=3D=
+"0 0 24 24" fill=3D"none" stroke=3D"currentColor" stroke-width=3D"2" stroke=
+-linecap=3D"round" stroke-linejoin=3D"round"><polyline points=3D"6 9 12 15 =
+18 9"></polyline></svg><select class=3D"dropdown-select"><option value=3D"a=
+pplication/json">application/json</option><option value=3D"application/x-ww=
+w-form-urlencoded">application/x-www-form-urlencoded</option><option value=
+=3D"multipart/form-data">multipart/form-data</option></select><label>applic=
+ation/json</label></div></div><div class=3D"sc-uVWWZ hPVmXE"><div class=3D"=
+sc-esYiGF fyLVJX"><div class=3D"sc-koXPp fxOhoS"><button><div class=3D"sc-f=
+hzFiK esMkSs">Copy</div></button></div><div class=3D"sc-eeDRCY gvJSKt sc-fX=
+Sgeo jJRLaa"><div class=3D"redoc-json"><code><button class=3D"collapser" ar=
+ia-label=3D"collapse"></button><span class=3D"token punctuation">{</span><s=
+pan class=3D"ellipsis"></span><ul class=3D"obj collapsible"><li><div class=
+=3D"hoverable "><span class=3D"property token string">"email"</span>: <span=
+ class=3D"token string">"string"</span><span class=3D"token punctuation">,<=
+/span></div></li><li><div class=3D"hoverable "><span class=3D"property toke=
+n string">"password"</span>: <span class=3D"token string">"string"</span></=
+div></li></ul><span class=3D"token punctuation">}</span></code></div></div>=
+</div></div></div></div></div></div><div><h3 class=3D"sc-kpDqfm jhTHfM"> Re=
+sponse samples </h3><div class=3D"sc-bXCLTC cJteCP" data-rttabs=3D"true"><u=
+l class=3D"react-tabs__tab-list" role=3D"tablist"><li class=3D"tab-success =
+react-tabs__tab--selected" role=3D"tab" id=3D"tab:r2:0" aria-selected=3D"tr=
+ue" aria-disabled=3D"false" aria-controls=3D"panel:r2:0" tabindex=3D"0" dat=
+a-rttab=3D"true">200</li></ul><div class=3D"react-tabs__tab-panel react-tab=
+s__tab-panel--selected" role=3D"tabpanel" id=3D"panel:r2:0" aria-labelledby=
+=3D"tab:r2:0"><div><div class=3D"sc-bbSZdi fIhWJA"><span class=3D"sc-fjvvzt=
+ iQMUWd">Content type</span><div class=3D"sc-JrDLc kqHFhX">application/json=
+</div></div><div class=3D"sc-uVWWZ hPVmXE"><div class=3D"sc-esYiGF fyLVJX">=
+<div class=3D"sc-koXPp fxOhoS"><button><div class=3D"sc-fhzFiK esMkSs">Copy=
+</div></button></div><div class=3D"sc-eeDRCY gvJSKt sc-fXSgeo jJRLaa"><div =
+class=3D"redoc-json"><code><button class=3D"collapser" aria-label=3D"collap=
+se"></button><span class=3D"token punctuation">{</span><span class=3D"ellip=
+sis"></span><ul class=3D"obj collapsible"><li><div class=3D"hoverable "><sp=
+an class=3D"property token string">"access"</span>: <span class=3D"token st=
+ring">"string"</span><span class=3D"token punctuation">,</span></div></li><=
+li><div class=3D"hoverable "><span class=3D"property token string">"refresh=
+"</span>: <span class=3D"token string">"string"</span></div></li></ul><span=
+ class=3D"token punctuation">}</span></code></div></div></div></div></div><=
+/div></div></div></div></div></div><div id=3D"tag/token/operation/token_ref=
+resh_create" data-section-id=3D"tag/token/operation/token_refresh_create" c=
+lass=3D"sc-dcJsrY kNjBFu"><div data-section-id=3D"operation/token_refresh_c=
+reate" id=3D"operation/token_refresh_create" class=3D"sc-kAyceB XMnSL"><div=
+ class=3D"sc-fqkvVR cEAxIC"><h2 class=3D"sc-jXbUNg copjkU"><a class=3D"sc-j=
+lZhew jrsfjb" href=3D"https://wep-app.onrender.com/api/docs/#tag/token/oper=
+ation/token_refresh_create" aria-label=3D"tag/token/operation/token_refresh=
+_create"></a>token_refresh_create </h2><div class=3D"sc-bVVIoq bxAVpD"><div=
+ class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya"><p>Takes a refresh type JSON we=
+b token and returns an access type JSON web
+token if the refresh token is valid.</p>
+</div></div><h5 class=3D"sc-dAlyuH hNlDMA">Request Body schema: <div class=
+=3D"sc-dtInlm sc-kOPcWz kLounG edEekE"><svg class=3D"sc-kOHTFB glrnAB" xmln=
+s=3D"http://www.w3.org/2000/svg" width=3D"16" height=3D"16" viewBox=3D"0 0 =
+24 24" fill=3D"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-line=
+cap=3D"round" stroke-linejoin=3D"round"><polyline points=3D"6 9 12 15 18 9"=
+></polyline></svg><select class=3D"dropdown-select"><option value=3D"applic=
+ation/json">application/json</option><option value=3D"application/x-www-for=
+m-urlencoded">application/x-www-form-urlencoded</option><option value=3D"mu=
+ltipart/form-data">multipart/form-data</option></select><label>application/=
+json</label></div><div class=3D"sc-Nxspf sc-hRJfrW sc-ecPEgm lmPAIU dBPdaM =
+gckpsV">required</div></h5><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt hzUya">=
+</div><table class=3D"sc-dAbbOL krDyRf"><tbody><tr class=3D"last "><td clas=
+s=3D"sc-dLMFU sc-eldPxv bvNJXm evxOdD" kind=3D"field" title=3D"refresh"><sp=
+an class=3D"sc-gFqAkR Aouot"></span><span class=3D"property-name">refresh</=
+span><div class=3D"sc-Nxspf sc-hRJfrW lmPAIU dBPdaM">required</div></td><td=
+ class=3D"sc-fPXMVe iMGXTw"><div><div><span class=3D"sc-Nxspf sc-cfxfcM lmP=
+AIU bZSMCf"></span><span class=3D"sc-Nxspf sc-gFAWRd lmPAIU iHgalF">string<=
+/span></div> <div><div class=3D"sc-eeDRCY sc-eBMEME gvJSKt FDQvA"></div></d=
+iv></div></td></tr></tbody></table><div><h3 class=3D"sc-fMMURN ciDERN">Resp=
+onses</h3><div><button class=3D"sc-kzqdkY fZRtWb"><svg class=3D"sc-cwHptR e=
+htaAK" version=3D"1.1" viewBox=3D"0 0 24 24" x=3D"0" xmlns=3D"http://www.w3=
+.org/2000/svg" y=3D"0" aria-hidden=3D"true"><polygon points=3D"17.3 8.3 12 =
+13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class=3D"sc=
+-dSIIpw cMtbfc">200 </strong><div class=3D"sc-eeDRCY sc-eBMEME sc-dCFHLb gv=
+JSKt dDrYQw ctYaUb"></div></button></div></div></div><div class=3D"sc-iGgWB=
+j sc-gsFSXq lbpUdJ bOFhJE"><div class=3D"sc-ejfMa-d jKIcgw"><button class=
+=3D"sc-EgOXT kJYWtq"><span type=3D"post" class=3D"sc-eZYNyq jjWbju http-ver=
+b post">post</span><span class=3D"sc-iEXKAA lmuCWo">/api/token/refresh/</sp=
+an><svg class=3D"sc-cwHptR hEFKzC" version=3D"1.1" viewBox=3D"0 0 24 24" x=
+=3D"0" xmlns=3D"http://www.w3.org/2000/svg" y=3D"0" aria-hidden=3D"true" st=
+yle=3D"margin-right: -25px;"><polygon points=3D"17.3 8.3 12 13.6 6.7 8.3 5.=
+3 9.7 12 16.4 18.7 9.7 "></polygon></svg></button><div aria-hidden=3D"true"=
+ class=3D"sc-dlWCHZ jLxaiG"><div class=3D"sc-hHOBiw fAZrna"><div class=3D"s=
+c-eeDRCY sc-eBMEME gvJSKt FDQvA"></div><div tabindex=3D"0" role=3D"button">=
+<div class=3D"sc-kWtpeL koYpNM"><span>https://wep-app.onrender.com</span>/a=
+pi/token/refresh/</div></div></div></div></div><div><h3 class=3D"sc-kpDqfm =
+jhTHfM"> Request samples </h3><div class=3D"sc-bXCLTC cJteCP" data-rttabs=
+=3D"true"><ul class=3D"react-tabs__tab-list" role=3D"tablist"><li class=3D"=
+react-tabs__tab react-tabs__tab--selected" role=3D"tab" id=3D"tab:r3:0" ari=
+a-selected=3D"true" aria-disabled=3D"false" aria-controls=3D"panel:r3:0" ta=
+bindex=3D"0" data-rttab=3D"true">Payload</li></ul><div class=3D"react-tabs_=
+_tab-panel react-tabs__tab-panel--selected" role=3D"tabpanel" id=3D"panel:r=
+3:0" aria-labelledby=3D"tab:r3:0"><div><div class=3D"sc-bbSZdi fIhWJA"><spa=
+n class=3D"sc-fjvvzt iQMUWd">Content type</span><div class=3D"sc-dtInlm sc-=
+fBWQRz kLounG bFmgGd"><svg class=3D"sc-kOHTFB cHXioC" xmlns=3D"http://www.w=
+3.org/2000/svg" width=3D"16" height=3D"16" viewBox=3D"0 0 24 24" fill=3D"no=
+ne" stroke=3D"currentColor" stroke-width=3D"2" stroke-linecap=3D"round" str=
+oke-linejoin=3D"round"><polyline points=3D"6 9 12 15 18 9"></polyline></svg=
+><select class=3D"dropdown-select"><option value=3D"application/json">appli=
+cation/json</option><option value=3D"application/x-www-form-urlencoded">app=
+lication/x-www-form-urlencoded</option><option value=3D"multipart/form-data=
+">multipart/form-data</option></select><label>application/json</label></div=
+></div><div class=3D"sc-uVWWZ hPVmXE"><div class=3D"sc-esYiGF fyLVJX"><div =
+class=3D"sc-koXPp fxOhoS"><button><div class=3D"sc-fhzFiK esMkSs">Copy</div=
+></button></div><div class=3D"sc-eeDRCY gvJSKt sc-fXSgeo jJRLaa"><div class=
+=3D"redoc-json"><code><button class=3D"collapser" aria-label=3D"collapse"><=
+/button><span class=3D"token punctuation">{</span><span class=3D"ellipsis">=
+</span><ul class=3D"obj collapsible"><li><div class=3D"hoverable "><span cl=
+ass=3D"property token string">"refresh"</span>: <span class=3D"token string=
+">"string"</span></div></li></ul><span class=3D"token punctuation">}</span>=
+</code></div></div></div></div></div></div></div></div><div><h3 class=3D"sc=
+-kpDqfm jhTHfM"> Response samples </h3><div class=3D"sc-bXCLTC cJteCP" data=
+-rttabs=3D"true"><ul class=3D"react-tabs__tab-list" role=3D"tablist"><li cl=
+ass=3D"tab-success react-tabs__tab--selected" role=3D"tab" id=3D"tab:r4:0" =
+aria-selected=3D"true" aria-disabled=3D"false" aria-controls=3D"panel:r4:0"=
+ tabindex=3D"0" data-rttab=3D"true">200</li></ul><div class=3D"react-tabs__=
+tab-panel react-tabs__tab-panel--selected" role=3D"tabpanel" id=3D"panel:r4=
+:0" aria-labelledby=3D"tab:r4:0"><div><div class=3D"sc-bbSZdi fIhWJA"><span=
+ class=3D"sc-fjvvzt iQMUWd">Content type</span><div class=3D"sc-JrDLc kqHFh=
+X">application/json</div></div><div class=3D"sc-uVWWZ hPVmXE"><div class=3D=
+"sc-esYiGF fyLVJX"><div class=3D"sc-koXPp fxOhoS"><button><div class=3D"sc-=
+fhzFiK esMkSs">Copy</div></button></div><div class=3D"sc-eeDRCY gvJSKt sc-f=
+XSgeo jJRLaa"><div class=3D"redoc-json"><code><button class=3D"collapser" a=
+ria-label=3D"collapse"></button><span class=3D"token punctuation">{</span><=
+span class=3D"ellipsis"></span><ul class=3D"obj collapsible"><li><div class=
+=3D"hoverable "><span class=3D"property token string">"access"</span>: <spa=
+n class=3D"token string">"string"</span></div></li></ul><span class=3D"toke=
+n punctuation">}</span></code></div></div></div></div></div></div></div></d=
+iv></div></div></div></div><div class=3D"sc-dExYaf gwMRTQ"></div></div></re=
+doc>
+   =20
+   =20
+   =20
+ =20
+
+</body></html>
+------MultipartBoundary--oP3l7dy3nTEzYqkClR6iIe7DBuOw2hzJfXxDkAgsHc----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://cdn.redoc.ly/redoc/logo-mini.svg
+
+<svg width=3D"300" height=3D"300" xmlns=3D"http://www.w3.org/2000/svg"><pat=
+h fill=3D"#0044d4" d=3D"M249.488 231.49a123.68 123.68 0 0 0-22.86-12.66 111=
+.55 111.55 0 0 0-42.12-214.75h-171.8a8.18 8.18 0 0 0-5.78 14 7.48 7.48 0 0 =
+0 5.78 2.48 95 95 0 1 1 0 190c-.83 0-1.38.27-2.21.27a8 8 0 0 0-6.33 7.71v1.=
+11a7.69 7.69 0 0 0 7.71 7.7h5.52a92.93 92.93 0 0 1 50.66 17.62 95.33 95.33 =
+0 0 1 34.14 45.43 8.27 8.27 0 0 0 7.7 5.52h171.8a7.76 7.76 0 0 0 6.61-3.58 =
+8 8 0 0 0 1.09-7.42 109.06 109.06 0 0 0-39.91-53.43zm-158-37.16a111.62 111.=
+62 0 0 0 32.76-78.75 110 110 0 0 0-32.76-78.74 105.91 105.91 0 0 0-20.37-16=
+.24h113.39a95 95 0 1 1 0 190 3.55 3.55 0 0 0-1.65.27H70.798a109.06 109.06 0=
+ 0 0 20.65-16.54h.04zm-13.77 37.16c-1.92-1.37-4.13-2.75-6.33-4.13h117.8a94.=
+79 94.79 0 0 1 80.12 52h-153.63a112 112 0 0 0-38-47.87h.04z" class=3D"cls-1=
+"/><path fill=3D"#0044d4" d=3D"M158.398 115.58a8.11 8.11 0 0 0 8.26 8.26h82=
+.6a8.26 8.26 0 0 0 0-16.52h-82.6a8.29 8.29 0 0 0-8.26 8.26zM152.298 156.92h=
+82.59a8.26 8.26 0 0 0 0-16.52h-82.59a8.11 8.11 0 0 0-8.26 8.26 8.28 8.28 0 =
+0 0 8.26 8.26zM152.298 90.8h82.59a8.26 8.26 0 0 0 0-16.52h-82.59a8.11 8.11 =
+0 0 0-8.26 8.26 8.46 8.46 0 0 0 8.26 8.26z" class=3D"cls-1"/></svg>
+------MultipartBoundary--oP3l7dy3nTEzYqkClR6iIe7DBuOw2hzJfXxDkAgsHc----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 300;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459WRhyzbi.woff2") format("woff2"); unicode-range: U+460-5=
+2F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 300;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459W1hyzbi.woff2") format("woff2"); unicode-range: U+301, =
+U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 300;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459WZhyzbi.woff2") format("woff2"); unicode-range: U+102-1=
+03, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303=
+-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 300;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459Wdhyzbi.woff2") format("woff2"); unicode-range: U+100-2=
+BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00=
+-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, =
+U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 300;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459Wlhyw.woff2") format("woff2"); unicode-range: U+0-FF, U=
++131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+200=
+0-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 400;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459WRhyzbi.woff2") format("woff2"); unicode-range: U+460-5=
+2F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 400;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459W1hyzbi.woff2") format("woff2"); unicode-range: U+301, =
+U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 400;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459WZhyzbi.woff2") format("woff2"); unicode-range: U+102-1=
+03, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303=
+-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 400;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459Wdhyzbi.woff2") format("woff2"); unicode-range: U+100-2=
+BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00=
+-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, =
+U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 400;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459Wlhyw.woff2") format("woff2"); unicode-range: U+0-FF, U=
++131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+200=
+0-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 700;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459WRhyzbi.woff2") format("woff2"); unicode-range: U+460-5=
+2F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 700;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459W1hyzbi.woff2") format("woff2"); unicode-range: U+301, =
+U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 700;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459WZhyzbi.woff2") format("woff2"); unicode-range: U+102-1=
+03, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303=
+-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 700;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459Wdhyzbi.woff2") format("woff2"); unicode-range: U+100-2=
+BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00=
+-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, =
+U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Montserrat; font-style: normal; font-weight: 700;=
+ font-display: swap; src: url("https://fonts.gstatic.com/s/montserrat/v29/J=
+TUSjIg1_i6t8kCHKm459Wlhyw.woff2") format("woff2"); unicode-range: U+0-FF, U=
++131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+200=
+0-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 300; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2") format("woff2")=
+; unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, =
+U+FE2E-FE2F; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 300; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2") format("woff2")=
+; unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 300; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2") format("woff2")=
+; unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 300; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2") format("woff2")=
+; unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3=
+FF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 300; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2") format("woff2")=
+; unicode-range: U+302-303, U+305, U+307-308, U+310, U+312, U+315, U+31A, U=
++326-327, U+32C, U+32F-330, U+332-333, U+338, U+33A, U+346, U+34D, U+391-3A=
+1, U+3A3-3A9, U+3B1-3C9, U+3D1, U+3D5-3D6, U+3F0-3F1, U+3F4-3F5, U+2016-201=
+7, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2=
+070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+210=
+0-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE,=
+ U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-23=
+0B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, =
+U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U=
++25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, =
+U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF; =
+}
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 300; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2") format("woff2")=
+; unicode-range: U+1-C, U+E-1F, U+7F-9F, U+20DD-20E0, U+20E2-20E4, U+2150-2=
+18F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219,=
+ U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U=
++2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, =
+U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-=
+102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-=
+1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F3=
+2C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3=
+AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+=
+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+=
+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F4=
+7D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+=
+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4=
+FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-=
+1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+=
+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+=
+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+=
+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+=
+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F9=
+96, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+=
+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 300; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2") format("woff2")=
+; unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1=
+AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;=
+ }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 300; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2") format("woff2")=
+; unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+3=
+04, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20A=
+B, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 300; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2") format("woff2"); =
+unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+=
+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2=
+215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 400; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2") format("woff2")=
+; unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, =
+U+FE2E-FE2F; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 400; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2") format("woff2")=
+; unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 400; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2") format("woff2")=
+; unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 400; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2") format("woff2")=
+; unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3=
+FF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 400; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2") format("woff2")=
+; unicode-range: U+302-303, U+305, U+307-308, U+310, U+312, U+315, U+31A, U=
++326-327, U+32C, U+32F-330, U+332-333, U+338, U+33A, U+346, U+34D, U+391-3A=
+1, U+3A3-3A9, U+3B1-3C9, U+3D1, U+3D5-3D6, U+3F0-3F1, U+3F4-3F5, U+2016-201=
+7, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2=
+070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+210=
+0-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE,=
+ U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-23=
+0B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, =
+U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U=
++25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, =
+U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF; =
+}
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 400; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2") format("woff2")=
+; unicode-range: U+1-C, U+E-1F, U+7F-9F, U+20DD-20E0, U+20E2-20E4, U+2150-2=
+18F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219,=
+ U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U=
++2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, =
+U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-=
+102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-=
+1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F3=
+2C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3=
+AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+=
+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+=
+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F4=
+7D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+=
+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4=
+FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-=
+1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+=
+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+=
+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+=
+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+=
+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F9=
+96, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+=
+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 400; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2") format("woff2")=
+; unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1=
+AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;=
+ }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 400; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2") format("woff2")=
+; unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+3=
+04, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20A=
+B, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 400; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2") format("woff2"); =
+unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+=
+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2=
+215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 700; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3GUBGEe.woff2") format("woff2")=
+; unicode-range: U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, =
+U+FE2E-FE2F; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 700; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3iUBGEe.woff2") format("woff2")=
+; unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 700; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3CUBGEe.woff2") format("woff2")=
+; unicode-range: U+1F00-1FFF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 700; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3-UBGEe.woff2") format("woff2")=
+; unicode-range: U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3=
+FF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 700; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMawCUBGEe.woff2") format("woff2")=
+; unicode-range: U+302-303, U+305, U+307-308, U+310, U+312, U+315, U+31A, U=
++326-327, U+32C, U+32F-330, U+332-333, U+338, U+33A, U+346, U+34D, U+391-3A=
+1, U+3A3-3A9, U+3B1-3C9, U+3D1, U+3D5-3D6, U+3F0-3F1, U+3F4-3F5, U+2016-201=
+7, U+2034-2038, U+203C, U+2040, U+2043, U+2047, U+2050, U+2057, U+205F, U+2=
+070-2071, U+2074-208E, U+2090-209C, U+20D0-20DC, U+20E1, U+20E5-20EF, U+210=
+0-2112, U+2114-2115, U+2117-2121, U+2123-214F, U+2190, U+2192, U+2194-21AE,=
+ U+21B0-21E5, U+21F1-21F2, U+21F4-2211, U+2213-2214, U+2216-22FF, U+2308-23=
+0B, U+2310, U+2319, U+231C-2321, U+2336-237A, U+237C, U+2395, U+239B-23B7, =
+U+23D0, U+23DC-23E1, U+2474-2475, U+25AF, U+25B3, U+25B7, U+25BD, U+25C1, U=
++25CA, U+25CC, U+25FB, U+266D-266F, U+27C0-27FF, U+2900-2AFF, U+2B0E-2B11, =
+U+2B30-2B4C, U+2BFE, U+3030, U+FF5B, U+FF5D, U+1D400-1D7FF, U+1EE00-1EEFF; =
+}
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 700; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMaxKUBGEe.woff2") format("woff2")=
+; unicode-range: U+1-C, U+E-1F, U+7F-9F, U+20DD-20E0, U+20E2-20E4, U+2150-2=
+18F, U+2190, U+2192, U+2194-2199, U+21AF, U+21E6-21F0, U+21F3, U+2218-2219,=
+ U+2299, U+22C4-22C6, U+2300-243F, U+2440-244A, U+2460-24FF, U+25A0-27BF, U=
++2800-28FF, U+2921-2922, U+2981, U+29BF, U+29EB, U+2B00-2BFF, U+4DC0-4DFF, =
+U+FFF9-FFFB, U+10140-1018E, U+10190-1019C, U+101A0, U+101D0-101FD, U+102E0-=
+102FB, U+10E60-10E7E, U+1D2C0-1D2D3, U+1D2E0-1D37F, U+1F000-1F0FF, U+1F100-=
+1F1AD, U+1F1E6-1F1FF, U+1F30D-1F30F, U+1F315, U+1F31C, U+1F31E, U+1F320-1F3=
+2C, U+1F336, U+1F378, U+1F37D, U+1F382, U+1F393-1F39F, U+1F3A7-1F3A8, U+1F3=
+AC-1F3AF, U+1F3C2, U+1F3C4-1F3C6, U+1F3CA-1F3CE, U+1F3D4-1F3E0, U+1F3ED, U+=
+1F3F1-1F3F3, U+1F3F5-1F3F7, U+1F408, U+1F415, U+1F41F, U+1F426, U+1F43F, U+=
+1F441-1F442, U+1F444, U+1F446-1F449, U+1F44C-1F44E, U+1F453, U+1F46A, U+1F4=
+7D, U+1F4A3, U+1F4B0, U+1F4B3, U+1F4B9, U+1F4BB, U+1F4BF, U+1F4C8-1F4CB, U+=
+1F4D6, U+1F4DA, U+1F4DF, U+1F4E3-1F4E6, U+1F4EA-1F4ED, U+1F4F7, U+1F4F9-1F4=
+FB, U+1F4FD-1F4FE, U+1F503, U+1F507-1F50B, U+1F50D, U+1F512-1F513, U+1F53E-=
+1F54A, U+1F54F-1F5FA, U+1F610, U+1F650-1F67F, U+1F687, U+1F68D, U+1F691, U+=
+1F694, U+1F698, U+1F6AD, U+1F6B2, U+1F6B9-1F6BA, U+1F6BC, U+1F6C6-1F6CF, U+=
+1F6D3-1F6D7, U+1F6E0-1F6EA, U+1F6F0-1F6F3, U+1F6F7-1F6FC, U+1F700-1F7FF, U+=
+1F800-1F80B, U+1F810-1F847, U+1F850-1F859, U+1F860-1F887, U+1F890-1F8AD, U+=
+1F8B0-1F8BB, U+1F8C0-1F8C1, U+1F900-1F90B, U+1F93B, U+1F946, U+1F984, U+1F9=
+96, U+1F9E9, U+1FA00-1FA6F, U+1FA70-1FA7C, U+1FA80-1FA89, U+1FA8F-1FAC6, U+=
+1FACE-1FADC, U+1FADF-1FAE9, U+1FAF0-1FAF8, U+1FB00-1FBFF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 700; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3OUBGEe.woff2") format("woff2")=
+; unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1=
+AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;=
+ }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 700; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3KUBGEe.woff2") format("woff2")=
+; unicode-range: U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+3=
+04, U+308, U+329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20A=
+B, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Roboto; font-style: normal; font-weight: 700; fon=
+t-stretch: 100%; font-display: swap; src: url("https://fonts.gstatic.com/s/=
+roboto/v47/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2") format("woff2"); =
+unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+=
+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2=
+215, U+FEFF, U+FFFD; }
+------MultipartBoundary--oP3l7dy3nTEzYqkClR6iIe7DBuOw2hzJfXxDkAgsHc----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-8672dce5-ed79-466a-be55-ec24069e51e6@mhtml.blink
+
+@charset "utf-8";
+
+.ZpVFp { animation: 2s linear 0s infinite normal none running gtRCGH; width=
+: 50px; height: 50px; content: ""; display: inline-block; margin-left: -25p=
+x; }
+
+.ZpVFp path { fill: rgb(50, 50, 159); }
+
+.fZTfPN { font-family: helvetica, sans; width: 100%; text-align: center; fo=
+nt-size: 25px; margin: 30px 0px 20px; color: rgb(50, 50, 159); }
+
+.cEAxIC { width: calc(60%); padding: 0px 40px; }
+
+@media print, screen and (max-width: 75rem) {
+  .cEAxIC { width: 100%; padding: 40px; }
+}
+
+.eVrqat { padding: 40px 0px; }
+
+.eVrqat:last-child { min-height: calc(1px + 100vh); }
+
+.sc-dcJsrY > .sc-dcJsrY:last-child { min-height: initial; }
+
+@media print, screen and (max-width: 75rem) {
+  .eVrqat { padding: 0px; }
+}
+
+.kNjBFu { padding: 40px 0px; position: relative; }
+
+.kNjBFu:last-child { min-height: calc(1px + 100vh); }
+
+.sc-dcJsrY > .sc-dcJsrY:last-child { min-height: initial; }
+
+@media print, screen and (max-width: 75rem) {
+  .kNjBFu { padding: 0px; }
+}
+
+.kNjBFu:not(:last-of-type)::after { position: absolute; bottom: 0px; width:=
+ 100%; display: block; content: ""; border-bottom: 1px solid rgba(0, 0, 0, =
+0.2); }
+
+.lbpUdJ { width: 40%; color: rgb(255, 255, 255); background-color: rgb(38, =
+50, 56); padding: 0px 40px; }
+
+@media print, screen and (max-width: 75rem) {
+  .lbpUdJ { width: 100%; padding: 40px; }
+}
+
+.bOFhJE { background-color: rgb(38, 50, 56); }
+
+.XMnSL { display: flex; width: 100%; padding: 0px; }
+
+@media print, screen and (max-width: 75rem) {
+  .XMnSL { flex-direction: column; }
+}
+
+.dCEJze { font-family: Montserrat, sans-serif; font-weight: 400; font-size:=
+ 1.85714em; line-height: 1.6em; color: rgb(51, 51, 51); }
+
+.copjkU { font-family: Montserrat, sans-serif; font-weight: 400; font-size:=
+ 1.57143em; line-height: 1.6em; color: rgb(51, 51, 51); margin: 0px 0px 20p=
+x; }
+
+.jhTHfM { color: rgb(255, 255, 255); }
+
+.hNlDMA { border-bottom: 1px solid rgba(38, 50, 56, 0.3); margin: 1em 0px; =
+color: rgba(38, 50, 56, 0.5); font-weight: normal; text-transform: uppercas=
+e; font-size: 0.929em; line-height: 20px; }
+
+.jrsfjb { cursor: pointer; margin-left: -20px; padding: 0px; line-height: 1=
+; width: 20px; display: inline-block; outline: 0px; }
+
+.jrsfjb::before { content: ""; width: 15px; height: 15px; background-size: =
+contain; background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0ia=
+HR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIgeT0iMCIgd2lk=
+dGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2d=
+yb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBmaWxsPS=
+IjMDEwMTAxIiBkPSJNNDU5LjcgMjMzLjRsLTkwLjUgOTAuNWMtNTAgNTAtMTMxIDUwLTE4MSAwI=
+C03LjktNy44LTE0LTE2LjctMTkuNC0yNS44bDQyLjEtNDIuMWMyLTIgNC41LTMuMiA2LjgtNC41=
+IDIuOSA5LjkgOCAxOS4zIDE1LjggMjcuMiAyNSAyNSA2NS42IDI0LjkgOTAuNSAwbDkwLjUtOTA=
+uNWMyNS0yNSAyNS02NS42IDAtOTAuNSAtMjQuOS0yNS02NS41LTI1LTkwLjUgMGwtMzIuMiAzMi=
+4yYy0yNi4xLTEwLjItNTQuMi0xMi45LTgxLjYtOC45bDY4LjYtNjguNmM1MC01MCAxMzEtNTAgM=
+TgxIDBDNTA5LjYgMTAyLjMgNTA5LjYgMTgzLjQgNDU5LjcgMjMzLjR6TTIyMC4zIDM4Mi4ybC0z=
+Mi4yIDMyLjJjLTI1IDI0LjktNjUuNiAyNC45LTkwLjUgMCAtMjUtMjUtMjUtNjUuNiAwLTkwLjV=
+sOTAuNS05MC41YzI1LTI1IDY1LjUtMjUgOTAuNSAwIDcuOCA3LjggMTIuOSAxNy4yIDE1LjggMj=
+cuMSAyLjQtMS40IDQuOC0yLjUgNi44LTQuNWw0Mi4xLTQyYy01LjQtOS4yLTExLjYtMTgtMTkuN=
+C0yNS44IC01MC01MC0xMzEtNTAtMTgxIDBsLTkwLjUgOTAuNWMtNTAgNTAtNTAgMTMxIDAgMTgx=
+IDUwIDUwIDEzMSA1MCAxODEgMGw2OC42LTY4LjZDMjc0LjYgMzk1LjEgMjQ2LjQgMzkyLjMgMjI=
+wLjMgMzgyLjJ6Ii8+PC9zdmc+Cg=3D=3D"); opacity: 0.5; visibility: hidden; disp=
+lay: inline-block; vertical-align: middle; }
+
+h1:hover > .sc-jlZhew::before, h2:hover > .jrsfjb::before, .jrsfjb:hover::b=
+efore { visibility: visible; }
+
+.ssWsg { height: 18px; width: 18px; min-width: 18px; vertical-align: middle=
+; float: right; transition: transform 0.2s ease-out; transform: rotateZ(-90=
+deg); }
+
+.kNXOKB { height: 1.3em; width: 1.3em; min-width: 1.3em; vertical-align: mi=
+ddle; transition: transform 0.2s ease-out; transform: rotateZ(-90deg); }
+
+.hEFKzC { height: 20px; width: 20px; min-width: 20px; vertical-align: middl=
+e; float: right; transition: transform 0.2s ease-out; transform: rotateZ(0d=
+eg); }
+
+.hEFKzC polygon { fill: white; }
+
+.ehtaAK { height: 1.5em; width: 1.5em; min-width: 1.5em; vertical-align: mi=
+ddle; float: left; transition: transform 0.2s ease-out; transform: rotateZ(=
+-90deg); }
+
+.ehtaAK polygon { fill: rgb(29, 129, 39); }
+
+.bvNJXm { border-left: 1px solid rgb(124, 124, 187); box-sizing: border-box=
+; position: relative; padding: 10px 10px 10px 0px; }
+
+@media screen and (max-width: 50rem) {
+  .bvNJXm { display: block; overflow: hidden; }
+}
+
+tr:first-of-type > .sc-dLMFU, tr.last > .bvNJXm { border-left-width: 0px; b=
+ackground-position: left top; background-repeat: no-repeat; background-size=
+: 1px 100%; }
+
+tr:first-of-type > .sc-dLMFU { background-image: linear-gradient(transparen=
+t 0%, transparent 22px, rgb(124, 124, 187) 22px, rgb(124, 124, 187) 100%); =
+}
+
+tr.last > .sc-dLMFU { background-image: linear-gradient(rgb(124, 124, 187) =
+0%, rgb(124, 124, 187) 22px, transparent 22px, transparent 100%); }
+
+tr.last + tr > .sc-dLMFU { border-left-color: transparent; }
+
+tr.last:first-child > .sc-dLMFU { background: none; border-left-color: tran=
+sparent; }
+
+.evxOdD { vertical-align: top; line-height: 20px; white-space: nowrap; font=
+-size: 13px; font-family: Courier, monospace; }
+
+.evxOdD.deprecated { text-decoration: line-through; color: rgb(112, 112, 11=
+2); }
+
+.iMGXTw { border-bottom: 1px solid rgb(159, 180, 190); padding: 10px 0px; w=
+idth: 75%; box-sizing: border-box; }
+
+tr.expanded .sc-fPXMVe { border-bottom: none; }
+
+@media screen and (max-width: 50rem) {
+  .iMGXTw { padding: 0px 20px; border-bottom: none; border-left: 1px solid =
+rgb(124, 124, 187); }
+  tr.last > .sc-fPXMVe { border-left: none; }
+}
+
+.Aouot { color: rgb(124, 124, 187); font-family: Courier, monospace; margin=
+-right: 10px; }
+
+.Aouot::before { content: ""; display: inline-block; vertical-align: middle=
+; width: 10px; height: 1px; background: rgb(124, 124, 187); }
+
+.Aouot::after { content: ""; display: inline-block; vertical-align: middle;=
+ width: 1px; background: rgb(124, 124, 187); height: 7px; }
+
+.krDyRf { border-collapse: separate; border-radius: 3px; font-size: 14px; b=
+order-spacing: 0px; width: 100%; }
+
+.krDyRf > tr { vertical-align: middle; }
+
+@media screen and (max-width: 50rem) {
+  .krDyRf { display: block; }
+  .krDyRf > tr, .krDyRf > tbody > tr { display: block; }
+}
+
+@media screen and (max-width: 50rem) and (-ms-high-contrast:none) {
+  .krDyRf td { float: left; width: 100%; }
+}
+
+.krDyRf .sc-ikkxIA, .krDyRf .sc-ikkxIA .sc-ikkxIA .sc-ikkxIA, .krDyRf .sc-i=
+kkxIA .sc-ikkxIA .sc-ikkxIA .sc-ikkxIA .sc-ikkxIA { margin: 1em 0px 1em 1em=
+; background: rgb(250, 250, 250); }
+
+.krDyRf .sc-ikkxIA .sc-ikkxIA, .krDyRf .sc-ikkxIA .sc-ikkxIA .sc-ikkxIA .sc=
+-ikkxIA, .krDyRf .sc-ikkxIA .sc-ikkxIA .sc-ikkxIA .sc-ikkxIA .sc-ikkxIA .sc=
+-ikkxIA { background: rgb(255, 255, 255); }
+
+.cJteCP > ul { list-style: none; padding: 0px; margin: 0px -5px; }
+
+.cJteCP > ul > li { padding: 5px 10px; display: inline-block; background-co=
+lor: rgb(17, 23, 26); cursor: pointer; text-align: center; outline: none; c=
+olor: rgb(204, 204, 204); margin: 0px 5px 5px; border: 1px solid rgb(7, 9, =
+11); border-radius: 5px; min-width: 60px; font-size: 0.9em; font-weight: bo=
+ld; }
+
+.cJteCP > ul > li.react-tabs__tab--selected { color: rgb(51, 51, 51); backg=
+round: rgb(255, 255, 255); }
+
+.cJteCP > ul > li.react-tabs__tab--selected:focus { outline: auto; }
+
+.cJteCP > ul > li:only-child { flex: 0 0 auto; min-width: 100px; }
+
+.cJteCP > ul > li.tab-success { color: rgb(29, 129, 39); }
+
+.cJteCP > ul > li.tab-redirect { color: rgb(255, 165, 0); }
+
+.cJteCP > ul > li.tab-info { color: rgb(135, 206, 235); }
+
+.cJteCP > ul > li.tab-error { color: rgb(212, 31, 28); }
+
+.cJteCP > .react-tabs__tab-panel { background: rgb(17, 23, 26); }
+
+.cJteCP > .react-tabs__tab-panel > div, .cJteCP > .react-tabs__tab-panel > =
+pre { padding: 20px; margin: 0px; }
+
+.cJteCP > .react-tabs__tab-panel > div > pre { padding: 0px; }
+
+.gvJSKt code[class*=3D"language-"], .gvJSKt pre[class*=3D"language-"] { tex=
+t-shadow: black 0px -0.1em 0.2em; text-align: left; white-space: pre; word-=
+spacing: normal; word-break: normal; overflow-wrap: normal; line-height: 1.=
+5; tab-size: 4; hyphens: none; }
+
+@media print {
+  .gvJSKt code[class*=3D"language-"], .gvJSKt pre[class*=3D"language-"] { t=
+ext-shadow: none; }
+}
+
+.gvJSKt pre[class*=3D"language-"] { padding: 1em; margin: 0.5em 0px; overfl=
+ow: auto; }
+
+.gvJSKt .token.comment, .gvJSKt .token.prolog, .gvJSKt .token.doctype, .gvJ=
+SKt .token.cdata { color: rgb(153, 128, 102); }
+
+.gvJSKt .token.punctuation { opacity: 0.7; }
+
+.gvJSKt .namespace { opacity: 0.7; }
+
+.gvJSKt .token.property, .gvJSKt .token.tag, .gvJSKt .token.number, .gvJSKt=
+ .token.constant, .gvJSKt .token.symbol { color: rgb(74, 139, 179); }
+
+.gvJSKt .token.boolean { color: rgb(230, 68, 65); }
+
+.gvJSKt .token.selector, .gvJSKt .token.attr-name, .gvJSKt .token.string, .=
+gvJSKt .token.char, .gvJSKt .token.builtin, .gvJSKt .token.inserted { color=
+: rgb(160, 251, 170); }
+
+.gvJSKt .token.selector + a, .gvJSKt .token.attr-name + a, .gvJSKt .token.s=
+tring + a, .gvJSKt .token.char + a, .gvJSKt .token.builtin + a, .gvJSKt .to=
+ken.inserted + a, .gvJSKt .token.selector + a:visited, .gvJSKt .token.attr-=
+name + a:visited, .gvJSKt .token.string + a:visited, .gvJSKt .token.char + =
+a:visited, .gvJSKt .token.builtin + a:visited, .gvJSKt .token.inserted + a:=
+visited { color: rgb(78, 210, 186); text-decoration: underline; }
+
+.gvJSKt .token.property.string { color: white; }
+
+.gvJSKt .token.operator, .gvJSKt .token.entity, .gvJSKt .token.url, .gvJSKt=
+ .token.variable { color: rgb(245, 184, 61); }
+
+.gvJSKt .token.atrule, .gvJSKt .token.attr-value, .gvJSKt .token.keyword { =
+color: rgb(209, 148, 158); }
+
+.gvJSKt .token.regex, .gvJSKt .token.important { color: rgb(238, 153, 0); }
+
+.gvJSKt .token.important, .gvJSKt .token.bold { font-weight: bold; }
+
+.gvJSKt .token.italic { font-style: italic; }
+
+.gvJSKt .token.entity { cursor: help; }
+
+.gvJSKt .token.deleted { color: red; }
+
+.fxOhoS { opacity: 0.7; transition: opacity 0.3s; text-align: right; }
+
+.fxOhoS:focus-within { opacity: 1; }
+
+.fxOhoS > button { background-color: transparent; border: 0px; color: inher=
+it; padding: 2px 10px; font-family: Roboto, sans-serif; font-size: 14px; li=
+ne-height: 1.5em; cursor: pointer; outline: 0px; }
+
+.fxOhoS > button:hover, .fxOhoS > button:focus { background: rgba(255, 255,=
+ 255, 0.1); }
+
+.gdNLsg { position: relative; }
+
+.cHXioC { position: absolute; pointer-events: none; z-index: 1; top: 50%; t=
+ransform: translateY(-50%); right: 8px; margin: auto; text-align: center; }
+
+.cHXioC polyline { color: white; }
+
+.glrnAB { position: absolute; pointer-events: none; z-index: 1; top: 50%; t=
+ransform: translateY(-50%); right: 8px; margin: auto; text-align: center; }
+
+.kLounG { box-sizing: border-box; min-width: 100px; outline: none; display:=
+ inline-block; border-radius: 2px; border: 1px solid rgba(38, 50, 56, 0.5);=
+ vertical-align: bottom; padding: 2px 0px 2px 6px; position: relative; widt=
+h: auto; background: white; color: rgb(38, 50, 56); font-family: Montserrat=
+, sans-serif; font-size: 0.929em; line-height: 1.5em; cursor: pointer; tran=
+sition: border 0.25s, color 0.25s, box-shadow 0.25s; }
+
+.kLounG label { box-sizing: border-box; min-width: 100px; outline: none; di=
+splay: inline-block; color: rgb(51, 51, 51); vertical-align: bottom; width:=
+ auto; text-transform: none; padding: 0px 22px 0px 4px; font-size: 0.929em;=
+ line-height: 1.5em; font-family: inherit; text-overflow: ellipsis; overflo=
+w: hidden; white-space: nowrap; }
+
+.kLounG .dropdown-select { position: absolute; top: 0px; left: 0px; width: =
+100%; height: 100%; opacity: 0; border: none; appearance: none; cursor: poi=
+nter; color: rgb(51, 51, 51); line-height: inherit; font-family: inherit; }
+
+.kLounG:hover, .kLounG:focus-within { border: 1px solid rgb(50, 50, 159); c=
+olor: rgb(50, 50, 159); box-shadow: rgb(50, 50, 159) 0px 0px 0px 1px; }
+
+.edEekE { margin-left: 10px; text-transform: none; font-size: 1em; border: =
+none; padding: 0px 1.2em 0px 0px; background: transparent; }
+
+.edEekE:hover, .edEekE:focus-within { border: none; box-shadow: none; }
+
+.edEekE:hover label, .edEekE:focus-within label { color: rgb(50, 50, 159); =
+text-shadow: rgb(50, 50, 159) 0px 0px 0px; }
+
+.hzUya { font-family: Roboto, sans-serif; font-weight: 400; line-height: 1.=
+5em; }
+
+.hzUya p:last-child { margin-bottom: 0px; }
+
+.hzUya h1 { font-family: Montserrat, sans-serif; font-weight: 400; font-siz=
+e: 1.85714em; line-height: 1.6em; color: rgb(50, 50, 159); margin-top: 0px;=
+ }
+
+.hzUya h2 { font-family: Montserrat, sans-serif; font-weight: 400; font-siz=
+e: 1.57143em; line-height: 1.6em; color: rgb(51, 51, 51); }
+
+.hzUya code { color: rgb(229, 57, 53); background-color: rgba(38, 50, 56, 0=
+.05); font-family: Courier, monospace; border-radius: 2px; border: 1px soli=
+d rgba(38, 50, 56, 0.1); padding: 0px 5px; font-size: 13px; font-weight: 40=
+0; word-break: break-word; }
+
+.hzUya pre { font-family: Courier, monospace; white-space: pre; background-=
+color: rgb(17, 23, 26); color: white; padding: 20px; overflow-x: auto; line=
+-height: normal; border-radius: 0px; border: 1px solid rgba(38, 50, 56, 0.1=
+); }
+
+.hzUya pre code { background-color: transparent; color: white; padding: 0px=
+; }
+
+.hzUya pre code::before, .hzUya pre code::after { content: none; }
+
+.hzUya blockquote { margin: 0px 0px 1em; padding: 0px 15px; color: rgb(119,=
+ 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+
+.hzUya img { max-width: 100%; box-sizing: content-box; }
+
+.hzUya ul, .hzUya ol { padding-left: 2em; margin: 0px 0px 1em; }
+
+.hzUya ul ul, .hzUya ol ul, .hzUya ul ol, .hzUya ol ol { margin-bottom: 0px=
+; margin-top: 0px; }
+
+.hzUya table { display: block; width: 100%; overflow: auto; word-break: kee=
+p-all; border-collapse: collapse; border-spacing: 0px; margin-top: 1.5em; m=
+argin-bottom: 1.5em; }
+
+.hzUya table tr { background-color: rgb(255, 255, 255); border-top: 1px sol=
+id rgb(204, 204, 204); }
+
+.hzUya table tr:nth-child(2n) { background-color: rgb(250, 250, 250); }
+
+.hzUya table th, .hzUya table td { padding: 6px 13px; border: 1px solid rgb=
+(221, 221, 221); }
+
+.hzUya table th { text-align: left; font-weight: bold; }
+
+.hzUya .share-link { cursor: pointer; margin-left: -20px; padding: 0px; lin=
+e-height: 1; width: 20px; display: inline-block; outline: 0px; }
+
+.hzUya .share-link::before { content: ""; width: 15px; height: 15px; backgr=
+ound-size: contain; background-image: url("data:image/svg+xml;base64,PHN2Zy=
+B4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIge=
+T0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFi=
+bGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF=
+0aCBmaWxsPSIjMDEwMTAxIiBkPSJNNDU5LjcgMjMzLjRsLTkwLjUgOTAuNWMtNTAgNTAtMTMxID=
+UwLTE4MSAwIC03LjktNy44LTE0LTE2LjctMTkuNC0yNS44bDQyLjEtNDIuMWMyLTIgNC41LTMuM=
+iA2LjgtNC41IDIuOSA5LjkgOCAxOS4zIDE1LjggMjcuMiAyNSAyNSA2NS42IDI0LjkgOTAuNSAw=
+bDkwLjUtOTAuNWMyNS0yNSAyNS02NS42IDAtOTAuNSAtMjQuOS0yNS02NS41LTI1LTkwLjUgMGw=
+tMzIuMiAzMi4yYy0yNi4xLTEwLjItNTQuMi0xMi45LTgxLjYtOC45bDY4LjYtNjguNmM1MC01MC=
+AxMzEtNTAgMTgxIDBDNTA5LjYgMTAyLjMgNTA5LjYgMTgzLjQgNDU5LjcgMjMzLjR6TTIyMC4zI=
+DM4Mi4ybC0zMi4yIDMyLjJjLTI1IDI0LjktNjUuNiAyNC45LTkwLjUgMCAtMjUtMjUtMjUtNjUu=
+NiAwLTkwLjVsOTAuNS05MC41YzI1LTI1IDY1LjUtMjUgOTAuNSAwIDcuOCA3LjggMTIuOSAxNy4=
+yIDE1LjggMjcuMSAyLjQtMS40IDQuOC0yLjUgNi44LTQuNWw0Mi4xLTQyYy01LjQtOS4yLTExLj=
+YtMTgtMTkuNC0yNS44IC01MC01MC0xMzEtNTAtMTgxIDBsLTkwLjUgOTAuNWMtNTAgNTAtNTAgM=
+TMxIDAgMTgxIDUwIDUwIDEzMSA1MCAxODEgMGw2OC42LTY4LjZDMjc0LjYgMzk1LjEgMjQ2LjQg=
+MzkyLjMgMjIwLjMgMzgyLjJ6Ii8+PC9zdmc+Cg=3D=3D"); opacity: 0.5; visibility: h=
+idden; display: inline-block; vertical-align: middle; }
+
+.hzUya h1:hover > .share-link::before, .hzUya h2:hover > .share-link::befor=
+e, .hzUya .share-link:hover::before { visibility: visible; }
+
+.hzUya a { text-decoration: none; color: rgb(50, 50, 159); }
+
+.hzUya a:visited { color: rgb(50, 50, 159); }
+
+.hzUya a:hover { color: rgb(104, 104, 207); text-decoration: none; }
+
+.dDrYQw { font-family: Roboto, sans-serif; font-weight: 400; line-height: 1=
+.5em; }
+
+.dDrYQw p:last-child { margin-bottom: 0px; }
+
+.dDrYQw p:first-child { margin-top: 0px; }
+
+.dDrYQw p:last-child { margin-bottom: 0px; }
+
+.dDrYQw p { display: inline-block; }
+
+.dDrYQw h1 { font-family: Montserrat, sans-serif; font-weight: 400; font-si=
+ze: 1.85714em; line-height: 1.6em; color: rgb(50, 50, 159); margin-top: 0px=
+; }
+
+.dDrYQw h2 { font-family: Montserrat, sans-serif; font-weight: 400; font-si=
+ze: 1.57143em; line-height: 1.6em; color: rgb(51, 51, 51); }
+
+.dDrYQw code { color: rgb(229, 57, 53); background-color: rgba(38, 50, 56, =
+0.05); font-family: Courier, monospace; border-radius: 2px; border: 1px sol=
+id rgba(38, 50, 56, 0.1); padding: 0px 5px; font-size: 13px; font-weight: 4=
+00; word-break: break-word; }
+
+.dDrYQw pre { font-family: Courier, monospace; white-space: pre; background=
+-color: rgb(17, 23, 26); color: white; padding: 20px; overflow-x: auto; lin=
+e-height: normal; border-radius: 0px; border: 1px solid rgba(38, 50, 56, 0.=
+1); }
+
+.dDrYQw pre code { background-color: transparent; color: white; padding: 0p=
+x; }
+
+.dDrYQw pre code::before, .dDrYQw pre code::after { content: none; }
+
+.dDrYQw blockquote { margin: 0px 0px 1em; padding: 0px 15px; color: rgb(119=
+, 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+
+.dDrYQw img { max-width: 100%; box-sizing: content-box; }
+
+.dDrYQw ul, .dDrYQw ol { padding-left: 2em; margin: 0px 0px 1em; }
+
+.dDrYQw ul ul, .dDrYQw ol ul, .dDrYQw ul ol, .dDrYQw ol ol { margin-bottom:=
+ 0px; margin-top: 0px; }
+
+.dDrYQw table { display: block; width: 100%; overflow: auto; word-break: ke=
+ep-all; border-collapse: collapse; border-spacing: 0px; margin-top: 1.5em; =
+margin-bottom: 1.5em; }
+
+.dDrYQw table tr { background-color: rgb(255, 255, 255); border-top: 1px so=
+lid rgb(204, 204, 204); }
+
+.dDrYQw table tr:nth-child(2n) { background-color: rgb(250, 250, 250); }
+
+.dDrYQw table th, .dDrYQw table td { padding: 6px 13px; border: 1px solid r=
+gb(221, 221, 221); }
+
+.dDrYQw table th { text-align: left; font-weight: bold; }
+
+.dDrYQw .share-link { cursor: pointer; margin-left: -20px; padding: 0px; li=
+ne-height: 1; width: 20px; display: inline-block; outline: 0px; }
+
+.dDrYQw .share-link::before { content: ""; width: 15px; height: 15px; backg=
+round-size: contain; background-image: url("data:image/svg+xml;base64,PHN2Z=
+yB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIg=
+eT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmF=
+ibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG=
+F0aCBmaWxsPSIjMDEwMTAxIiBkPSJNNDU5LjcgMjMzLjRsLTkwLjUgOTAuNWMtNTAgNTAtMTMxI=
+DUwLTE4MSAwIC03LjktNy44LTE0LTE2LjctMTkuNC0yNS44bDQyLjEtNDIuMWMyLTIgNC41LTMu=
+MiA2LjgtNC41IDIuOSA5LjkgOCAxOS4zIDE1LjggMjcuMiAyNSAyNSA2NS42IDI0LjkgOTAuNSA=
+wbDkwLjUtOTAuNWMyNS0yNSAyNS02NS42IDAtOTAuNSAtMjQuOS0yNS02NS41LTI1LTkwLjUgMG=
+wtMzIuMiAzMi4yYy0yNi4xLTEwLjItNTQuMi0xMi45LTgxLjYtOC45bDY4LjYtNjguNmM1MC01M=
+CAxMzEtNTAgMTgxIDBDNTA5LjYgMTAyLjMgNTA5LjYgMTgzLjQgNDU5LjcgMjMzLjR6TTIyMC4z=
+IDM4Mi4ybC0zMi4yIDMyLjJjLTI1IDI0LjktNjUuNiAyNC45LTkwLjUgMCAtMjUtMjUtMjUtNjU=
+uNiAwLTkwLjVsOTAuNS05MC41YzI1LTI1IDY1LjUtMjUgOTAuNSAwIDcuOCA3LjggMTIuOSAxNy=
+4yIDE1LjggMjcuMSAyLjQtMS40IDQuOC0yLjUgNi44LTQuNWw0Mi4xLTQyYy01LjQtOS4yLTExL=
+jYtMTgtMTkuNC0yNS44IC01MC01MC0xMzEtNTAtMTgxIDBsLTkwLjUgOTAuNWMtNTAgNTAtNTAg=
+MTMxIDAgMTgxIDUwIDUwIDEzMSA1MCAxODEgMGw2OC42LTY4LjZDMjc0LjYgMzk1LjEgMjQ2LjQ=
+gMzkyLjMgMjIwLjMgMzgyLjJ6Ii8+PC9zdmc+Cg=3D=3D"); opacity: 0.5; visibility: =
+hidden; display: inline-block; vertical-align: middle; }
+
+.dDrYQw h1:hover > .share-link::before, .dDrYQw h2:hover > .share-link::bef=
+ore, .dDrYQw .share-link:hover::before { visibility: visible; }
+
+.dDrYQw a { text-decoration: none; color: rgb(50, 50, 159); }
+
+.dDrYQw a:visited { color: rgb(50, 50, 159); }
+
+.dDrYQw a:hover { color: rgb(104, 104, 207); text-decoration: none; }
+
+.FDQvA { font-family: Roboto, sans-serif; font-weight: 400; line-height: 1.=
+5em; }
+
+.FDQvA p:last-child { margin-bottom: 0px; }
+
+.FDQvA p:first-child { margin-top: 0px; }
+
+.FDQvA p:last-child { margin-bottom: 0px; }
+
+.FDQvA h1 { font-family: Montserrat, sans-serif; font-weight: 400; font-siz=
+e: 1.85714em; line-height: 1.6em; color: rgb(50, 50, 159); margin-top: 0px;=
+ }
+
+.FDQvA h2 { font-family: Montserrat, sans-serif; font-weight: 400; font-siz=
+e: 1.57143em; line-height: 1.6em; color: rgb(51, 51, 51); }
+
+.FDQvA code { color: rgb(229, 57, 53); background-color: rgba(38, 50, 56, 0=
+.05); font-family: Courier, monospace; border-radius: 2px; border: 1px soli=
+d rgba(38, 50, 56, 0.1); padding: 0px 5px; font-size: 13px; font-weight: 40=
+0; word-break: break-word; }
+
+.FDQvA pre { font-family: Courier, monospace; white-space: pre; background-=
+color: rgb(17, 23, 26); color: white; padding: 20px; overflow-x: auto; line=
+-height: normal; border-radius: 0px; border: 1px solid rgba(38, 50, 56, 0.1=
+); }
+
+.FDQvA pre code { background-color: transparent; color: white; padding: 0px=
+; }
+
+.FDQvA pre code::before, .FDQvA pre code::after { content: none; }
+
+.FDQvA blockquote { margin: 0px 0px 1em; padding: 0px 15px; color: rgb(119,=
+ 119, 119); border-left: 4px solid rgb(221, 221, 221); }
+
+.FDQvA img { max-width: 100%; box-sizing: content-box; }
+
+.FDQvA ul, .FDQvA ol { padding-left: 2em; margin: 0px 0px 1em; }
+
+.FDQvA ul ul, .FDQvA ol ul, .FDQvA ul ol, .FDQvA ol ol { margin-bottom: 0px=
+; margin-top: 0px; }
+
+.FDQvA table { display: block; width: 100%; overflow: auto; word-break: kee=
+p-all; border-collapse: collapse; border-spacing: 0px; margin-top: 1.5em; m=
+argin-bottom: 1.5em; }
+
+.FDQvA table tr { background-color: rgb(255, 255, 255); border-top: 1px sol=
+id rgb(204, 204, 204); }
+
+.FDQvA table tr:nth-child(2n) { background-color: rgb(250, 250, 250); }
+
+.FDQvA table th, .FDQvA table td { padding: 6px 13px; border: 1px solid rgb=
+(221, 221, 221); }
+
+.FDQvA table th { text-align: left; font-weight: bold; }
+
+.FDQvA .share-link { cursor: pointer; margin-left: -20px; padding: 0px; lin=
+e-height: 1; width: 20px; display: inline-block; outline: 0px; }
+
+.FDQvA .share-link::before { content: ""; width: 15px; height: 15px; backgr=
+ound-size: contain; background-image: url("data:image/svg+xml;base64,PHN2Zy=
+B4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIge=
+T0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFi=
+bGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF=
+0aCBmaWxsPSIjMDEwMTAxIiBkPSJNNDU5LjcgMjMzLjRsLTkwLjUgOTAuNWMtNTAgNTAtMTMxID=
+UwLTE4MSAwIC03LjktNy44LTE0LTE2LjctMTkuNC0yNS44bDQyLjEtNDIuMWMyLTIgNC41LTMuM=
+iA2LjgtNC41IDIuOSA5LjkgOCAxOS4zIDE1LjggMjcuMiAyNSAyNSA2NS42IDI0LjkgOTAuNSAw=
+bDkwLjUtOTAuNWMyNS0yNSAyNS02NS42IDAtOTAuNSAtMjQuOS0yNS02NS41LTI1LTkwLjUgMGw=
+tMzIuMiAzMi4yYy0yNi4xLTEwLjItNTQuMi0xMi45LTgxLjYtOC45bDY4LjYtNjguNmM1MC01MC=
+AxMzEtNTAgMTgxIDBDNTA5LjYgMTAyLjMgNTA5LjYgMTgzLjQgNDU5LjcgMjMzLjR6TTIyMC4zI=
+DM4Mi4ybC0zMi4yIDMyLjJjLTI1IDI0LjktNjUuNiAyNC45LTkwLjUgMCAtMjUtMjUtMjUtNjUu=
+NiAwLTkwLjVsOTAuNS05MC41YzI1LTI1IDY1LjUtMjUgOTAuNSAwIDcuOCA3LjggMTIuOSAxNy4=
+yIDE1LjggMjcuMSAyLjQtMS40IDQuOC0yLjUgNi44LTQuNWw0Mi4xLTQyYy01LjQtOS4yLTExLj=
+YtMTgtMTkuNC0yNS44IC01MC01MC0xMzEtNTAtMTgxIDBsLTkwLjUgOTAuNWMtNTAgNTAtNTAgM=
+TMxIDAgMTgxIDUwIDUwIDEzMSA1MCAxODEgMGw2OC42LTY4LjZDMjc0LjYgMzk1LjEgMjQ2LjQg=
+MzkyLjMgMjIwLjMgMzgyLjJ6Ii8+PC9zdmc+Cg=3D=3D"); opacity: 0.5; visibility: h=
+idden; display: inline-block; vertical-align: middle; }
+
+.FDQvA h1:hover > .share-link::before, .FDQvA h2:hover > .share-link::befor=
+e, .FDQvA .share-link:hover::before { visibility: visible; }
+
+.FDQvA a { text-decoration: none; color: rgb(50, 50, 159); }
+
+.FDQvA a:visited { color: rgb(50, 50, 159); }
+
+.FDQvA a:hover { color: rgb(104, 104, 207); text-decoration: none; }
+
+.ctYaUb { display: inline; }
+
+.esMkSs { position: relative; }
+
+.fyLVJX:hover > .sc-koXPp { opacity: 1; }
+
+.jJRLaa { font-family: Courier, monospace; font-size: 13px; white-space: pr=
+e; contain: content; overflow-x: auto; }
+
+.jJRLaa .redoc-json code > .collapser { display: none; pointer-events: none=
+; }
+
+.jJRLaa .callback-function { color: gray; }
+
+.jJRLaa .collapser::after { content: "-"; cursor: pointer; }
+
+.jJRLaa .collapsed > .collapser::after { content: "+"; cursor: pointer; }
+
+.jJRLaa .ellipsis::after { content: " =E2=80=A6 "; }
+
+.jJRLaa .collapsible { margin-left: 2em; }
+
+.jJRLaa .hoverable { padding: 1px 2px; border-radius: 2px; }
+
+.jJRLaa .hovered { background-color: rgb(235, 238, 249); }
+
+.jJRLaa .collapser { background-color: transparent; border: 0px; color: rgb=
+(255, 255, 255); font-family: Courier, monospace; font-size: 13px; display:=
+ flex; -webkit-box-align: center; align-items: center; -webkit-box-pack: ce=
+nter; justify-content: center; width: 15px; height: 15px; position: absolut=
+e; top: 4px; left: -1.5em; cursor: default; user-select: none; padding: 2px=
+; }
+
+.jJRLaa .collapser:focus { outline: rgb(255, 255, 255) dotted 1px; }
+
+.jJRLaa ul { list-style-type: none; padding: 0px; margin: 0px 0px 0px 26px;=
+ }
+
+.jJRLaa li { position: relative; display: block; }
+
+.jJRLaa .hoverable { display: inline-block; }
+
+.jJRLaa .selected { outline-width: 1px; outline-style: dotted; }
+
+.jJRLaa .collapsed > .collapsible { display: none; }
+
+.jJRLaa .ellipsis { display: none; }
+
+.jJRLaa .collapsed > .ellipsis { display: inherit; }
+
+.kqHFhX { padding: 0.9em; background-color: rgba(38, 50, 56, 0.4); margin: =
+0px 0px 10px; display: block; font-family: Montserrat, sans-serif; font-siz=
+e: 0.929em; line-height: 1.5em; }
+
+.iQMUWd { font-family: Montserrat, sans-serif; font-size: 12px; position: a=
+bsolute; z-index: 1; top: -11px; left: 12px; font-weight: 600; color: rgba(=
+255, 255, 255, 0.7); }
+
+.fIhWJA { position: relative; }
+
+.bFmgGd { margin: 0px 0px 10px; display: block; background-color: rgba(38, =
+50, 56, 0.4); border: none; padding: 0.9em 1.6em 0.9em 0.9em; box-shadow: n=
+one; }
+
+.bFmgGd label { color: rgb(255, 255, 255); text-overflow: ellipsis; white-s=
+pace: nowrap; overflow: hidden; font-size: 1em; text-transform: none; borde=
+r: none; }
+
+.bFmgGd:hover, .bFmgGd:focus-within { border: none; box-shadow: none; backg=
+round-color: rgba(38, 50, 56, 0.7); }
+
+.dTOtRY { font-family: Courier, monospace; font-size: 12px; color: rgb(238,=
+ 128, 127); }
+
+.hPVmXE { margin-top: 15px; }
+
+.lmPAIU { vertical-align: middle; font-size: 13px; line-height: 20px; }
+
+.bZSMCf { color: rgba(102, 102, 102, 0.9); }
+
+.iHgalF { color: rgb(102, 102, 102); }
+
+.dBPdaM { color: rgb(212, 31, 28); font-size: 0.9em; font-weight: normal; m=
+argin-left: 20px; line-height: 1; }
+
+.dEQDjv { border-radius: 2px; word-break: break-word; background-color: rgb=
+a(51, 51, 51, 0.05); color: rgba(51, 51, 51, 0.9); padding: 0px 5px; border=
+: 1px solid rgba(51, 51, 51, 0.1); font-family: Courier, monospace; }
+
+.sc-ddjGPC + .sc-ddjGPC { margin-left: 0px; }
+
+.fCYfYV::after { content: " and "; font-weight: normal; }
+
+.fCYfYV:last-child::after { content: none; }
+
+.fCYfYV a { text-decoration: none; color: rgb(50, 50, 159); }
+
+.fCYfYV a:visited { color: rgb(50, 50, 159); }
+
+.fCYfYV a:hover { color: rgb(104, 104, 207); text-decoration: none; }
+
+.ezhZdr { white-space: nowrap; }
+
+.ezhZdr::after { content: " or "; white-space: pre; }
+
+.ezhZdr:last-child::after, .ezhZdr:only-child::after { content: none; }
+
+.ezhZdr a { text-decoration: none; color: rgb(50, 50, 159); }
+
+.ezhZdr a:visited { color: rgb(50, 50, 159); }
+
+.ezhZdr a:hover { color: rgb(104, 104, 207); text-decoration: none; }
+
+.fJRIzN { flex: 1 1 auto; cursor: pointer; }
+
+.jiAhSp { width: 75%; text-overflow: ellipsis; border-radius: 4px; overflow=
+: hidden; }
+
+@media screen and (max-width: 50rem) {
+  .jiAhSp { margin-top: 10px; }
+}
+
+.hjazRA { display: inline-block; margin: 0px; }
+
+.cDocAe { width: 100%; display: flex; margin: 1em 0px; flex-direction: row;=
+ }
+
+@media screen and (max-width: 50rem) {
+  .cDocAe { flex-direction: column; }
+}
+
+.kxOCzH { margin-top: 0px; margin-bottom: 0.5em; }
+
+.gDfmoL { border: 1px solid rgb(50, 50, 159); color: rgb(50, 50, 159); font=
+-weight: normal; margin-left: 0.5em; padding: 4px 8px; display: inline-bloc=
+k; text-decoration: none; cursor: pointer; }
+
+.hDOFXM { width: 9ex; display: inline-block; height: 13px; line-height: 13p=
+x; background-color: rgb(51, 51, 51); border-radius: 3px; background-repeat=
+: no-repeat; background-position: 6px 4px; font-size: 7px; font-family: Ver=
+dana, sans-serif; color: white; text-transform: uppercase; text-align: cent=
+er; font-weight: bold; vertical-align: middle; margin-right: 6px; margin-to=
+p: 2px; }
+
+.hDOFXM.get { background-color: rgb(47, 129, 50); }
+
+.hDOFXM.post { background-color: rgb(24, 111, 175); }
+
+.hDOFXM.put { background-color: rgb(149, 80, 124); }
+
+.hDOFXM.options { background-color: rgb(148, 112, 20); }
+
+.hDOFXM.patch { background-color: rgb(191, 88, 29); }
+
+.hDOFXM.delete { background-color: rgb(204, 51, 51); }
+
+.hDOFXM.basic { background-color: rgb(112, 112, 112); }
+
+.hDOFXM.link { background-color: rgb(7, 129, 143); }
+
+.hDOFXM.head { background-color: rgb(162, 61, 173); }
+
+.hDOFXM.hook { background-color: rgb(50, 50, 159); }
+
+.hDOFXM.schema { background-color: rgb(112, 112, 112); }
+
+.eoKbCJ { margin: 0px; padding: 0px; }
+
+.eoKbCJ:first-child { padding-bottom: 32px; }
+
+.sc-kYxDKI .sc-kYxDKI { font-size: 0.929em; }
+
+.YyzeY { margin: 0px; padding: 0px; display: none; }
+
+.YyzeY:first-child { padding-bottom: 32px; }
+
+.sc-kYxDKI .sc-kYxDKI { font-size: 0.929em; }
+
+.itmOnH { list-style: inside none none; overflow: hidden; text-overflow: el=
+lipsis; padding: 0px; }
+
+.kbFLfk { cursor: pointer; color: rgb(51, 51, 51); margin: 0px; padding: 12=
+.5px 20px; display: flex; -webkit-box-pack: justify; justify-content: space=
+-between; font-family: Montserrat, sans-serif; font-size: 0.929em; text-tra=
+nsform: none; background-color: rgb(250, 250, 250); }
+
+.kbFLfk:hover { color: rgb(50, 50, 159); background-color: rgb(225, 225, 22=
+5); }
+
+.kbFLfk .sc-cwHptR { height: 1.5em; width: 1.5em; }
+
+.kbFLfk .sc-cwHptR polygon { fill: rgb(51, 51, 51); }
+
+.iACzre { cursor: pointer; color: rgb(51, 51, 51); margin: 0px; padding: 12=
+.5px 20px; display: flex; -webkit-box-pack: justify; justify-content: space=
+-between; font-family: Montserrat, sans-serif; background-color: rgb(250, 2=
+50, 250); }
+
+.iACzre:hover { color: rgb(50, 50, 159); background-color: rgb(237, 237, 23=
+7); }
+
+.iACzre .sc-cwHptR { height: 1.5em; width: 1.5em; }
+
+.iACzre .sc-cwHptR polygon { fill: rgb(51, 51, 51); }
+
+.ijqoQq { display: inline-block; vertical-align: middle; width: calc(100% -=
+ 38px); overflow: hidden; text-overflow: ellipsis; }
+
+.ccKipA { font-size: 0.8em; margin-top: 10px; text-align: center; position:=
+ fixed; width: 260px; bottom: 0px; background: rgb(250, 250, 250); }
+
+.ccKipA a, .ccKipA a:visited, .ccKipA a:hover { padding: 5px 0px; border-to=
+p: 1px solid rgb(225, 225, 225); text-decoration: none; display: flex; -web=
+kit-box-align: center; align-items: center; -webkit-box-pack: center; justi=
+fy-content: center; color: rgb(51, 51, 51) !important; }
+
+.ccKipA img { width: 15px; margin-right: 5px; }
+
+@media screen and (max-width: 50rem) {
+  .ccKipA { width: 100%; }
+}
+
+.jKIcgw { cursor: pointer; position: relative; margin-bottom: 5px; }
+
+.lmuCWo { font-family: Courier, monospace; margin-left: 10px; flex: 1 1 0%;=
+ overflow-x: hidden; text-overflow: ellipsis; }
+
+.kJYWtq { outline: 0px; color: inherit; width: 100%; text-align: left; curs=
+or: pointer; padding: 10px 30px 10px 20px; border-radius: 4px 4px 0px 0px; =
+background-color: rgb(17, 23, 26); display: flex; white-space: nowrap; -web=
+kit-box-align: center; align-items: center; border-width: 1px 1px 0px; bord=
+er-top-style: solid; border-right-style: solid; border-left-style: solid; b=
+order-top-color: transparent; border-right-color: transparent; border-left-=
+color: transparent; border-image: initial; border-bottom-style: initial; bo=
+rder-bottom-color: initial; transition: border-color 0.25s; }
+
+.kJYWtq:focus { box-shadow: rgba(0, 0, 0, 0.45) 0px 2px 2px inset, rgba(128=
+, 128, 128, 0.25) 0px 2px 0px; }
+
+.kDzUVU { font-size: 0.929em; line-height: 20px; background-color: rgb(47, =
+129, 50); color: rgb(255, 255, 255); padding: 3px 10px; text-transform: upp=
+ercase; font-family: Montserrat, sans-serif; margin: 0px; }
+
+.jjWbju { font-size: 0.929em; line-height: 20px; background-color: rgb(24, =
+111, 175); color: rgb(255, 255, 255); padding: 3px 10px; text-transform: up=
+percase; font-family: Montserrat, sans-serif; margin: 0px; }
+
+.jLavRV { font-size: 0.929em; line-height: 20px; background-color: rgb(149,=
+ 80, 124); color: rgb(255, 255, 255); padding: 3px 10px; text-transform: up=
+percase; font-family: Montserrat, sans-serif; margin: 0px; }
+
+.hZWvcU { font-size: 0.929em; line-height: 20px; background-color: rgb(204,=
+ 51, 51); color: rgb(255, 255, 255); padding: 3px 10px; text-transform: upp=
+ercase; font-family: Montserrat, sans-serif; margin: 0px; }
+
+.jLxaiG { position: absolute; width: 100%; z-index: 100; background: rgb(25=
+0, 250, 250); color: rgb(38, 50, 56); box-sizing: border-box; box-shadow: r=
+gba(0, 0, 0, 0.33) 0px 0px 6px; overflow: hidden; border-bottom-left-radius=
+: 4px; border-bottom-right-radius: 4px; transition: 0.25s; visibility: hidd=
+en; transform: translateY(-50%) scaleY(0); }
+
+.fAZrna { padding: 10px; }
+
+.koYpNM { padding: 5px; border: 1px solid rgb(204, 204, 204); background: r=
+gb(255, 255, 255); word-break: break-all; color: rgb(50, 50, 159); }
+
+.koYpNM > span { color: rgb(51, 51, 51); }
+
+.gckpsV { text-transform: lowercase; margin-left: 0px; line-height: 1.5em; =
+}
+
+.bFiTlt { display: block; border: 0px; width: 100%; text-align: left; paddi=
+ng: 10px; border-radius: 2px; margin-bottom: 4px; line-height: 1.5em; color=
+: rgb(29, 129, 39); background-color: rgba(29, 129, 39, 0.07); cursor: defa=
+ult; }
+
+.bFiTlt:focus { outline: rgb(29, 129, 39) auto; }
+
+.bFiTlt::before { content: "=E2=80=94"; font-weight: bold; width: 1.5em; te=
+xt-align: center; display: inline-block; vertical-align: top; }
+
+.bFiTlt:focus { outline: 0px; }
+
+.fZRtWb { display: block; border: 0px; width: 100%; text-align: left; paddi=
+ng: 10px; border-radius: 2px; margin-bottom: 4px; line-height: 1.5em; curso=
+r: pointer; color: rgb(29, 129, 39); background-color: rgba(29, 129, 39, 0.=
+07); }
+
+.fZRtWb:focus { outline: rgb(29, 129, 39) auto; }
+
+.cMtbfc { vertical-align: top; }
+
+.ciDERN { font-size: 1.3em; padding: 0.2em 0px; margin: 3em 0px 1.1em; colo=
+r: rgb(51, 51, 51); font-weight: normal; }
+
+.bxAVpD { margin-bottom: 30px; }
+
+.hJpxRL { user-select: none; width: 20px; height: 20px; align-self: center;=
+ display: flex; flex-direction: column; color: rgb(50, 50, 159); }
+
+.iVHMBI { width: 260px; background-color: rgb(250, 250, 250); overflow: hid=
+den; display: flex; flex-direction: column; backface-visibility: hidden; he=
+ight: 100vh; position: sticky; top: 0px; }
+
+@media screen and (max-width: 50rem) {
+  .iVHMBI { position: fixed; z-index: 20; width: 100%; background: rgb(250,=
+ 250, 250); display: none; }
+}
+
+@media print {
+  .iVHMBI { display: none; }
+}
+
+.goQxSG { outline: none; user-select: none; background-color: rgb(242, 242,=
+ 242); color: rgb(50, 50, 159); display: none; cursor: pointer; position: f=
+ixed; right: 20px; z-index: 100; border-radius: 50%; box-shadow: rgba(0, 0,=
+ 0, 0.3) 0px 0px 20px; bottom: 44px; width: 60px; height: 60px; padding: 0p=
+x 20px; }
+
+@media screen and (max-width: 50rem) {
+  .goQxSG { display: flex; }
+}
+
+.goQxSG svg { color: rgb(0, 101, 251); }
+
+@media print {
+  .goQxSG { display: none; }
+}
+
+.jvNsve { font-family: Roboto, sans-serif; font-size: 14px; font-weight: 40=
+0; line-height: 1.5em; color: rgb(51, 51, 51); display: flex; position: rel=
+ative; text-align: left; -webkit-font-smoothing: antialiased; text-size-adj=
+ust: 100%; text-rendering: optimizespeed !important; }
+
+.jvNsve * { box-sizing: border-box; -webkit-tap-highlight-color: rgba(255, =
+255, 255, 0); }
+
+.dQiXRu { z-index: 1; position: relative; overflow: hidden; width: calc(100=
+% - 260px); contain: layout; }
+
+@media print, screen and (max-width: 50rem) {
+  .dQiXRu { width: 100%; }
+}
+
+.gwMRTQ { background: rgb(38, 50, 56); position: absolute; top: 0px; bottom=
+: 0px; right: 0px; width: calc(40% - 104px); }
+
+@media print, screen and (max-width: 75rem) {
+  .gwMRTQ { display: none; }
+}
+
+.jwpqNI { padding: 5px 0px; }
+
+.gfkSLd { width: calc(100% - 40px); box-sizing: border-box; margin: 0px 20p=
+x; padding: 5px 10px 5px 20px; border-width: 0px 0px 1px; border-top-style:=
+ initial; border-right-style: initial; border-left-style: initial; border-t=
+op-color: initial; border-right-color: initial; border-left-color: initial;=
+ border-image: initial; border-bottom-style: solid; border-bottom-color: rg=
+b(225, 225, 225); font-family: Roboto, sans-serif; font-weight: bold; font-=
+size: 13px; color: rgb(51, 51, 51); background-color: transparent; outline:=
+ none; }
+
+.HJXho { position: absolute; left: 20px; height: 1.8em; width: 0.9em; }
+
+.HJXho path { fill: rgb(51, 51, 51); }
+
+@-webkit-keyframes gtRCGH {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes gtRCGH {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+------MultipartBoundary--oP3l7dy3nTEzYqkClR6iIe7DBuOw2hzJfXxDkAgsHc----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-cf449bcb-4738-497b-ad14-dcf302ca5990@mhtml.blink
+
+@charset "utf-8";
+
+.ps { overflow-anchor: none; touch-action: auto; overflow: hidden !importan=
+t; }
+
+.ps__rail-x { display: none; opacity: 0; transition: background-color 0.2s =
+linear, opacity 0.2s linear; height: 15px; bottom: 0px; position: absolute;=
+ }
+
+.ps__rail-y { display: none; opacity: 0; transition: background-color 0.2s =
+linear, opacity 0.2s linear; width: 15px; right: 0px; position: absolute; }
+
+.ps--active-x > .ps__rail-x, .ps--active-y > .ps__rail-y { display: block; =
+background-color: transparent; }
+
+.ps:hover > .ps__rail-x, .ps:hover > .ps__rail-y, .ps--focus > .ps__rail-x,=
+ .ps--focus > .ps__rail-y, .ps--scrolling-x > .ps__rail-x, .ps--scrolling-y=
+ > .ps__rail-y { opacity: 0.6; }
+
+.ps .ps__rail-x:hover, .ps .ps__rail-y:hover, .ps .ps__rail-x:focus, .ps .p=
+s__rail-y:focus, .ps .ps__rail-x.ps--clicking, .ps .ps__rail-y.ps--clicking=
+ { background-color: rgb(238, 238, 238); opacity: 0.9; }
+
+.ps__thumb-x { background-color: rgb(170, 170, 170); border-radius: 6px; tr=
+ansition: background-color 0.2s linear, height 0.2s ease-in-out; height: 6p=
+x; bottom: 2px; position: absolute; }
+
+.ps__thumb-y { background-color: rgb(170, 170, 170); border-radius: 6px; tr=
+ansition: background-color 0.2s linear, width 0.2s ease-in-out; width: 6px;=
+ right: 2px; position: absolute; }
+
+.ps__rail-x:hover > .ps__thumb-x, .ps__rail-x:focus > .ps__thumb-x, .ps__ra=
+il-x.ps--clicking .ps__thumb-x { background-color: rgb(153, 153, 153); heig=
+ht: 11px; }
+
+.ps__rail-y:hover > .ps__thumb-y, .ps__rail-y:focus > .ps__thumb-y, .ps__ra=
+il-y.ps--clicking .ps__thumb-y { background-color: rgb(153, 153, 153); widt=
+h: 11px; }
+
+@supports (-ms-overflow-style: none) {
+  .ps { overflow: auto !important; }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps { overflow: auto !important; }
+}
+------MultipartBoundary--oP3l7dy3nTEzYqkClR6iIe7DBuOw2hzJfXxDkAgsHc----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-78c5b755-f803-4a4c-9919-fd6b3cc4ce1a@mhtml.blink
+
+@charset "utf-8";
+
+body { margin: 0px; padding: 0px; }
+------MultipartBoundary--oP3l7dy3nTEzYqkClR6iIe7DBuOw2hzJfXxDkAgsHc------
