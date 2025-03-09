@@ -1,0 +1,1864 @@
+{
+	"info": {
+		"_postman_id": "e5e40989-177c-41ec-807c-a468c7473566",
+		"name": "Web-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42850386"
+	},
+	"item": [
+		{
+			"name": "https://wep-app.onrender.com/api/register/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test1\",\r\n    \"email\": \"test1@ukr.net\",\r\n    \"password\": \"12345678\",\r\n    \"gender\": \"M\",\r\n    \"birth_date\": \"2000-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wep-app.onrender.com/api/register/",
+					"protocol": "https",
+					"host": [
+						"wep-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"register",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://wep-app.onrender.com/api/register/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMzUwMjU5LCJpYXQiOjE3NDEzNDk5NTksImp0aSI6IjE0Y2JmNTZjYjYxMDQyZTk5MzNkYzU1YzhhN2E3MDhhIiwidXNlcl9pZCI6Mn0.qZYyrcYQ_XsUJ9-J04C0Qpz7MKzpK8Z9izmqEENKBIo",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"test1\",\r\n    \"email\": \"test1@ukr.net\",\r\n    \"password\": \"12345678\",\r\n    \"gender\": \"M\",\r\n    \"birth_date\": \"2000-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/register/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"register",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 15:56:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "19c61399-fee2-4f5f"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbc2909a8ad589-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"test1\",\n    \"email\": \"test1@ukr.net\",\n    \"gender\": \"M\",\n    \"birth_date\": \"2000-01-01\",\n    \"avatar\": null\n}"
+				},
+				{
+					"name": "https://wep-app.onrender.com/api/register/ - error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"test2\",\r\n    \"email\": \"test1@ukr.net\",\r\n    \"password\": \"123456789\",\r\n    \"gender\": \"F\",\r\n    \"birth_date\": \"2003-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/register/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"register",
+								""
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:12:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "53"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "688e174a-0a9d-4063"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbdb48c990d589-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"email\": [\n        \"user with this email already exists.\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "https://wep-app.onrender.com/api/login/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMzUwMjU5LCJpYXQiOjE3NDEzNDk5NTksImp0aSI6IjE0Y2JmNTZjYjYxMDQyZTk5MzNkYzU1YzhhN2E3MDhhIiwidXNlcl9pZCI6Mn0.qZYyrcYQ_XsUJ9-J04C0Qpz7MKzpK8Z9izmqEENKBIo",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test1@ukr.net\",\r\n    \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wep-app.onrender.com/api/login/",
+					"protocol": "https",
+					"host": [
+						"wep-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://wep-app.onrender.com/api/login/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMzUwMjU5LCJpYXQiOjE3NDEzNDk5NTksImp0aSI6IjE0Y2JmNTZjYjYxMDQyZTk5MzNkYzU1YzhhN2E3MDhhIiwidXNlcl9pZCI6Mn0.qZYyrcYQ_XsUJ9-J04C0Qpz7MKzpK8Z9izmqEENKBIo",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test1@ukr.net\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/login/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 15:58:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "344"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "149443cf-4b3e-4962"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbc624dd5fd587-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0MTYyMjMxMCwiaWF0IjoxNzQxNTM1OTEwLCJqdGkiOiJlYmZlYmQ1ZWI0NTI0ZjVkYTc1ZjQ0MTQyZDBlM2I2ZiIsInVzZXJfaWQiOjh9.iI4FY87AC0XT3WqGAPuXEd_ZekDkW8zH41AJn3zg7OI\",\n    \"access\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2MjEwLCJpYXQiOjE3NDE1MzU5MTAsImp0aSI6Ijg2YzliMmI4Yzc1MjQwNDBiNDgxYzdhYWRhYjNmYjNiIiwidXNlcl9pZCI6OH0.w5LflctkJdi7rz4XSKFiY4slkRqXxqrBzUl5uFXFStU\"\n}"
+				},
+				{
+					"name": "https://wep-app.onrender.com/api/login/  - error wrong password",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMzUwMjU5LCJpYXQiOjE3NDEzNDk5NTksImp0aSI6IjE0Y2JmNTZjYjYxMDQyZTk5MzNkYzU1YzhhN2E3MDhhIiwidXNlcl9pZCI6Mn0.qZYyrcYQ_XsUJ9-J04C0Qpz7MKzpK8Z9izmqEENKBIo",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test1@ukr.net\",\r\n    \"password\": \"123456789\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/login/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:14:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "311fc069-cd9b-483f"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbdd8deaa6d583-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid credentials\"\n}"
+				},
+				{
+					"name": "https://wep-app.onrender.com/api/login/ - error wrong email",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxMzUwMjU5LCJpYXQiOjE3NDEzNDk5NTksImp0aSI6IjE0Y2JmNTZjYjYxMDQyZTk5MzNkYzU1YzhhN2E3MDhhIiwidXNlcl9pZCI6Mn0.qZYyrcYQ_XsUJ9-J04C0Qpz7MKzpK8Z9izmqEENKBIo",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test11@ukr.net\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/login/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"login",
+								""
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:15:23 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "2e8aa356-3823-487f"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbdedb2e08d583-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": \"Invalid credentials\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://wep-app.onrender.com/api/profile/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2MjEwLCJpYXQiOjE3NDE1MzU5MTAsImp0aSI6Ijg2YzliMmI4Yzc1MjQwNDBiNDgxYzdhYWRhYjNmYjNiIiwidXNlcl9pZCI6OH0.w5LflctkJdi7rz4XSKFiY4slkRqXxqrBzUl5uFXFStU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wep-app.onrender.com/api/profile/",
+					"protocol": "https",
+					"host": [
+						"wep-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://wep-app.onrender.com/api/profile/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2MjEwLCJpYXQiOjE3NDE1MzU5MTAsImp0aSI6Ijg2YzliMmI4Yzc1MjQwNDBiNDgxYzdhYWRhYjNmYjNiIiwidXNlcl9pZCI6OH0.w5LflctkJdi7rz4XSKFiY4slkRqXxqrBzUl5uFXFStU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/profile/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"profile",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:02:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "GET, PUT, HEAD, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "d0800d1a-0d15-4e77"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbcba19f71d581-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"test1\",\n    \"email\": \"test1@ukr.net\",\n    \"gender\": \"M\",\n    \"birth_date\": \"2000-01-01\",\n    \"avatar\": null\n}"
+				},
+				{
+					"name": "https://wep-app.onrender.com/api/profile/ - error without token",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/profile/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"profile",
+								""
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:16:22 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "GET, PUT, HEAD, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "402334d0-3962-405d"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "www-authenticate",
+							"value": "Bearer realm=\"api\""
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbe059294ad58b-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"detail\": \"Authentication credentials were not provided.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://wep-app.onrender.com/api/profile/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2MjEwLCJpYXQiOjE3NDE1MzU5MTAsImp0aSI6Ijg2YzliMmI4Yzc1MjQwNDBiNDgxYzdhYWRhYjNmYjNiIiwidXNlcl9pZCI6OH0.w5LflctkJdi7rz4XSKFiY4slkRqXxqrBzUl5uFXFStU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"birth_date\": \"2003-05-24\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wep-app.onrender.com/api/profile/",
+					"protocol": "https",
+					"host": [
+						"wep-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://wep-app.onrender.com/api/profile/",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2MjEwLCJpYXQiOjE3NDE1MzU5MTAsImp0aSI6Ijg2YzliMmI4Yzc1MjQwNDBiNDgxYzdhYWRhYjNmYjNiIiwidXNlcl9pZCI6OH0.w5LflctkJdi7rz4XSKFiY4slkRqXxqrBzUl5uFXFStU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"birth_date\": \"2003-05-24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/profile/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"profile",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:02:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "81"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "GET, PUT, HEAD, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "e341fd32-7b27-42b2"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbcc4c3c3bd581-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"username\": \"test1\",\n    \"email\": \"test1@ukr.net\",\n    \"gender\": \"M\",\n    \"birth_date\": \"2003-05-24\",\n    \"avatar\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "https://wep-app.onrender.com/api/about/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2MjEwLCJpYXQiOjE3NDE1MzU5MTAsImp0aSI6Ijg2YzliMmI4Yzc1MjQwNDBiNDgxYzdhYWRhYjNmYjNiIiwidXNlcl9pZCI6OH0.w5LflctkJdi7rz4XSKFiY4slkRqXxqrBzUl5uFXFStU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wep-app.onrender.com/api/about/",
+					"protocol": "https",
+					"host": [
+						"wep-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"about",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://wep-app.onrender.com/api/about/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2MjEwLCJpYXQiOjE3NDE1MzU5MTAsImp0aSI6Ijg2YzliMmI4Yzc1MjQwNDBiNDgxYzdhYWRhYjNmYjNiIiwidXNlcl9pZCI6OH0.w5LflctkJdi7rz4XSKFiY4slkRqXxqrBzUl5uFXFStU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/about/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"about",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:03:04 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "405"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "80279045-bce6-4129"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbcce0490dd581-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"logo\": \"https://wep-app.onrender.com/static/img/logo.png\",\n    \"description\": \"Ласкаво просимо до To-Do List — додатку, який допоможе вам організувати ваші щоденні завдання з легкістю.\",\n    \"features\": [\n        \"Додавання нових завдань із заголовком і описом\",\n        \"Позначення завдань як виконаних\",\n        \"Редагування та видалення завдань\",\n        \"Сортування завдань за статусом виконання\",\n        \"Зручний інтерфейс для роботи з вашим профілем\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "https://wep-app.onrender.com/api/tasks/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2NTU3LCJpYXQiOjE3NDE1MzYyNTcsImp0aSI6Ijc5ZjhmMjBkNjcwNTQyMTNhOGE5NTE2YzA0MDg2OGJhIiwidXNlcl9pZCI6OH0.h7gYdjn8s6_2s6NJyGQFjt50lK6PkNwiYScnYnkC0Zo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Тестова задача\",\r\n    \"description\": \"Перевірити API\",\r\n    \"completed\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wep-app.onrender.com/api/tasks/",
+					"protocol": "https",
+					"host": [
+						"wep-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://wep-app.onrender.com/api/tasks/",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2NTU3LCJpYXQiOjE3NDE1MzYyNTcsImp0aSI6Ijc5ZjhmMjBkNjcwNTQyMTNhOGE5NTE2YzA0MDg2OGJhIiwidXNlcl9pZCI6OH0.h7gYdjn8s6_2s6NJyGQFjt50lK6PkNwiYScnYnkC0Zo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Тестова задача\",\r\n    \"description\": \"Перевірити API\",\r\n    \"completed\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/tasks/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"tasks",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:04:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "138"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "531c82c6-1ad4-45b8"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbcef5b817d581-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 19,\n    \"title\": \"Тестова задача\",\n    \"description\": \"Перевірити API\",\n    \"completed\": false,\n    \"created_at\": \"2025-03-09T16:04:29.745419Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://wep-app.onrender.com/api/task/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2NTU3LCJpYXQiOjE3NDE1MzYyNTcsImp0aSI6Ijc5ZjhmMjBkNjcwNTQyMTNhOGE5NTE2YzA0MDg2OGJhIiwidXNlcl9pZCI6OH0.h7gYdjn8s6_2s6NJyGQFjt50lK6PkNwiYScnYnkC0Zo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wep-app.onrender.com/api/tasks/19/",
+					"protocol": "https",
+					"host": [
+						"wep-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"19",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://wep-app.onrender.com/api/task/",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2NTU3LCJpYXQiOjE3NDE1MzYyNTcsImp0aSI6Ijc5ZjhmMjBkNjcwNTQyMTNhOGE5NTE2YzA0MDg2OGJhIiwidXNlcl9pZCI6OH0.h7gYdjn8s6_2s6NJyGQFjt50lK6PkNwiYScnYnkC0Zo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/tasks/19/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"19",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:06:00 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "138"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "b2aa68d5-c637-4fcd"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbd12d9d7dd586-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 19,\n    \"title\": \"Тестова задача\",\n    \"description\": \"Перевірити API\",\n    \"completed\": false,\n    \"created_at\": \"2025-03-09T16:04:29.745419Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://wep-app.onrender.com/api/task/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2NTU3LCJpYXQiOjE3NDE1MzYyNTcsImp0aSI6Ijc5ZjhmMjBkNjcwNTQyMTNhOGE5NTE2YzA0MDg2OGJhIiwidXNlcl9pZCI6OH0.h7gYdjn8s6_2s6NJyGQFjt50lK6PkNwiYScnYnkC0Zo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"completed\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wep-app.onrender.com/api/tasks/19/",
+					"protocol": "https",
+					"host": [
+						"wep-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"19",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://wep-app.onrender.com/api/task/",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2NTU3LCJpYXQiOjE3NDE1MzYyNTcsImp0aSI6Ijc5ZjhmMjBkNjcwNTQyMTNhOGE5NTE2YzA0MDg2OGJhIiwidXNlcl9pZCI6OH0.h7gYdjn8s6_2s6NJyGQFjt50lK6PkNwiYScnYnkC0Zo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"completed\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/tasks/19/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"19",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:06:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "137"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "6e723b7b-ab67-43e6"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbd250f991d586-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 19,\n    \"title\": \"Тестова задача\",\n    \"description\": \"Перевірити API\",\n    \"completed\": true,\n    \"created_at\": \"2025-03-09T16:04:29.745419Z\"\n}"
+				}
+			]
+		},
+		{
+			"name": "https://wep-app.onrender.com/api/task/",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2NTU3LCJpYXQiOjE3NDE1MzYyNTcsImp0aSI6Ijc5ZjhmMjBkNjcwNTQyMTNhOGE5NTE2YzA0MDg2OGJhIiwidXNlcl9pZCI6OH0.h7gYdjn8s6_2s6NJyGQFjt50lK6PkNwiYScnYnkC0Zo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://wep-app.onrender.com/api/tasks/19/",
+					"protocol": "https",
+					"host": [
+						"wep-app",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks",
+						"19",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://wep-app.onrender.com/api/task/",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQxNTM2NTU3LCJpYXQiOjE3NDE1MzYyNTcsImp0aSI6Ijc5ZjhmMjBkNjcwNTQyMTNhOGE5NTE2YzA0MDg2OGJhIiwidXNlcl9pZCI6OH0.h7gYdjn8s6_2s6NJyGQFjt50lK6PkNwiYScnYnkC0Zo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://wep-app.onrender.com/api/tasks/19/",
+							"protocol": "https",
+							"host": [
+								"wep-app",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"19",
+								""
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 09 Mar 2025 16:07:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "allow",
+							"value": "GET, PUT, DELETE, HEAD, OPTIONS"
+						},
+						{
+							"key": "cross-origin-opener-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "rndr-id",
+							"value": "815e6c80-3de8-4d99"
+						},
+						{
+							"key": "vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "DENY"
+						},
+						{
+							"key": "x-render-origin-server",
+							"value": "gunicorn"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "91dbd3cd0c50d586-KBP"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
