@@ -128,6 +128,11 @@ CORS_ALLOW_HEADERS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-app-backend-m6hf.onrender.com',
+    'http://localhost:8000',
+]
+
 ROOT_URLCONF = 'todo_project.urls'
 
 TEMPLATES = [
