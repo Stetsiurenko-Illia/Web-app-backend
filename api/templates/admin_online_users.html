@@ -30,7 +30,7 @@
 
     <script>
         // Підключення до WebSocket
-        const socket = new WebSocket('ws://localhost:8000/ws/online-users/');
+        const socket = new WebSocket(`${window.location.protocol === 'https:' ? 'wss' : 'ws'}://${window.location.host}/ws/online-users/`);
 
         socket.onopen = function(event) {
             console.log('WebSocket для онлайн-користувачів підключено');

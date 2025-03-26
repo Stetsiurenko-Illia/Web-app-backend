@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-a+ppp*8f+vax8iyjs0f*mfg0^_jt#g#n5+1me_0f!+_9zko9)s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['web-app-backend-m6hf.onrender.com', 'localhost', '127.0.0.1']
 
@@ -56,11 +56,11 @@ INSTALLED_APPS = [
 ]
 
 ASGI_APPLICATION = 'todo_project.asgi.application'
-CHANNEL_LAYERS = {
+CCHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            "hosts": [('127.0.0.1', 6379)],
+            "hosts": [os.getenv('REDIS_URL', 'redis://localhost:6379')],
         },
     },
 }
