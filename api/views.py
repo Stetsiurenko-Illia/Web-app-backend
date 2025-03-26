@@ -4,6 +4,8 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.tokens import RefreshToken
 from django.contrib.auth import authenticate
+from django.contrib.auth.decorators import user_passes_test
+from django.shortcuts import render
 from .models import Task
 from .serializers import (
     UserRegistrationSerializer, UserLoginSerializer, UserProfileSerializer, TaskSerializer
@@ -131,3 +133,13 @@ class TaskDetailView(APIView):
             return Response(status=status.HTTP_404_NOT_FOUND)
         task.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+def is_admin(user):
+    return user.is_authenticated and user.is_staff
+
+
+@user_passes_test(is_admin)
+def admin_online_users_view(request):
+    """Відображення сторінки зі списком онлайн-користувачів для адміністратора."""
+    return render(request, 'admin_online_users.html')

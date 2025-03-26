@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Users (Admin)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        #online-users {
+            list-style-type: none;
+            padding: 0;
+        }
+        #online-users li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Users</h1>
+    <ul id="online-users">
+        <li>Waiting for users...</li>
+    </ul>
+
+    <script>
+        // Підключення до WebSocket
+        const socket = new WebSocket('ws://localhost:8000/ws/online-users/');
+
+        socket.onopen = function(event) {
+            console.log('WebSocket для онлайн-користувачів підключено');
+        };
+
+        socket.onmessage = function(event) {
+            const data = JSON.parse(event.data);
+            if (data.action === 'online_users') {
+                console.log('Онлайн користувачі:', data.users);
+                // Оновлюємо список на сторінці
+                const userList = document.getElementById('online-users');
+                userList.innerHTML = ''; // Очищаємо список
+                if (data.users.length === 0) {
+                    userList.innerHTML = '<li>No users online</li>';
+                } else {
+                    data.users.forEach(user => {
+                        const li = document.createElement('li');
+                        li.textContent = user;
+                        userList.appendChild(li);
+                    });
+                }
+            }
+        };
+
+        socket.onclose = function(event) {
+            console.log('WebSocket відключено');
+            document.getElementById('online-users').innerHTML = '<li>Disconnected from server</li>';
+        };
+
+        socket.onerror = function(error) {
+            console.error('WebSocket error:', error);
+        };
+    </script>
+</body>
+</html>
