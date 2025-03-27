@@ -14,6 +14,7 @@ urlpatterns = [
     path('tasks/', TaskListView.as_view(), name='task-list'),
     path('tasks/<int:pk>/', TaskDetailView.as_view(), name='task-detail'),
     path('admin/online-users/', admin_online_users_view, name='admin_online_users'),
+
 ]
 
 if settings.DEBUG:
