@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test WebSocket - Tasks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        #login-form, #task-form {
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #error-message {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login-form">
+        <h1>Login</h1>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <button onclick="login()">Login</button>
+        <div id="error-message"></div>
+    </div>
+
+    <div id="task-form" style="display: none;">
+        <h1>Task Manager</h1>
+        <div class="form-group">
+            <label for="title">Task Title:</label>
+            <input type="text" id="title" placeholder="Enter task title">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" placeholder="Enter description"></textarea>
+        </div>
+        <button onclick="createTask()">Create Task</button>
+    </div>
+
+    <h2>Tasks</h2>
+    <ul id="task-list">
+        <li>Waiting for tasks...</li>
+    </ul>
+
+    <script>
+        let socket = null;
+        let token = null;
+
+        async function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            errorMessage.textContent = ''; // Очищаємо попередні помилки
+
+            try {
+                const response = await fetch('/api/token/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: email,
+                        password: password
+                    })
+                });
+
+                const data = await response.json();
+                if (response.ok) {
+                    token = data.access;
+                    console.log('Token:', token);
+                    document.getElementById('login-form').style.display = 'none';
+                    document.getElementById('task-form').style.display = 'block';
+                    connectWebSocket();
+                } else {
+                    errorMessage.textContent = data.detail || 'Login failed. Please check your credentials.';
+                }
+            } catch (error) {
+                console.error('Login error:', error);
+                errorMessage.textContent = 'Error during login. Please try again.';
+            }
+        }
+
+        function connectWebSocket() {
+            socket = new WebSocket(`wss://${window.location.host}/ws/tasks/?token=${token}`);
+
+            socket.onopen = function(event) {
+                console.log('WebSocket підключено');
+                document.getElementById('task-list').innerHTML = ''; // Очищаємо "Waiting for tasks..."
+            };
+
+            socket.onmessage = function(event) {
+                const data = JSON.parse(event.data);
+                if (data.action === 'create_task') {
+                    console.log('Нова задача:', data.task);
+                    const taskList = document.getElementById('task-list');
+                    const li = document.createElement('li');
+                    li.textContent = `${data.task.title} (by ${data.task.user}) - ${data.task.description}`;
+                    taskList.appendChild(li);
+                } else if (data.error) {
+                    console.error('Server error:', data.error);
+                    alert('Error: ' + data.error);
+                }
+            };
+
+            socket.onclose = function(event) {
+                console.log('WebSocket відключено', event);
+                document.getElementById('task-list').innerHTML = '<li>Disconnected from server</li>';
+            };
+
+            socket.onerror = function(error) {
+                console.error('WebSocket error:', error);
+            };
+        }
+
+        function createTask() {
+            const title = document.getElementById('title').value;
+            const description = document.getElementById('description').value;
+            if (title) {
+                socket.send(JSON.stringify({
+                    action: 'create_task',
+                    title: title,
+                    description: description,
+                    completed: false
+                }));
+                document.getElementById('title').value = '';
+                document.getElementById('description').value = '';
+            } else {
+                alert('Please enter a task title');
+            }
+        }
+    </script>
+</body>
+</html>
