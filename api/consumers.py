@@ -9,13 +9,16 @@ logger = logging.getLogger(__name__)
 class TaskConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         self.user = self.scope['user']
-        logger.info(f"Connecting user: {self.user}, authenticated: {self.user.is_authenticated}")
         if self.user.is_authenticated:
             self.group_name = 'tasks'
-            logger.info(f"Adding to group: {self.group_name}, channel: {self.channel_name}")
             await self.channel_layer.group_add(self.group_name, self.channel_name)
             await self.accept()
             await self.update_online_users()
+
+            import asyncio
+            while True:
+                await asyncio.sleep(30)
+                await self.send(text_data=json.dumps({'action': 'heartbeat'}))
         else:
             logger.warning("User not authenticated, closing connection")
             await self.close()

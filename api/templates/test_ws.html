@@ -127,17 +127,19 @@
 
             socket.onmessage = function(event) {
                 const data = JSON.parse(event.data);
-                if (data.action === 'create_task') {
-                    console.log('Нова задача:', data.task);
-                    const taskList = document.getElementById('task-list');
-                    const li = document.createElement('li');
-                    li.textContent = `${data.task.title} (by ${data.task.user}) - ${data.task.description}`;
-                    taskList.appendChild(li);
-                } else if (data.error) {
-                    console.error('Server error:', data.error);
-                    alert('Error: ' + data.error);
-                }
-            };
+                if (data.action === 'heartbeat') {
+                    console.log('Heartbeat received');
+                } else if (data.action === 'create_task') {
+                console.log('Нова задача:', data.task);
+                const taskList = document.getElementById('task-list');
+                const li = document.createElement('li');
+                li.textContent = `${data.task.title} (by ${data.task.user}) - ${data.task.description}`;
+                taskList.appendChild(li);
+            } else if (data.error) {
+            console.error('Server error:', data.error);
+            alert('Error: ' + data.error);
+            }
+           };
 
             socket.onclose = function(event) {
                 console.log('WebSocket відключено', event);
