@@ -4,7 +4,6 @@ from channels.generic.websocket import AsyncWebsocketConsumer
 from channels.db import database_sync_to_async
 from .models import Task, CustomUser
 
-# Налаштування логування
 logger = logging.getLogger(__name__)
 
 class TaskConsumer(AsyncWebsocketConsumer):
@@ -49,11 +48,9 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }))
                     return
 
-                # Зберігаємо задачу в базі даних
                 task = await self.create_task(title, description, completed)
                 logger.info(f"Task created: {task.id}")
 
-                # Надсилаємо повідомлення всім у групі
                 await self.channel_layer.group_send(
                     self.group_name,
                     {
@@ -117,3 +114,26 @@ class TaskConsumer(AsyncWebsocketConsumer):
                 'users': online_users,
             }
         )
+
+class OnlineUsersConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        self.user = self.scope['user']
+        logger.info(f"Connecting admin user: {self.user}, is_staff: {self.user.is_staff}")
+        if self.user.is_authenticated and self.user.is_staff:
+            await self.channel_layer.group_add('admin_online', self.channel_name)
+            await self.accept()
+        else:
+            logger.warning("User not admin, closing connection")
+            await self.close()
+
+    async def disconnect(self, close_code):
+        if self.user.is_authenticated and self.user.is_staff:
+            logger.info(f"Disconnecting admin user: {self.user}, close code: {close_code}")
+            await self.channel_layer.group_discard('admin_online', self.channel_name)
+
+    async def online_users_message(self, event):
+        logger.info(f"Sending online users to admin: {event['users']}")
+        await self.send(text_data=json.dumps({
+            'action': event['action'],
+            'users': event['users'],
+        }))
