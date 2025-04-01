@@ -13,8 +13,8 @@ urlpatterns = [
     path('about/', AboutView.as_view(), name='about'),
     path('tasks/', TaskListView.as_view(), name='task-list'),
     path('tasks/<int:pk>/', TaskDetailView.as_view(), name='task-detail'),
-    path('admin/online-users/', admin_online_users_view.as_view(), name='admin_online_users'),
-    path('test-ws/', test_ws_view.as_view(), name='test_ws'),
+    path('admin/online-users/', admin_online_users_view, name='admin_online_users'),
+    path('test-ws/', test_ws_view, name='test_ws'),
 ]
 
 if settings.DEBUG:
