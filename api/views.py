@@ -143,3 +143,6 @@ def is_admin(user):
 def admin_online_users_view(request):
     """Відображення сторінки зі списком онлайн-користувачів для адміністратора."""
     return render(request, 'admin_online_users.html')
+
+def test_ws_view(request):
+    return render(request, 'test_ws.html')
