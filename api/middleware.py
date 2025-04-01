@@ -15,7 +15,8 @@ def get_user_from_token(token):
         user_id = access_token['user_id']
         user = User.objects.get(id=user_id)
         return user
-    except (InvalidToken, TokenError, User.DoesNotExist):
+    except (InvalidToken, TokenError, User.DoesNotExist) as e:
+        print(f"Token validation error: {str(e)}")  # Додаємо логування
         return None
 
 class JWTAuthMiddleware:
@@ -38,9 +39,12 @@ class JWTAuthMiddleware:
             user = await get_user_from_token(token)
             if user:
                 scope['user'] = user
+                print(f"User authenticated: {user.email}")  # Додаємо логування
             else:
                 scope['user'] = None
+                print("User not authenticated: Invalid token")  # Додаємо логування
         else:
             scope['user'] = None
+            print("User not authenticated: No token provided")  # Додаємо логування
 
         return await self.app(scope, receive, send)

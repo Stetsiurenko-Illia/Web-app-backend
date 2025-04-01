@@ -13,18 +13,25 @@ class TaskConsumer(AsyncWebsocketConsumer):
         if self.user is not None and self.user.is_authenticated:
             self.group_name = 'tasks'
             logger.info(f"Adding to group: {self.group_name}, channel: {self.channel_name}")
-            await self.channel_layer.group_add(self.group_name, self.channel_name)
-            await self.accept()
-            await self.update_online_users()
+            try:
+                await self.channel_layer.group_add(self.group_name, self.channel_name)
+                await self.accept()
+                await self.update_online_users()
+            except Exception as e:
+                logger.error(f"Error in connect: {str(e)}")
+                await self.close(code=1011)  # Закриваємо з кодом 1011 у разі помилки
         else:
             logger.warning("User not authenticated, closing connection")
-            await self.close()
+            await self.close(code=1008)  # Код 1008 для помилок автентифікації
 
     async def disconnect(self, close_code):
         if self.user is not None and self.user.is_authenticated:
             logger.info(f"Disconnecting user: {self.user}, close code: {close_code}")
-            await self.channel_layer.group_discard(self.group_name, self.channel_name)
-            await self.update_online_users()
+            try:
+                await self.channel_layer.group_discard(self.group_name, self.channel_name)
+                await self.update_online_users()
+            except Exception as e:
+                logger.error(f"Error in disconnect: {str(e)}")
         else:
             logger.warning("Disconnecting unauthenticated user")
 
@@ -101,19 +108,27 @@ class TaskConsumer(AsyncWebsocketConsumer):
 
     @database_sync_to_async
     def get_online_users(self):
-        return list(CustomUser.objects.filter(is_online=True).values_list('email', flat=True))
+        try:
+            return list(CustomUser.objects.filter(is_online=True).values_list('email', flat=True))
+        except Exception as e:
+            logger.error(f"Error getting online users: {str(e)}")
+            return []
 
     async def update_online_users(self):
-        online_users = await self.get_online_users()
-        logger.info(f"Updating online users: {online_users}")
-        await self.channel_layer.group_send(
-            'admin_online',
-            {
-                'type': 'online_users_message',
-                'action': 'online_users',
-                'users': online_users,
-            }
-        )
+        try:
+            online_users = await self.get_online_users()
+            logger.info(f"Updating online users: {online_users}")
+            await self.channel_layer.group_send(
+                'admin_online',
+                {
+                    'type': 'online_users_message',
+                    'action': 'online_users',
+                    'users': online_users,
+                }
+            )
+        except Exception as e:
+            logger.error(f"Error in update_online_users: {str(e)}")
+            raise
 
 class OnlineUsersConsumer(AsyncWebsocketConsumer):
     async def connect(self):
