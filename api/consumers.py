@@ -133,16 +133,16 @@ class TaskConsumer(AsyncWebsocketConsumer):
 class OnlineUsersConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         self.user = self.scope['user']
-        logger.info(f"Connecting admin user: {self.user}, is_staff: {self.user.is_staff}")
-        if self.user.is_authenticated and self.user.is_staff:
+        logger.info(f"Connecting admin user: {self.user}, is_staff: {self.user.is_staff if self.user else False}")
+        if self.user and self.user.is_authenticated and self.user.is_staff:
             await self.channel_layer.group_add('admin_online', self.channel_name)
             await self.accept()
         else:
-            logger.warning("User not admin, closing connection")
-            await self.close()
+            logger.warning("User not admin or not authenticated, closing connection")
+            await self.close(code=1008) 
 
     async def disconnect(self, close_code):
-        if self.user.is_authenticated and self.user.is_staff:
+        if self.user and self.user.is_authenticated and self.user.is_staff:
             logger.info(f"Disconnecting admin user: {self.user}, close code: {close_code}")
             await self.channel_layer.group_discard('admin_online', self.channel_name)
 
