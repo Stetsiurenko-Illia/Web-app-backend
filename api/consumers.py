@@ -139,7 +139,7 @@ class OnlineUsersConsumer(AsyncWebsocketConsumer):
             await self.accept()
         else:
             logger.warning("User not admin or not authenticated, closing connection")
-            await self.close(code=1008) 
+            await self.close(code=1008)
 
     async def disconnect(self, close_code):
         if self.user and self.user.is_authenticated and self.user.is_staff:
