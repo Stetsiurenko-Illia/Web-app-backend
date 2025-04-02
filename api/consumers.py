@@ -143,6 +143,9 @@ class TaskConsumer(AsyncWebsocketConsumer):
                 )
                 logger.info("Share task message sent to group")
 
+            elif action == 'request_online_users':
+                await self.update_online_users()
+
         except json.JSONDecodeError as e:
             logger.error(f"JSON decode error: {str(e)}")
             await self.send(text_data=json.dumps({
@@ -263,6 +266,13 @@ class OnlineUsersConsumer(AsyncWebsocketConsumer):
             await self.channel_layer.group_add('admin_online', self.channel_name)
             await self.accept()
             logger.info(f"Admin {self.user.email} connected to admin_online group")
+            await self.channel_layer.group_send(
+                'tasks',
+                {
+                    'type': 'request_online_users_message',
+                    'action': 'request_online_users',
+                }
+            )
         else:
             logger.warning("User not admin or not authenticated, closing connection")
             await self.close(code=1008)
@@ -278,3 +288,6 @@ class OnlineUsersConsumer(AsyncWebsocketConsumer):
             'action': event['action'],
             'users': event['users'],
         }))
+
+    async def request_online_users_message(self, event):
+        pass
