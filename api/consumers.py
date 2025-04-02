@@ -14,22 +14,24 @@ class TaskConsumer(AsyncWebsocketConsumer):
             self.group_name = 'tasks'
             logger.info(f"Adding to group: {self.group_name}, channel: {self.channel_name}")
             try:
+                await self.set_user_online()  # Оновлюємо статус is_online
                 await self.channel_layer.group_add(self.group_name, self.channel_name)
                 await self.accept()
-                await self.update_online_users()
+                await self.update_online_users()  # Надсилаємо оновлення списку онлайн-користувачів
             except Exception as e:
                 logger.error(f"Error in connect: {str(e)}")
-                await self.close(code=1011)  # Закриваємо з кодом 1011 у разі помилки
+                await self.close(code=1011)
         else:
             logger.warning("User not authenticated, closing connection")
-            await self.close(code=1008)  # Код 1008 для помилок автентифікації
+            await self.close(code=1008)
 
     async def disconnect(self, close_code):
         if self.user is not None and self.user.is_authenticated:
             logger.info(f"Disconnecting user: {self.user}, close code: {close_code}")
             try:
                 await self.channel_layer.group_discard(self.group_name, self.channel_name)
-                await self.update_online_users()
+                await self.set_user_offline()  # Оновлюємо статус is_online
+                await self.update_online_users()  # Надсилаємо оновлення списку онлайн-користувачів
             except Exception as e:
                 logger.error(f"Error in disconnect: {str(e)}")
         else:
@@ -107,9 +109,31 @@ class TaskConsumer(AsyncWebsocketConsumer):
             raise
 
     @database_sync_to_async
+    def set_user_online(self):
+        try:
+            self.user.is_online = True
+            self.user.save()
+            logger.info(f"User {self.user.email} set to online")
+        except Exception as e:
+            logger.error(f"Error setting user online: {str(e)}")
+            raise
+
+    @database_sync_to_async
+    def set_user_offline(self):
+        try:
+            self.user.is_online = False
+            self.user.save()
+            logger.info(f"User {self.user.email} set to offline")
+        except Exception as e:
+            logger.error(f"Error setting user offline: {str(e)}")
+            raise
+
+    @database_sync_to_async
     def get_online_users(self):
         try:
-            return list(CustomUser.objects.filter(is_online=True).values_list('email', flat=True))
+            online_users = list(CustomUser.objects.filter(is_online=True).values_list('email', flat=True))
+            logger.info(f"Online users retrieved: {online_users}")
+            return online_users
         except Exception as e:
             logger.error(f"Error getting online users: {str(e)}")
             return []
@@ -126,6 +150,7 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     'users': online_users,
                 }
             )
+            logger.info("Online users message sent to admin_online group")
         except Exception as e:
             logger.error(f"Error in update_online_users: {str(e)}")
             raise
@@ -137,6 +162,7 @@ class OnlineUsersConsumer(AsyncWebsocketConsumer):
         if self.user and self.user.is_authenticated and self.user.is_staff:
             await self.channel_layer.group_add('admin_online', self.channel_name)
             await self.accept()
+            logger.info(f"Admin {self.user.email} connected to admin_online group")
         else:
             logger.warning("User not admin or not authenticated, closing connection")
             await self.close(code=1008)

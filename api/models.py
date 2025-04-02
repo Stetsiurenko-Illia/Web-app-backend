@@ -13,6 +13,7 @@ class CustomUser(AbstractUser):
     gender = models.CharField(max_length=1, choices=GENDER_CHOICES)
     birth_date = models.DateField(null=True, blank=True)
     avatar = models.ImageField(upload_to='avatars/', null=True, blank=True)
+    is_online = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
