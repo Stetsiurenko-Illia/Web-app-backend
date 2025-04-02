@@ -15,6 +15,9 @@
         li {
             padding: 10px;
             border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .form-group {
             margin-bottom: 15px;
@@ -42,6 +45,14 @@
         #error-message {
             color: red;
             margin-top: 10px;
+        }
+        .share-form {
+            display: none;
+            margin-left: 10px;
+        }
+        .share-form input {
+            width: 200px;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -73,9 +84,14 @@
         <button onclick="createTask()">Create Task</button>
     </div>
 
-    <h2>Tasks</h2>
+    <h2>My Tasks</h2>
     <ul id="task-list">
         <li>Waiting for tasks...</li>
+    </ul>
+
+    <h2>Shared with Me</h2>
+    <ul id="shared-task-list">
+        <li>Waiting for shared tasks...</li>
     </ul>
 
     <script>
@@ -87,7 +103,7 @@
             const password = document.getElementById('password').value;
             const errorMessage = document.getElementById('error-message');
 
-            errorMessage.textContent = ''; // Очищаємо попередні помилки
+            errorMessage.textContent = '';
 
             try {
                 const response = await fetch('/api/token/', {
@@ -104,6 +120,7 @@
                 const data = await response.json();
                 if (response.ok) {
                     token = data.access;
+                    localStorage.setItem('token', token);
                     console.log('Token:', token);
                     document.getElementById('login-form').style.display = 'none';
                     document.getElementById('task-form').style.display = 'block';
@@ -122,28 +139,45 @@
 
             socket.onopen = function(event) {
                 console.log('WebSocket підключено');
-                document.getElementById('task-list').innerHTML = ''; // Очищаємо "Waiting for tasks..."
+                document.getElementById('task-list').innerHTML = '';
+                document.getElementById('shared-task-list').innerHTML = '';
             };
 
             socket.onmessage = function(event) {
                 const data = JSON.parse(event.data);
-                if (data.action === 'heartbeat') {
-                    console.log('Heartbeat received');
-                } else if (data.action === 'create_task') {
-                console.log('Нова задача:', data.task);
-                const taskList = document.getElementById('task-list');
-                const li = document.createElement('li');
-                li.textContent = `${data.task.title} (by ${data.task.user}) - ${data.task.description}`;
-                taskList.appendChild(li);
-            } else if (data.error) {
-            console.error('Server error:', data.error);
-            alert('Error: ' + data.error);
-            }
-           };
+                if (data.action === 'create_task') {
+                    console.log('Нова задача:', data.task);
+                    const taskList = document.getElementById('task-list');
+                    const li = document.createElement('li');
+                    li.setAttribute('data-task-id', data.task.id);
+                    li.innerHTML = `
+                        ${data.task.title} (by ${data.task.user}) - ${data.task.description}
+                        <div>
+                            <button onclick="toggleShareForm(${data.task.id})">Поширити</button>
+                            <div class="share-form" id="share-form-${data.task.id}">
+                                <input type="email" id="share-email-${data.task.id}" placeholder="Enter email">
+                                <button onclick="shareTask(${data.task.id})">Надіслати</button>
+                            </div>
+                        </div>
+                    `;
+                    taskList.appendChild(li);
+                } else if (data.action === 'share_task') {
+                    console.log('Завдання поширене:', data.task);
+                    const sharedTaskList = document.getElementById('shared-task-list');
+                    const li = document.createElement('li');
+                    li.setAttribute('data-task-id', data.task.id);
+                    li.textContent = `${data.task.title} (by ${data.task.user}) - ${data.task.description}`;
+                    sharedTaskList.appendChild(li);
+                } else if (data.error) {
+                    console.error('Server error:', data.error);
+                    alert('Error: ' + data.error);
+                }
+            };
 
             socket.onclose = function(event) {
                 console.log('WebSocket відключено', event);
                 document.getElementById('task-list').innerHTML = '<li>Disconnected from server</li>';
+                document.getElementById('shared-task-list').innerHTML = '<li>Disconnected from server</li>';
             };
 
             socket.onerror = function(error) {
@@ -165,6 +199,26 @@
                 document.getElementById('description').value = '';
             } else {
                 alert('Please enter a task title');
+            }
+        }
+
+        function toggleShareForm(taskId) {
+            const shareForm = document.getElementById(`share-form-${taskId}`);
+            shareForm.style.display = shareForm.style.display === 'none' ? 'flex' : 'none';
+        }
+
+        function shareTask(taskId) {
+            const email = document.getElementById(`share-email-${taskId}`).value;
+            if (email) {
+                socket.send(JSON.stringify({
+                    action: 'share_task',
+                    task_id: taskId,
+                    email: email
+                }));
+                document.getElementById(`share-email-${taskId}`).value = '';
+                toggleShareForm(taskId);
+            } else {
+                alert('Please enter an email');
             }
         }
     </script>

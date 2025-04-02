@@ -14,10 +14,10 @@ class TaskConsumer(AsyncWebsocketConsumer):
             self.group_name = 'tasks'
             logger.info(f"Adding to group: {self.group_name}, channel: {self.channel_name}")
             try:
-                await self.set_user_online()  # Оновлюємо статус is_online
+                await self.set_user_online()
                 await self.channel_layer.group_add(self.group_name, self.channel_name)
                 await self.accept()
-                await self.update_online_users()  # Надсилаємо оновлення списку онлайн-користувачів
+                await self.update_online_users()
             except Exception as e:
                 logger.error(f"Error in connect: {str(e)}")
                 await self.close(code=1011)
@@ -30,8 +30,8 @@ class TaskConsumer(AsyncWebsocketConsumer):
             logger.info(f"Disconnecting user: {self.user}, close code: {close_code}")
             try:
                 await self.channel_layer.group_discard(self.group_name, self.channel_name)
-                await self.set_user_offline()  # Оновлюємо статус is_online
-                await self.update_online_users()  # Надсилаємо оновлення списку онлайн-користувачів
+                await self.set_user_offline()
+                await self.update_online_users()
             except Exception as e:
                 logger.error(f"Error in disconnect: {str(e)}")
         else:
@@ -75,6 +75,73 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }
                 )
                 logger.info("Task message sent to group")
+
+            elif action == 'share_task':
+                task_id = text_data_json.get('task_id')
+                email = text_data_json.get('email')
+                logger.info(f"Sharing task: task_id={task_id}, email={email}")
+
+                if not task_id or not email:
+                    logger.warning("Task ID or email is missing")
+                    await self.send(text_data=json.dumps({
+                        'error': 'Task ID and email are required'
+                    }))
+                    return
+
+                # Перевіряємо, чи існує завдання і чи належить воно користувачу
+                task = await self.get_task(task_id)
+                if not task:
+                    logger.warning(f"Task {task_id} not found")
+                    await self.send(text_data=json.dumps({
+                        'error': 'Task not found'
+                    }))
+                    return
+
+                if task.user != self.user:
+                    logger.warning(f"User {self.user.email} is not the owner of task {task_id}")
+                    await self.send(text_data=json.dumps({
+                        'error': 'You can only share your own tasks'
+                    }))
+                    return
+
+                # Перевіряємо, чи існує користувач із вказаним email
+                target_user = await self.get_user_by_email(email)
+                if not target_user:
+                    logger.warning(f"User with email {email} not found")
+                    await self.send(text_data=json.dumps({
+                        'error': 'User not found'
+                    }))
+                    return
+
+                if target_user == self.user:
+                    logger.warning(f"User {self.user.email} tried to share task with themselves")
+                    await self.send(text_data=json.dumps({
+                        'error': 'You cannot share a task with yourself'
+                    }))
+                    return
+
+                # Додаємо завдання до shared_with
+                await self.share_task_with_user(task, target_user)
+                logger.info(f"Task {task_id} shared with {email}")
+
+                # Надсилаємо повідомлення групі про поширення завдання
+                await self.channel_layer.group_send(
+                    self.group_name,
+                    {
+                        'type': 'task_message',
+                        'action': 'share_task',
+                        'task': {
+                            'id': task.id,
+                            'title': task.title,
+                            'description': task.description,
+                            'completed': task.completed,
+                            'user': self.user.email,
+                            'shared_with': email,
+                        }
+                    }
+                )
+                logger.info("Share task message sent to group")
+
         except json.JSONDecodeError as e:
             logger.error(f"JSON decode error: {str(e)}")
             await self.send(text_data=json.dumps({
@@ -83,7 +150,7 @@ class TaskConsumer(AsyncWebsocketConsumer):
         except Exception as e:
             logger.error(f"Error in receive: {str(e)}")
             await self.send(text_data=json.dumps({
-                'error': f'Error creating task: {str(e)}'
+                'error': f'Error processing request: {str(e)}'
             }))
 
     async def task_message(self, event):
@@ -155,6 +222,29 @@ class TaskConsumer(AsyncWebsocketConsumer):
             logger.error(f"Error in update_online_users: {str(e)}")
             raise
 
+    @database_sync_to_async
+    def get_task(self, task_id):
+        try:
+            return Task.objects.get(id=task_id)
+        except Task.DoesNotExist:
+            return None
+
+    @database_sync_to_async
+    def get_user_by_email(self, email):
+        try:
+            return CustomUser.objects.get(email=email)
+        except CustomUser.DoesNotExist:
+            return None
+
+    @database_sync_to_async
+    def share_task_with_user(self, task, target_user):
+        try:
+            task.shared_with.add(target_user)
+            task.save()
+            logger.info(f"Task {task.id} shared with {target_user.email}")
+        except Exception as e:
+            logger.error(f"Error sharing task: {str(e)}")
+            raise
 class OnlineUsersConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         self.user = self.scope['user']

@@ -24,6 +24,7 @@ class Task(models.Model):
         description = models.TextField(blank=True)
         completed = models.BooleanField(default=False)
         created_at = models.DateTimeField(auto_now_add=True)
+        shared_with = models.ManyToManyField(CustomUser, related_name='shared_tasks', blank=True)
 
         def __str__(self):
             return self.title
