@@ -8,11 +8,11 @@ django_asgi_app = get_asgi_application()
 
 # Імпортуємо після ініціалізації налаштувань
 import api.routing
-from api.middleware import JWTAuthMiddleware
+from api.middleware import SelectiveAuthMiddleware
 
 application = ProtocolTypeRouter({
     "http": django_asgi_app,
-    "websocket": JWTAuthMiddleware(
+    "websocket": SelectiveAuthMiddleware(
         URLRouter(
             api.routing.websocket_urlpatterns
         )
