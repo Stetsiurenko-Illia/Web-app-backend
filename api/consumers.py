@@ -88,7 +88,6 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }))
                     return
 
-                # Отримуємо завдання з усіма пов’язаними даними
                 task_data = await self.get_task(task_id)
                 if not task_data:
                     logger.warning(f"Task {task_id} not found")
@@ -97,7 +96,6 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }))
                     return
 
-                # Перевіряємо, чи належить завдання користувачу
                 if task_data['user_id'] != self.user.id:
                     logger.warning(f"User {self.user.email} is not the owner of task {task_id}")
                     await self.send(text_data=json.dumps({
@@ -105,7 +103,6 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }))
                     return
 
-                # Перевіряємо, чи існує користувач із вказаним email
                 target_user = await self.get_user_by_email(email)
                 if not target_user:
                     logger.warning(f"User with email {email} not found")
@@ -121,11 +118,9 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }))
                     return
 
-                # Додаємо завдання до shared_with
                 await self.share_task_with_user(task_id, target_user.id)
                 logger.info(f"Task {task_id} shared with {email}")
 
-                # Надсилаємо повідомлення групі про поширення завдання
                 await self.channel_layer.group_send(
                     self.group_name,
                     {
@@ -142,9 +137,6 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }
                 )
                 logger.info("Share task message sent to group")
-
-            elif action == 'request_online_users':
-                await self.update_online_users()
 
         except json.JSONDecodeError as e:
             logger.error(f"JSON decode error: {str(e)}")
@@ -258,6 +250,7 @@ class TaskConsumer(AsyncWebsocketConsumer):
         except Exception as e:
             logger.error(f"Error sharing task: {str(e)}")
             raise
+
 class OnlineUsersConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         self.user = self.scope['user']
@@ -266,13 +259,12 @@ class OnlineUsersConsumer(AsyncWebsocketConsumer):
             await self.channel_layer.group_add('admin_online', self.channel_name)
             await self.accept()
             logger.info(f"Admin {self.user.email} connected to admin_online group")
-            await self.channel_layer.group_send(
-                'tasks',
-                {
-                    'type': 'request_online_users_message',
-                    'action': 'request_online_users',
-                }
-            )
+            # Отримуємо список онлайн-користувачів і надсилаємо його клієнту
+            online_users = await self.get_online_users()
+            await self.send(text_data=json.dumps({
+                'action': 'online_users',
+                'users': online_users,
+            }))
         else:
             logger.warning("User not admin or not authenticated, closing connection")
             await self.close(code=1008)
@@ -289,5 +281,12 @@ class OnlineUsersConsumer(AsyncWebsocketConsumer):
             'users': event['users'],
         }))
 
-    async def request_online_users_message(self, event):
-        pass
+    @database_sync_to_async
+    def get_online_users(self):
+        try:
+            online_users = list(CustomUser.objects.filter(is_online=True).values_list('email', flat=True))
+            logger.info(f"Online users retrieved in OnlineUsersConsumer: {online_users}")
+            return online_users
+        except Exception as e:
+            logger.error(f"Error getting online users in OnlineUsersConsumer: {str(e)}")
+            return []
