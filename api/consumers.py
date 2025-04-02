@@ -88,16 +88,17 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }))
                     return
 
-                # Перевіряємо, чи існує завдання і чи належить воно користувачу
-                task = await self.get_task(task_id)
-                if not task:
+                # Отримуємо завдання з усіма пов’язаними даними
+                task_data = await self.get_task(task_id)
+                if not task_data:
                     logger.warning(f"Task {task_id} not found")
                     await self.send(text_data=json.dumps({
                         'error': 'Task not found'
                     }))
                     return
 
-                if task.user != self.user:
+                # Перевіряємо, чи належить завдання користувачу
+                if task_data['user_id'] != self.user.id:
                     logger.warning(f"User {self.user.email} is not the owner of task {task_id}")
                     await self.send(text_data=json.dumps({
                         'error': 'You can only share your own tasks'
@@ -113,7 +114,7 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }))
                     return
 
-                if target_user == self.user:
+                if target_user.id == self.user.id:
                     logger.warning(f"User {self.user.email} tried to share task with themselves")
                     await self.send(text_data=json.dumps({
                         'error': 'You cannot share a task with yourself'
@@ -121,7 +122,7 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     return
 
                 # Додаємо завдання до shared_with
-                await self.share_task_with_user(task, target_user)
+                await self.share_task_with_user(task_id, target_user.id)
                 logger.info(f"Task {task_id} shared with {email}")
 
                 # Надсилаємо повідомлення групі про поширення завдання
@@ -131,10 +132,10 @@ class TaskConsumer(AsyncWebsocketConsumer):
                         'type': 'task_message',
                         'action': 'share_task',
                         'task': {
-                            'id': task.id,
-                            'title': task.title,
-                            'description': task.description,
-                            'completed': task.completed,
+                            'id': task_data['id'],
+                            'title': task_data['title'],
+                            'description': task_data['description'],
+                            'completed': task_data['completed'],
                             'user': self.user.email,
                             'shared_with': email,
                         }
@@ -225,7 +226,14 @@ class TaskConsumer(AsyncWebsocketConsumer):
     @database_sync_to_async
     def get_task(self, task_id):
         try:
-            return Task.objects.get(id=task_id)
+            task = Task.objects.select_related('user').get(id=task_id)
+            return {
+                'id': task.id,
+                'title': task.title,
+                'description': task.description,
+                'completed': task.completed,
+                'user_id': task.user.id,
+            }
         except Task.DoesNotExist:
             return None
 
@@ -237,8 +245,10 @@ class TaskConsumer(AsyncWebsocketConsumer):
             return None
 
     @database_sync_to_async
-    def share_task_with_user(self, task, target_user):
+    def share_task_with_user(self, task_id, target_user_id):
         try:
+            task = Task.objects.get(id=task_id)
+            target_user = CustomUser.objects.get(id=target_user_id)
             task.shared_with.add(target_user)
             task.save()
             logger.info(f"Task {task.id} shared with {target_user.email}")
