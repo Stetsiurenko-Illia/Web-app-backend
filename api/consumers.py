@@ -195,10 +195,10 @@ class TaskConsumer(AsyncWebsocketConsumer):
     def get_online_users(self):
         try:
             online_users = list(CustomUser.objects.filter(is_online=True).values_list('email', flat=True))
-            logger.info(f"Online users retrieved: {online_users}")
+            logger.info(f"Online users retrieved in TaskConsumer: {online_users}")
             return online_users
         except Exception as e:
-            logger.error(f"Error getting online users: {str(e)}")
+            logger.error(f"Error getting online users in TaskConsumer: {str(e)}")
             return []
 
     async def update_online_users(self):
@@ -261,6 +261,7 @@ class OnlineUsersConsumer(AsyncWebsocketConsumer):
             logger.info(f"Admin {self.user.email} connected to admin_online group")
             # Отримуємо список онлайн-користувачів і надсилаємо його клієнту
             online_users = await self.get_online_users()
+            logger.info(f"Sending initial online users list: {online_users}")
             await self.send(text_data=json.dumps({
                 'action': 'online_users',
                 'users': online_users,

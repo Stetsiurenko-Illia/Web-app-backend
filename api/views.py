@@ -11,7 +11,6 @@ from .serializers import (
     UserRegistrationSerializer, UserLoginSerializer, UserProfileSerializer, TaskSerializer
 )
 
-
 class RegisterView(APIView):
     permission_classes = []
 
@@ -23,7 +22,6 @@ class RegisterView(APIView):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
 class LoginView(APIView):
     def post(self, request):
         """Аутентифікація користувача та видача JWT-токенів. Приймає email і пароль, повертає access та refresh токени для авторизованого користувача."""
@@ -34,6 +32,8 @@ class LoginView(APIView):
                 password=serializer.validated_data['password']
             )
             if user:
+                user.is_online = True  # Встановлюємо is_online=True
+                user.save()
                 refresh = RefreshToken.for_user(user)
                 return Response({
                     'refresh': str(refresh),
@@ -41,7 +41,6 @@ class LoginView(APIView):
                 }, status=status.HTTP_200_OK)
             return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
 
 class ProfileView(APIView):
     permission_classes = [IsAuthenticated]
@@ -59,7 +58,6 @@ class ProfileView(APIView):
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
 class AboutView(APIView):
     def get(self, request):
         """Інформація про додаток. Повертає логотип і короткий опис додатку To-Do List."""
@@ -74,7 +72,6 @@ class AboutView(APIView):
                 "Зручний інтерфейс для роботи з вашим профілем"
             ]
         })
-
 
 class TaskListView(APIView):
     permission_classes = [IsAuthenticated]
@@ -96,7 +93,6 @@ class TaskListView(APIView):
             serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
 
 class TaskDetailView(APIView):
     permission_classes = [IsAuthenticated]
@@ -134,10 +130,8 @@ class TaskDetailView(APIView):
         task.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-
 def is_admin(user):
     return user.is_authenticated and user.is_staff
-
 
 @user_passes_test(is_admin)
 def admin_online_users_view(request):

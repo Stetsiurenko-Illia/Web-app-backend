@@ -20,34 +20,38 @@
 </head>
 <body>
     <h1>Online Users</h1>
-    <ul id="user-list">
+    <ul id="online-users-list">
         <li>Waiting for users...</li>
     </ul>
 
     <script>
-        const socket = new WebSocket(`wss://${window.location.host}/ws/online-users/`);
+        const socket = new WebSocket('wss://' + window.location.host + '/ws/online-users/');
 
         socket.onopen = function(event) {
             console.log('WebSocket connected for online users');
         };
 
         socket.onmessage = function(event) {
+            console.log('Received message:', event.data);
             const data = JSON.parse(event.data);
             if (data.action === 'online_users') {
-                console.log('Online users:', data.users);
-                const userList = document.getElementById('user-list');
+                const userList = document.getElementById('online-users-list');
                 userList.innerHTML = '';
-                data.users.forEach(user => {
-                    const li = document.createElement('li');
-                    li.textContent = user;
-                    userList.appendChild(li);
-                });
+                if (data.users.length === 0) {
+                    userList.innerHTML = '<li>No online users</li>';
+                } else {
+                    data.users.forEach(user => {
+                        const li = document.createElement('li');
+                        li.textContent = user;
+                        userList.appendChild(li);
+                    });
+                }
             }
         };
 
         socket.onclose = function(event) {
             console.log('WebSocket disconnected', event);
-            document.getElementById('user-list').innerHTML = '<li>Disconnected from server</li>';
+            document.getElementById('online-users-list').innerHTML = '<li>Disconnected from server</li>';
         };
 
         socket.onerror = function(error) {
