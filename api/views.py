@@ -140,3 +140,12 @@ def admin_online_users_view(request):
 
 def test_ws_view(request):
     return render(request, 'test_ws.html')
+
+class SharedTasksView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        """Отримання списку завдань, поширених з авторизованим користувачем."""
+        shared_tasks = Task.objects.filter(shared_with=request.user)
+        serializer = TaskSerializer(shared_tasks, many=True)
+        return Response(serializer.data)
