@@ -188,6 +188,45 @@ class TaskConsumer(AsyncWebsocketConsumer):
                 )
                 logger.info("Update task message sent to group")
 
+            elif action == 'delete_task':
+                task_id = text_data_json.get('task_id')
+                logger.info(f"Deleting task: task_id={task_id}")
+
+                if not task_id:
+                    logger.warning("Task ID is missing")
+                    await self.send(text_data=json.dumps({
+                        'error': 'Task ID is required'
+                    }))
+                    return
+
+                task_info = await self.get_task(task_id)
+                if not task_info:
+                    logger.warning(f"Task {task_id} not found")
+                    await self.send(text_data=json.dumps({
+                        'error': 'Task not found'
+                    }))
+                    return
+
+                if task_info['user_id'] != self.user.id:
+                    logger.warning(f"User {self.user.email} is not the owner of task {task_id}")
+                    await self.send(text_data=json.dumps({
+                        'error': 'You can only delete your own tasks'
+                    }))
+                    return
+
+                await self.delete_task(task_id)
+                logger.info(f"Task {task_id} deleted")
+
+                await self.channel_layer.group_send(
+                    self.group_name,
+                    {
+                        'type': 'task_message',
+                        'action': 'delete_task',
+                        'task_id': task_id,
+                    }
+                )
+                logger.info("Delete task message sent to group")
+
         except json.JSONDecodeError as e:
             logger.error(f"JSON decode error: {str(e)}")
             await self.send(text_data=json.dumps({
@@ -203,7 +242,8 @@ class TaskConsumer(AsyncWebsocketConsumer):
         logger.info(f"Sending task message to client: {event}")
         await self.send(text_data=json.dumps({
             'action': event['action'],
-            'task': event['task'],
+            'task': event['task'] if 'task' in event else None,
+            'task_id': event['task_id'] if 'task_id' in event else None,
         }))
 
     @database_sync_to_async
@@ -316,6 +356,19 @@ class TaskConsumer(AsyncWebsocketConsumer):
             return None
         except Exception as e:
             logger.error(f"Error updating task in DB: {str(e)}")
+            raise
+
+    @database_sync_to_async
+    def delete_task(self, task_id):
+        try:
+            task = Task.objects.get(id=task_id)
+            task.delete()
+            logger.info(f"Task {task_id} deleted from DB")
+        except Task.DoesNotExist:
+            logger.error(f"Task {task_id} not found for deletion")
+            raise
+        except Exception as e:
+            logger.error(f"Error deleting task in DB: {str(e)}")
             raise
 
 class OnlineUsersConsumer(AsyncWebsocketConsumer):
