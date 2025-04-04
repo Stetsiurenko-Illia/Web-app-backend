@@ -190,7 +190,7 @@ class TaskConsumer(AsyncWebsocketConsumer):
 
             elif action == 'delete_task':
                 task_id = text_data_json.get('task_id')
-                logger.info(f"Deleting task: task_id={task_id}")
+                logger.info(f"Processing delete task: task_id={task_id}")
 
                 if not task_id:
                     logger.warning("Task ID is missing")
@@ -199,24 +199,16 @@ class TaskConsumer(AsyncWebsocketConsumer):
                     }))
                     return
 
+                # Перевіряємо права власника, але не видаляємо повторно, якщо API вже видалив
                 task_info = await self.get_task(task_id)
-                if not task_info:
-                    logger.warning(f"Task {task_id} not found")
-                    await self.send(text_data=json.dumps({
-                        'error': 'Task not found'
-                    }))
-                    return
-
-                if task_info['user_id'] != self.user.id:
+                if task_info and task_info['user_id'] != self.user.id:
                     logger.warning(f"User {self.user.email} is not the owner of task {task_id}")
                     await self.send(text_data=json.dumps({
                         'error': 'You can only delete your own tasks'
                     }))
                     return
 
-                await self.delete_task(task_id)
-                logger.info(f"Task {task_id} deleted")
-
+                # Якщо задача вже видалена через API, просто сповіщаємо групу
                 await self.channel_layer.group_send(
                     self.group_name,
                     {
