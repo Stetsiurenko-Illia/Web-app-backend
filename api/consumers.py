@@ -138,6 +138,56 @@ class TaskConsumer(AsyncWebsocketConsumer):
                 )
                 logger.info("Share task message sent to group")
 
+            elif action == 'update_task':
+                task_data = text_data_json.get('task')
+                task_id = task_data.get('id')
+                logger.info(f"Updating task: task_id={task_id}")
+
+                if not task_id:
+                    logger.warning("Task ID is missing")
+                    await self.send(text_data=json.dumps({
+                        'error': 'Task ID is required'
+                    }))
+                    return
+
+                task_info = await self.get_task(task_id)
+                if not task_info:
+                    logger.warning(f"Task {task_id} not found")
+                    await self.send(text_data=json.dumps({
+                        'error': 'Task not found'
+                    }))
+                    return
+
+                if task_info['user_id'] != self.user.id:
+                    logger.warning(f"User {self.user.email} is not the owner of task {task_id}")
+                    await self.send(text_data=json.dumps({
+                        'error': 'You can only update your own tasks'
+                    }))
+                    return
+
+                updated_task = await self.update_task(
+                    task_id,
+                    task_data.get('title', task_info['title']),
+                    task_data.get('description', task_info['description']),
+                    task_data.get('completed', task_info['completed'])
+                )
+                logger.info(f"Task {task_id} updated")
+
+                await self.channel_layer.group_send(
+                    self.group_name,
+                    {
+                        'type': 'task_message',
+                        'action': 'update_task',
+                        'task': {
+                            'id': updated_task.id,
+                            'title': updated_task.title,
+                            'description': updated_task.description,
+                            'completed': updated_task.completed,
+                        }
+                    }
+                )
+                logger.info("Update task message sent to group")
+
         except json.JSONDecodeError as e:
             logger.error(f"JSON decode error: {str(e)}")
             await self.send(text_data=json.dumps({
@@ -251,6 +301,23 @@ class TaskConsumer(AsyncWebsocketConsumer):
             logger.error(f"Error sharing task: {str(e)}")
             raise
 
+    @database_sync_to_async
+    def update_task(self, task_id, title, description, completed):
+        try:
+            task = Task.objects.get(id=task_id)
+            task.title = title
+            task.description = description
+            task.completed = completed
+            task.save()
+            logger.info(f"Task {task.id} updated in DB")
+            return task
+        except Task.DoesNotExist:
+            logger.error(f"Task {task_id} not found for update")
+            return None
+        except Exception as e:
+            logger.error(f"Error updating task in DB: {str(e)}")
+            raise
+
 class OnlineUsersConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         self.user = self.scope['user']
@@ -259,7 +326,6 @@ class OnlineUsersConsumer(AsyncWebsocketConsumer):
             await self.channel_layer.group_add('admin_online', self.channel_name)
             await self.accept()
             logger.info(f"Admin {self.user.email} connected to admin_online group")
-            # Отримуємо список онлайн-користувачів і надсилаємо його клієнту
             online_users = await self.get_online_users()
             logger.info(f"Sending initial online users list: {online_users}")
             await self.send(text_data=json.dumps({
