@@ -89,10 +89,10 @@
         <li>Waiting for tasks...</li>
     </ul>
 
-<!--    <h2>Shared with Me</h2>-->
-<!--    <ul id="shared-task-list">-->
-<!--        <li>Waiting for shared tasks...</li>-->
-<!--    </ul>-->
+    <h2>Shared with Me</h2>
+    <ul id="shared-task-list">
+        <li>Waiting for shared tasks...</li>
+    </ul>
 
     <script>
         let socket = null;
@@ -152,22 +152,22 @@
                     li.setAttribute('data-task-id', data.task.id);
                     li.innerHTML = `
                         ${data.task.title} (by ${data.task.user}) - ${data.task.description}
-<!--                        <div>-->
-<!--                            <button onclick="toggleShareForm(${data.task.id})">Поширити</button>-->
-<!--                            <div class="share-form" id="share-form-${data.task.id}">-->
-<!--                                <input type="email" id="share-email-${data.task.id}" placeholder="Enter email">-->
-<!--                                <button onclick="shareTask(${data.task.id})">Надіслати</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <div>
+                            <button onclick="toggleShareForm(${data.task.id})">Поширити</button>
+                            <div class="share-form" id="share-form-${data.task.id}">
+                                <input type="email" id="share-email-${data.task.id}" placeholder="Enter email">
+                                <button onclick="shareTask(${data.task.id})">Надіслати</button>
+                            </div>
+                        </div>
                     `;
                     taskList.appendChild(li);
-<!--                } else if (data.action === 'share_task') {-->
-<!--                    console.log('Завдання поширене:', data.task);-->
-<!--                    const sharedTaskList = document.getElementById('shared-task-list');-->
-<!--                    const li = document.createElement('li');-->
-<!--                    li.setAttribute('data-task-id', data.task.id);-->
-<!--                    li.textContent = `${data.task.title} (by ${data.task.user}) - ${data.task.description}`;-->
-<!--                    sharedTaskList.appendChild(li);-->
+                } else if (data.action === 'share_task') {
+                    console.log('Завдання поширене:', data.task);
+                    const sharedTaskList = document.getElementById('shared-task-list');
+                    const li = document.createElement('li');
+                    li.setAttribute('data-task-id', data.task.id);
+                    li.textContent = `${data.task.title} (by ${data.task.user}) - ${data.task.description}`;
+                    sharedTaskList.appendChild(li);
                 } else if (data.error) {
                     console.error('Server error:', data.error);
                     alert('Error: ' + data.error);
@@ -177,7 +177,7 @@
             socket.onclose = function(event) {
                 console.log('WebSocket відключено', event);
                 document.getElementById('task-list').innerHTML = '<li>Disconnected from server</li>';
-<!--                document.getElementById('shared-task-list').innerHTML = '<li>Disconnected from server</li>';-->
+                document.getElementById('shared-task-list').innerHTML = '<li>Disconnected from server</li>';
             };
 
             socket.onerror = function(error) {
