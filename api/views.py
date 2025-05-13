@@ -10,6 +10,9 @@ from .models import Task
 from .serializers import (
     UserRegistrationSerializer, UserLoginSerializer, UserProfileSerializer, TaskSerializer
 )
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAdminUser
+from .tasks import send_email_to_online_users, generate_user_task_report
 
 class RegisterView(APIView):
     permission_classes = []
@@ -149,3 +152,20 @@ class SharedTasksView(APIView):
         shared_tasks = Task.objects.filter(shared_with=request.user)
         serializer = TaskSerializer(shared_tasks, many=True)
         return Response(serializer.data)
+
+@api_view(['POST'])
+@permission_classes([IsAdminUser])
+def send_notification(request):
+    subject = request.data.get('subject', 'New Task Notification')
+    message = request.data.get('message', 'A new task has been shared with you.')
+    task_result = send_email_to_online_users.delay(subject, message)
+    return Response({'task_id': task_result.id, 'status': 'Email task started'})
+
+@api_view(['POST'])
+@permission_classes([IsAdminUser])
+def generate_task_report(request):
+    user_id = request.data.get('user_id')
+    if not user_id:
+        return Response({'error': 'User ID is required'}, status=400)
+    task_result = generate_user_task_report.delay(user_id)
+    return Response({'task_id': task_result.id, 'status': 'Report generation task started'})

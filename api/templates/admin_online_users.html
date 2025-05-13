@@ -2,61 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Online Users</title>
+    <title>Admin Notifications</title>
     <style>
-        body {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
             font-family: Arial, sans-serif;
-            margin: 20px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
         }
-        li {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .empty-message {
+            text-align: center;
+            padding: 20px;
+            color: #666;
         }
     </style>
 </head>
 <body>
-    <h1>Online Users</h1>
-    <ul id="online-users-list">
-        <li>Waiting for users...</li>
-    </ul>
-
-    <script>
-        const socket = new WebSocket('wss://' + window.location.host + '/ws/online-users/');
-
-        socket.onopen = function(event) {
-            console.log('WebSocket connected for online users');
-        };
-
-        socket.onmessage = function(event) {
-            console.log('Received message:', event.data);
-            const data = JSON.parse(event.data);
-            if (data.action === 'online_users') {
-                const userList = document.getElementById('online-users-list');
-                userList.innerHTML = '';
-                if (data.users.length === 0) {
-                    userList.innerHTML = '<li>No online users</li>';
-                } else {
-                    data.users.forEach(user => {
-                        const li = document.createElement('li');
-                        li.textContent = user;
-                        userList.appendChild(li);
-                    });
-                }
-            }
-        };
-
-        socket.onclose = function(event) {
-            console.log('WebSocket disconnected', event);
-            document.getElementById('online-users-list').innerHTML = '<li>Disconnected from server</li>';
-        };
-
-        socket.onerror = function(error) {
-            console.error('WebSocket error:', error);
-        };
-    </script>
+    <h1>Admin Notifications</h1>
+    <table id="notifications">
+        <thead>
+            <tr>
+                <th>Operation</th>
+                <th>Data</th>
+                <th>Result</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in task_results %}
+            <tr>
+                <td>{{ result.operation }}</td>
+                <td>{{ result.data|safe }}</td>
+                <td>{{ result.result }}</td>
+                <td>{{ result.timestamp }}</td>
+            </tr>
+            {% empty %}
+            <tr>
+                <td colspan="4" class="empty-message">No task results yet.</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>

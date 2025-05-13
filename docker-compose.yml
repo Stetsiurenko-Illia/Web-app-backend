@@ -1,0 +1,26 @@
+services:
+  web:
+    build: .
+    command: gunicorn --bind 0.0.0.0:8000 todo_project.wsgi:application
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - redis
+      - celery
+    env_file:
+      - .env
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+  celery:
+    build: .
+    command: celery -A todo_project worker --loglevel=info -Q email,long_running
+    volumes:
+      - .:/app
+    depends_on:
+      - redis
+    env_file:
+      - .env

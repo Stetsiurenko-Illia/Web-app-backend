@@ -402,3 +402,43 @@ class OnlineUsersConsumer(AsyncWebsocketConsumer):
         except Exception as e:
             logger.error(f"Error getting online users in OnlineUsersConsumer: {str(e)}")
             return []
+
+class TaskStatusConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        user = self.scope['user']
+        if user and user.is_authenticated and user.is_staff:
+            await self.channel_layer.group_add('task_status', self.channel_name)
+            await self.accept()
+            logger.info(f"Admin {user.email} connected to task_status group")
+        else:
+            logger.warning("User not admin or not authenticated, closing connection")
+            await self.close(code=1008)
+
+    async def disconnect(self, close_code):
+        await self.channel_layer.group_discard('task_status', self.channel_name)
+
+    async def notify_task_status(self, event):
+        await self.send(text_data=json.dumps({
+            'operation': event['operation'],
+            'data': event['data'],
+            'result': event['result'],
+            'completed_at': event['completed_at'],
+        }))
+class AdminNotificationConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        await self.channel_layer.group_add("admin_notifications", self.channel_name)
+        await self.accept()
+        print("WebSocket connected")
+
+    async def disconnect(self, close_code):
+        await self.channel_layer.group_discard("admin_notifications", self.channel_name)
+        print("WebSocket disconnected")
+
+    async def task_update(self, event):
+        print(f"Received event: {event}")
+        await self.send(text_data=json.dumps({
+            "operation": event["operation"],
+            "data": event["data"],
+            "result": event["result"],
+            "timestamp": event["timestamp"]
+        }))
